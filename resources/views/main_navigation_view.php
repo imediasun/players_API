@@ -9,7 +9,7 @@
             <div class="nano">
                 <div class="nano-content">
 
-                    <ul id="mainnav-menu" class="list-group" style="background:#000">
+                    <ul id="mainnav-menu" class="list-group" style="background:#1b232a">
 
 
                         <?
@@ -58,17 +58,32 @@
                                 //перебираем в цикле массив и выводим на экран
                                 for ($i = 0; $i < count($arr[$parent_id]); $i++) {
 
-                                    echo '
+
+
+                                        echo '
                                           <li>
                                         <a href="'.$arr[$parent_id][$i]->link.'">';
+
+
+
                                     if($parent_id == 0){
-                                        echo '<i class="fa '.$arr[$parent_id][$i]->icon.'"></i>';
+                                        echo '<div class="icon_stat" style="position:relative;top:12px;display:inline-block;background-repeat:no-repeat;width:30px;height:30px;background-image:url('.$arr[$parent_id][$i]->icon.');"></div>';
+                                    echo '<div class="icon_hover" style="position:relative;top:12px;display:none;background-repeat:no-repeat;width:30px;height:30px;background-image:url('.$arr[$parent_id][$i]->icon_hover.');"></div>';
                                     }
 
-                                    echo '
-                                <span class="menu-title">' . $arr[$parent_id][$i]->name . '</span>
-                                <i class="arrow"></i> 
-                                            </a>';
+
+                                    if($parent_id == 0) {
+                                        echo '
+                                        <span class="menu-title">' . $arr[$parent_id][$i]->name . '</span>
+                                        <i class="arrow"></i> 
+                                        </a>';
+                                    }
+                                    else{
+                                        echo '
+                                        <span style="font-size:12px;color:#eee;" class="menu-title">' . $arr[$parent_id][$i]->name . '</span>
+                                        <i class="arrow"></i> 
+                                        </a>';
+                                    }
                                     //рекурсия - проверяем нет ли дочерних категорий
                                     $this->view_cat($arr, $arr[$parent_id][$i]->id, 1);
                                     echo '</li> ';
@@ -138,5 +153,18 @@
 
     </div>
 </nav>
+
+<script>
+
+    $('#mainnav-menu li').hover(function(){
+
+     $(this).find('.icon_stat').css('display','none')
+     $(this).find('.icon_hover').css('display','inline-block')
+    },function(){
+    $(this).find('.icon_stat').css('display','inline-block')
+    $(this).find('.icon_hover').css('display','none')
+
+    })
+</script>
 <!--===================================================-->
 <!--END MAIN NAVIGATION-->

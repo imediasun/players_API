@@ -14,25 +14,6 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         
         
-        DB::table('type_of_goods')->insert([
-
-            [
-
-                'name' => 'Акційний товар',
-
-            ],
-            [
-
-                'name' => 'Оптовий товар',
-
-            ],
-            [
-
-                'name' => 'Роздрібний товар',
-
-            ],
-
-        ]);
 
         DB::table('roles')->insert([
 
@@ -96,331 +77,144 @@ class DatabaseSeeder extends Seeder
 
             [
                 'parent_id' => 0,
-                'name' => 'Лікарські препарати',
-                'link'=> '/good_category?id=',
-                'icon'=>'fa-plus-square'
+                'name' => 'Dashboard',
+                'link'=> '/dashboard',
+                'icon'=>'/img/dashboard_icon.png',
+                'icon_hover'=>'/img/dashboard_icon_white.png'
             ],
             [
                 'parent_id' => 0,
-                'name' => 'Електроніка',
-                'link'=> '/good?id=123456',
-                'icon'=>'fa-usb'
+                'name' => 'Anfregen',
+                'link'=> '/anfregen',
+                'icon'=>'/img/Anfregen.png',
+                'icon_hover'=>'/img/Anfregen_white.png'
             ],
-            [
-                'parent_id' => 1,
-                'name' => 'Нервові препарати',
-                'link'=> '/good?id=123456',
-                'icon'=>''
-            ],
-            [
-                'parent_id' => 1,
-                'name' => 'Судинні препарати',
-                'link'=> '/good?id=123456',
-                'icon'=>''
-            ],
-            [
-                'parent_id' => 1,
-                'name' => 'Серцеві препарати',
-                'link'=> '/good?id=123456',
-                'icon'=>''
-            ],
-            [
-                'parent_id' => 1,
-                'name' => 'Препарати для сну',
-                'link'=> '/good?id=123456',
-                'icon'=>''
 
+            [
+                'parent_id' => 0,
+                'name' => 'Projekte',
+                'link'=> '/projekte',
+                'icon'=>'/img/Projekte.png',
+                'icon_hover'=>'/img/Projekte_white.png'
+            ],
+            [
+                'parent_id' => 0,
+                'name' => 'Kunden',
+                'link'=> '/kunden',
+                'icon'=>'/img/contacts.png',
+                'icon_hover'=>'/img/contacts_white.png'
+            ],
+            [
+                'parent_id' => 0,
+                'name' => 'Kalender',
+                'link'=> '/kalender',
+                'icon'=>'/img/Kalender.png',
+                'icon_hover'=>'/img/Kalender_white.png'
+            ],
+            [
+                'parent_id' => 0,
+                'name' => 'Angebotseinstellungen',
+                'link'=> '/angebotseinstellungen',
+                'icon'=>'/img/Angebotseinstellungen.png',
+                'icon_hover'=>'/img/Angebotseinstellungen_white.png'
             ],[
-                'parent_id' => 1,
-                'name' => 'Вітаміни',
-                'link'=> '/good?id=123456',
-                'icon'=>''
-            ]
-        ]);
-
-
-
-
-
-        DB::table('goods')->insert([
-
-            [
-                'type' => 1,
-                'name' => 'Глицесед - КМП таблетки 0.1 г №50',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'glicesed.jpg',
-                'price'=>42000000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 1,
-                'name' => 'Ливицитам 500 таблетки 500мг №60',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'livicitam.jpg',
-                'price'=>42000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 1,
-                'name' => 'Валерианы настойка 25мг',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'valeriana.jpg',
-                'price'=>42,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 1,
-                'name' => 'Когнум таблетки 250 мг №50',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'kognum.jpg',
-                'price'=>420,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 1,
-                'name' => 'Новакаин дарница раствор для инъекций 0.5% 2мл №10',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'novakain.jpg',
-                'price'=>4200,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-
-            ],
-            [
-                'type' => 1,
-                'name' => 'Валеріана',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'glicesed.jpg',
-                'price'=>42000000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-
-
-
-
-
-            [
-                'type' => 2,
-                'name' => 'Глицесед - КМП таблетки 0.1 г №50',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'glicesed.jpg',
-                'price'=>42000000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 2,
-                'name' => 'Ливицитам 500 таблетки 500мг №60',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'livicitam.jpg',
-                'price'=>42000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 2,
-                'name' => 'Валерианы настойка 25мг',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'valeriana.jpg',
-                'price'=>42,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 2,
-                'name' => 'Когнум таблетки 250 мг №50',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'kognum.jpg',
-                'price'=>420,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 2,
-                'name' => 'Новакаин дарница раствор для инъекций 0.5% 2мл №10',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'novakain.jpg',
-                'price'=>4200,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-
-            ],
-            [
-                'type' => 2,
-                'name' => 'Валеріана',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'glicesed.jpg',
-                'price'=>42000000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-
-
-
-
-            [
-                'type' => 3,
-                'name' => 'Глицесед - КМП таблетки 0.1 г №50',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'glicesed.jpg',
-                'price'=>42000000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 3,
-                'name' => 'Ливицитам 500 таблетки 500мг №60',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'livicitam.jpg',
-                'price'=>42000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 3,
-                'name' => 'Валерианы настойка 25мг',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'valeriana.jpg',
-                'price'=>42,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 3,
-                'name' => 'Когнум таблетки 250 мг №50',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'kognum.jpg',
-                'price'=>420,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ],
-            [
-                'type' => 3,
-                'name' => 'Новакаин дарница раствор для инъекций 0.5% 2мл №10',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'novakain.jpg',
-                'price'=>4200,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-
-            ],
-            [
-                'type' => 3,
-                'name' => 'Валеріана',
-                'category'=>3,
-                'articul'=>'11244234',
-                'image_small'=>'glicesed.jpg',
-                'price'=>42000000,
-                'star'=>true,
-                'description'=>'',
-                'description2'=>''
-            ]
-
-
-
-
-
-        ]);
-
-
-        DB::table('admin_categories')->insert([
-
-            [
                 'parent_id' => 0,
-                'name' => 'Користувачі',
-                'icon'=> 'fa-users',
-                'link'=> '/admin'
+                'name' => 'Einstellungen',
+                'link'=> '/einstellungen',
+                'icon'=>'/img/Einstellungen.png',
+                'icon_hover'=>'/img/Einstellungen_white.png'
             ],
             [
-                'parent_id' => 1,
-                'name' => 'Управління користувачами',
-                'icon'=> 'fa-registered',
-                'link'=> '/admin/customers_managment'
+                'parent_id' => 2,
+                'name' => 'Neue Anfragen',
+                'link'=> '/neue_anfregen',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
             [
-                'parent_id' => 0,
-                'name' => 'Товари',
-                'icon'=> 'fa-gift',
-                'link'=> '/admin'
+                'parent_id' => 2,
+                'name' => 'Gekaufte Anfragen',
+                'link'=> '/gekaufte_anfregen',
+                'icon'=>'',
+                'icon_hover'=>''
+            ],
+            [
+                'parent_id' => 2,
+                'name' => 'Stornierte Anfragen',
+                'link'=> '/stornierte_anfregen',
+                'icon'=>'',
+                'icon_hover'=>''
+            ],[
+                'parent_id' => 3,
+                'name' => 'Alle Projekte',
+                'link'=> '/alle_projekte',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
             [
                 'parent_id' => 3,
-                'name' => 'Додати товар',
-                'icon'=> 'fa-envelope','link'=> '/admin/add_good'
+                'name' => 'Erstkontakt',
+                'link'=> '/erstkontakt',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
             [
                 'parent_id' => 3,
-                'name' => 'Додати Категорію',
-                'icon'=> 'fa-envelope','link'=> '/admin/add_category'
+                'name' => 'Vor-Ort-Termin',
+                'link'=> '/vor-ort-termin',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
             [
-                'parent_id' => 0,
-                'name' => 'Замовлення',
-                'icon'=> 'fa-envelope',
-                'link'=> '/admin'
-
+                'parent_id' => 3,
+                'name' => 'Angebotserstellung',
+                'link'=> '/angebotserstellung',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
             [
-                'parent_id' => 0,
-                'name' => 'Реклама',
-                'icon'=> 'fa-bullhorn',
-                'link'=> '/admin'
+                'parent_id' => 3,
+                'name' => 'Detailgesprach',
+                'link'=> '/detailgesprach',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
             [
-                'parent_id' => 0,
-                'name' => 'Партнери',
-                'icon'=> 'fa-thumbs-o-up',
-                'link'=> '/admin'
+                'parent_id' => 3,
+                'name' => 'Auftragsbestatigung',
+                'link'=> '/auftragsbestatigung',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
             [
-                'parent_id' => 8,
-                'name' => 'Додати логотипи',
-                'icon'=> 'fa-envelope','link'=> '/admin/add_logos'
+                'parent_id' => 3,
+                'name' => 'Umsetzung',
+                'link'=> '/umsetzung',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
             [
-                'parent_id' => 8,
-                'name' => 'Видалити логотипи',
-                'icon'=> 'fa-envelope','link'=> '/admin/del_logos'
+                'parent_id' => 3,
+                'name' => 'Abgeschlossen',
+                'link'=> '/abgeschlossen',
+                'icon'=>'',
+                'icon_hover'=>''
             ],
+            [
+                'parent_id' => 3,
+                'name' => 'Geloscht',
+                'link'=> '/geloscht',
+                'icon'=>'',
+                'icon_hover'=>''
+            ],
+            
         ]);
+
+
+
+
+
+
+
     }
 }

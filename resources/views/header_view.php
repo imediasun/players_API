@@ -8,7 +8,9 @@
         <!--================================-->
         <div class="navbar-header">
             <a href="index.html" class="navbar-brand"> <i class="fa fa-cube brand-icon"></i>
-                <div class="brand-title"> <span class="brand-text">Jasmine</span> </div>
+                <div class="brand-title"> <!--<span class="brand-text">Jasmine</span>-->
+                <img src="/img/logo_interdomus.png">
+                </div>
             </a>
         </div>
         <!--================================-->
