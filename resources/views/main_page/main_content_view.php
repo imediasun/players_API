@@ -20,7 +20,7 @@
             <div id="page-content">
 
 
-              
+
 
             </div>
             <!--===================================================-->
@@ -280,7 +280,7 @@
                 <div class="col-md-4" >
                     <h3 style="position:relative;top:-10px;color:#9e9e9e">MITTWOCH</h3>
                     <h2 style="position:relative;top:-10px;color:#000">14:30 Uhr</h2>
-                    
+
                 </div>
             </div>
 

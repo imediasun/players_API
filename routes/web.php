@@ -20,7 +20,7 @@ Route::get('/admin/del_good', 'AdminController@del_good');*/
 /*Route::get('/', function () {
     return view('index');
 });*/
-
+Route::get('/kalender', 'KalenderController@index');
 
 
 Route::post('/functions_images', 'FunctionsController@index');
