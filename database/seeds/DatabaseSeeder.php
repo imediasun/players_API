@@ -174,15 +174,15 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'parent_id' => 3,
-                'name' => 'Detailgesprach',
-                'link'=> '/detailgesprach',
+                'name' => 'Detailgespräch',
+                'link'=> '/detailgespräch',
                 'icon'=>'',
                 'icon_hover'=>''
             ],
             [
                 'parent_id' => 3,
-                'name' => 'Auftragsbestatigung',
-                'link'=> '/auftragsbestatigung',
+                'name' => 'Auftragsbestätigung',
+                'link'=> '/auftragsbestätigung',
                 'icon'=>'',
                 'icon_hover'=>''
             ],
@@ -202,8 +202,8 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'parent_id' => 3,
-                'name' => 'Geloscht',
-                'link'=> '/geloscht',
+                'name' => 'Gelöscht',
+                'link'=> '/gelöscht',
                 'icon'=>'',
                 'icon_hover'=>''
             ],
