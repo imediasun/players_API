@@ -21,6 +21,7 @@ Route::get('/admin/del_good', 'AdminController@del_good');*/
     return view('index');
 });*/
 Route::get('/kalender', 'KalenderController@index');
+Route::get('/erstkontakt', 'ProjekteController@erstkontakt');
 
 
 Route::post('/functions_images', 'FunctionsController@index');
@@ -63,6 +64,24 @@ Route::get('/add_to_cart/{id}','ShopingCartController@addToCart')->name('add_to_
 Route::get('/shoping_cart','ShopingCartController@getCart')->name('shoping_cart');
 Route::get('/checkout','ShopingCartController@getCheckout')->name('checkout');
 
+
+
+$router->group(['prefix' => 'api/v1'], function ($router) {
+    // Аутентификация приложений...
+    $router->post('/auth/app', 'Api\AuthController@authenticateApp');
+
+    // Аутентификация пользователей...
+    $router->post('/auth/user', 'Api\AuthController@authenticateUser')->middleware('auth.api.app');
+    $router->post('/auth/user/logout', 'Api\AuthController@logoutUser')->middleware('auth.api.user');
+
+    // Тестовые  маршруты
+    $router->post('/application-data', 'Api\HomeController@appData')->middleware('auth.api.app');
+    $router->get('/user-data', 'Api\HomeController@userData');
+});
+
+// авторизация приложения для доступа к данным пользователя...
+$router->get('/authorize', 'HomeController@showAuthorizationForm')->middleware('web');
+$router->post('/authorize', 'HomeController@authorizeApp')->middleware('web');
 
 
 

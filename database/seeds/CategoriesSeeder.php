@@ -37,17 +37,29 @@ class CategoriesSeeder extends Seeder
                 'name' => 'Кривошейкин Алексей'
 
             ],
+
             [
                 'email'=>'imediasun8@gmail.com',
-                'password'=>bcrypt('sunimedia'),
+                'password'=>'$2y$10$QfBGX14wKpXT/zA1gR.FZ.A12nrXzbtfki8wfqfwG.irvAWAYE9dC',
                 'mobile'=>'+38(096)544-11-20',
                 'add_phone'=>'+38(096)544-11-20',
                 'information'=>'information description',
-                'status'=>2,
+                'status'=>1,
                 'activated'=> TRUE,
-                'name' => 'Демидов Сергей'
+                'name' => 'Loki'
 
             ]
+
+        ]);
+
+        DB::table('applications')->insert([
+
+            [
+                'name' => 'Asgard Connect',
+                'key'=>'111222333',
+                'secret'=>'aaabbbccc'
+            ]
+
 
         ]);
         DB::table('role_user')->insert([

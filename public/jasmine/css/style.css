@@ -5967,10 +5967,12 @@ hr {
 }
 .panel-control .nav-tabs>li:not(.active) a {
 	color: inherit;
-	border-bottom: 0 !important
+	border-bottom: 0 !important;
+
 }
 .panel-control .nav-tabs>.active>a {
-	z-index: 1
+	z-index: 1;
+	border-bottom:3px solid #12aaeb;
 }
 .panel-control .progress {
 	min-width: 150px;

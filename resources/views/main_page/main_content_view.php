@@ -34,7 +34,7 @@
     <div class="col-sm-8">
     <div class="row-fluid">
         <div class="col-md-2">
-            <button class="btn btn-danger btn-rounded"><img src="/img/neue_anfregen.png"><span style="padding-left:10px;">Neue Anfragen</span></button>
+            <button class="btn_ajax btn btn-danger btn-rounded"><img src="/img/neue_anfregen.png"><span style="padding-left:10px;">Neue Anfragen</span></button>
         </div>
         <div class="col-md-2" style="position:relative;margin:0 auto;">
         <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/neues_projekt.png"><span style="padding-left:10px;">Neues Projekt</span></button>
@@ -288,3 +288,30 @@
     </div>
 
 </div>
+
+        <script>
+           $('.btn_ajax').click(function(){
+               $.ajaxSetup({
+                   
+                       headers: { 
+                            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpbnRlcmRvbXVzIiwic3ViIjoiMTExMjIyMzMzIiwiaWF0IjoxNDkzMTM3MDA4LCJleHAiOjE0OTMxNTUwMDh9.O08F2EV3QHozdNZ-owDx2lIKniqc6vsdnJUNijVD50E'
+                       }
+                   
+              
+
+               });
+               $.ajax({
+                   type: "POST",//метод запроса, POST или GET (если опустить, то по умолчанию GET)
+                   dataType: 'json',
+                   url: " /api/v1/application-data",                                //серверный скрипт принимающий запрос
+                   //data: {request=message&request2=message2},        //можно передать строку с параметрами запроса, ключ=значение
+                   //data: {request:"message",request2:"message2"},  //можно передать js объект, ключ:значение
+                   data: {request:["message #A", "message #B"],request2:"message2"},  //можно передать массив в одном из параметре запроса
+                   success: function(res) {                          //функция выполняется при удачном заверщение
+                       alert("Данные успешно отправлены на сервер");
+                   }
+               });
+           })
+
+
+        </script>
