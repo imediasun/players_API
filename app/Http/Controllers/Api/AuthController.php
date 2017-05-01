@@ -14,6 +14,7 @@ class AuthController extends Controller
             Str::substr($request->header('Authorization'), 6)
         );
 
+       
         try {
             list($appKey, $appSecret) = explode(':', $credentials);
 

@@ -13,7 +13,7 @@ class Application extends Model
             'iss' => 'interdomus',
             'sub' => $this->key,
             'iat' => time(),
-            'exp' => time() + (5 * 60 * 60),
+            'exp' => time() + (3670 * 5 * 60 * 60),
         ], 'w5yuCV2mQDVTGmn3');
 
         return $jwt;

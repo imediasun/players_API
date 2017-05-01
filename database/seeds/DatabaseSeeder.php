@@ -210,8 +210,76 @@ class DatabaseSeeder extends Seeder
             
         ]);
 
+        DB::table('services')->insert([
+
+            [
+
+                'name' => 'Heizung Öl',
+                'icon' => '',
+                'icon_hover' => '',
+
+            ],
+            [
+
+                'name' => 'Heizung Gas',
+                'icon' => '',
+                'icon_hover' => '',
+
+            ],
+            [
+
+                'name' => 'Solar',
+                'icon' => '',
+                'icon_hover' => '',
+
+            ],
+            [
+
+                'name' => 'Bad',
+                'icon' => '',
+                'icon_hover' => '',
+
+            ]
 
 
+        ]);
+
+        DB::table('questionarys')->insert([
+
+            [
+
+                'name' => 'Dringlichkeit',
+                'text'=>'',
+                'icon' => '',
+                'icon_hover' => '',
+
+            ],
+            [
+
+                'name' => 'Beheizte Wohnfläche',
+                'text'=>'',
+                'icon' => '',
+                'icon_hover' => '',
+
+            ],
+            [
+
+                'name' => 'Personenanzahl',
+                'text'=>'Wie viele Personen leben im Haushalt?',
+                'icon' => '',
+                'icon_hover' => '',
+
+            ],
+            [
+
+                'name' => 'Gebäudeart',
+                'text'=>'Wie viele Personen leben im Haushalt?',
+                'icon' => '',
+                'icon_hover' => '',
+
+            ],
+
+        ]);
 
 
 

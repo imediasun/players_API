@@ -294,7 +294,7 @@
                $.ajaxSetup({
                    
                        headers: { 
-                            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpbnRlcmRvbXVzIiwic3ViIjoiMTExMjIyMzMzIiwiaWF0IjoxNDkzMTM3MDA4LCJleHAiOjE0OTMxNTUwMDh9.O08F2EV3QHozdNZ-owDx2lIKniqc6vsdnJUNijVD50E'
+                            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpbnRlcmRvbXVzIiwic3ViIjoiMTExMjIyMzMzIiwiaWF0IjoxNDkzNTYzNTc1LCJleHAiOjE1NTk2MjM1NzV9.pxOg6NT7Gb6nUbUFvgWybpEsmo8sdXN6Aa1YZyv4v0I'
                        }
                    
               
@@ -303,10 +303,30 @@
                $.ajax({
                    type: "POST",//метод запроса, POST или GET (если опустить, то по умолчанию GET)
                    dataType: 'json',
-                   url: " /api/v1/application-data",                                //серверный скрипт принимающий запрос
+                   url: "/api/v1/application-data",                                //серверный скрипт принимающий запрос
                    //data: {request=message&request2=message2},        //можно передать строку с параметрами запроса, ключ=значение
                    //data: {request:"message",request2:"message2"},  //можно передать js объект, ключ:значение
-                   data: {request:["message #A", "message #B"],request2:"message2"},  //можно передать массив в одном из параметре запроса
+                   data: {
+                       company_name:"Firmenname",
+                       first_name:"Vorname",
+                       last_name:"Nachname",
+                       street_house_number:"Straße und Hausnummer",
+                       zip_code:"Postleitzahl",
+                       city:"Ort",
+                       different:false,
+                       install_street_house_number:"Straße und Hausnummer",
+                       install_zip_code:"Postleitzahl",
+                       install_city:"Postleitzahl",
+                       email:"Ort",
+                       telephone:"Telefon",
+                       reachability:"Erreichbarkeit",
+                       service:1,
+                       comments:'Comment',
+                       comments_hidden:false
+                   },
+
+
+               //можно передать массив в одном из параметре запроса
                    success: function(res) {                          //функция выполняется при удачном заверщение
                        alert("Данные успешно отправлены на сервер");
                    }

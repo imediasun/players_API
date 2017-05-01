@@ -22,7 +22,7 @@ Route::get('/admin/del_good', 'AdminController@del_good');*/
 });*/
 Route::get('/kalender', 'KalenderController@index');
 Route::get('/erstkontakt', 'ProjekteController@erstkontakt');
-
+Route::get('/neue_anfregen', 'AnfragenController@neue_anfregen');
 
 Route::post('/functions_images', 'FunctionsController@index');
 Route::post('/functions_image', 'FunctionsController@main_image');
