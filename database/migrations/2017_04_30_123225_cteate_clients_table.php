@@ -22,6 +22,7 @@ class CteateClientsTable extends Migration
             $table->text('zip_code');
             $table->text('city');
             $table->boolean('different');
+            $table->boolean('active');
             $table->text('install_street_house_number');
             $table->text('install_zip_code');
             $table->text('install_city');

@@ -244,38 +244,78 @@ class DatabaseSeeder extends Seeder
 
         ]);
 
-        DB::table('questionarys')->insert([
+        DB::table('questions')->insert([
 
             [
 
-                'name' => 'Dringlichkeit',
-                'text'=>'',
+                'name'=>'Dringlichkeit',
+                'shortcode' => 'urgency',
+
                 'icon' => '',
                 'icon_hover' => '',
 
             ],
             [
 
-                'name' => 'Beheizte Wohnfläche',
-                'text'=>'',
-                'icon' => '',
-                'icon_hover' => '',
+                'name'=>'Beheizte Wohnfläche',
+                'shortcode' => 'heating_area',
+
+                'icon' => '/img/100-200_grey.png',
+                'icon_hover' => '/img/100-200.png',
 
             ],
             [
 
-                'name' => 'Personenanzahl',
-                'text'=>'Wie viele Personen leben im Haushalt?',
-                'icon' => '',
-                'icon_hover' => '',
+                'name'=>'Personenanzahl',
+                'shortcode' => 'number_of_persons',
+
+                'icon' => '/img/4-7_Personen_grey.png',
+                'icon_hover' => '/img/4-7_Personen.png',
 
             ],
             [
 
-                'name' => 'Gebäudeart',
-                'text'=>'Wie viele Personen leben im Haushalt?',
-                'icon' => '',
-                'icon_hover' => '',
+                'name'=>'Gebäudeart',
+                'shortcode' => 'building',
+
+                'icon' => '/img/house_grey.png',
+                'icon_hover' => '/img/house_grey.png',
+
+            ],
+            [
+
+                'name'=>'Warmwasser',
+                'shortcode' => 'warm_water',
+
+                'icon' => '/img/drope_blue.png',
+                'icon_hover' => '/img/drope_blue.png',
+
+            ],
+            [
+
+                'name'=>'Wärmeabgabe',
+                'shortcode' => 'radiator',
+
+                'icon' => '/img/heater_blue.png',
+                'icon_hover' => '/img/heater_blue.png',
+
+            ],
+            [
+
+                'name'=>'Wasserabfluss',
+                'shortcode' => 'drain',
+
+                'icon' => '/img/kotyol_blue.png',
+                'icon_hover' => '/img/kotyol_blue.png',
+
+            ],
+            [
+
+                'name'=>'Abgasführung',
+                'shortcode' => 'exhaust',
+                
+                'icon' => '/img/kamin_blue.png',
+                'icon_hover' => '/img/kamin_blue.png',
 
             ],
 

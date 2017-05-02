@@ -300,6 +300,71 @@
               
 
                });
+
+               var main={
+                   company_name:"Firmenname",
+                   first_name:"Vorname",
+                   last_name:"Nachname",
+                   street_house_number:"Straße und Hausnummer",
+                   zip_code:"Postleitzahl",
+                   city:"Ort",
+                   different:false,
+                   install_street_house_number:"Straße und Hausnummer",
+                   install_zip_code:"Postleitzahl",
+                   install_city:"Postleitzahl",
+                   email:"Ort",
+                   telephone:"Telefon",
+                   reachability:"Erreichbarkeit",
+                   service:1,
+                   comments:'Comment',
+                   comments_hidden:false,
+
+               };
+
+               var question1={
+                   question:'Wast is das ?',
+                   shortcode:'urgency',
+                   answer:'No problem'
+               };
+               var question2={
+                   question:'Wast is das ?',
+                   shortcode:'heating_area',
+                   answer:'No problem'
+               };
+               var question3={
+                   question:'Wast is das ?',
+                   shortcode:'number_of_persons',
+                   answer:'No problem'
+               };
+               var question4={
+                   question:'Wast is das ?',
+                   shortcode:'building',
+                   answer:'No problem'
+               };
+               var question5={
+                   question:'Wast is das ?',
+                   shortcode:'warm_water',
+                   answer:'No problem'
+               };
+               var question6={
+                   question:'Wast is das ?',
+                   shortcode:'radiator',
+                   answer:'No problem'
+               };
+               var question7={
+                   question:'Wast is das ?',
+                   shortcode:'drain',
+                   answer:'No problem'
+               };
+               var question8={
+                   question:'Wast is das ?',
+                   shortcode:'exhaust',
+                   answer:'No problem'
+               };
+                var Questinary=[];
+               Questinary.push(question1);Questinary.push(question2);Questinary.push(question3);Questinary.push(question4);Questinary.push(question5);
+               Questinary.push(question6);Questinary.push(question7);Questinary.push(question8);
+
                $.ajax({
                    type: "POST",//метод запроса, POST или GET (если опустить, то по умолчанию GET)
                    dataType: 'json',
@@ -307,22 +372,8 @@
                    //data: {request=message&request2=message2},        //можно передать строку с параметрами запроса, ключ=значение
                    //data: {request:"message",request2:"message2"},  //можно передать js объект, ключ:значение
                    data: {
-                       company_name:"Firmenname",
-                       first_name:"Vorname",
-                       last_name:"Nachname",
-                       street_house_number:"Straße und Hausnummer",
-                       zip_code:"Postleitzahl",
-                       city:"Ort",
-                       different:false,
-                       install_street_house_number:"Straße und Hausnummer",
-                       install_zip_code:"Postleitzahl",
-                       install_city:"Postleitzahl",
-                       email:"Ort",
-                       telephone:"Telefon",
-                       reachability:"Erreichbarkeit",
-                       service:1,
-                       comments:'Comment',
-                       comments_hidden:false
+                    main:main,questinary:Questinary
+
                    },
 
 

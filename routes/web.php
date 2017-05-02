@@ -75,7 +75,7 @@ $router->group(['prefix' => 'api/v1'], function ($router) {
     $router->post('/auth/user/logout', 'Api\AuthController@logoutUser')->middleware('auth.api.user');
 
     // Тестовые  маршруты
-    $router->post('/application-data', 'Api\HomeController@appData')->middleware('auth.api.app');
+    $router->get('/application-data', 'Api\HomeController@appData')->middleware('auth.api.app');
     $router->get('/user-data', 'Api\HomeController@userData');
 });
 

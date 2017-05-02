@@ -15,6 +15,8 @@ class HomeController extends Controller
 
     {
 
+        dd($request->input());
+
 
         DB::table('clients')->insert(
             ['company_name' => $request->input('company_name'),
@@ -35,6 +37,8 @@ class HomeController extends Controller
                 'comments_hidden' => ($request->input('comments_hidden')=='true') ? 1 : 0 ,
             ]
         );
+
+        
 
 
 
