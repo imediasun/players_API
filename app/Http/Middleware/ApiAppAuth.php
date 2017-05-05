@@ -17,10 +17,9 @@ class ApiAppAuth
      */
     public function handle($request, Closure $next)
     {
-        
+
 
 		$authToken = $request->bearerToken();
-       
 
 
         try {
@@ -31,7 +30,9 @@ class ApiAppAuth
             // JWT::decode  принимает строку с токеном первым аргументом
             // затем ключ, которым закодирован токен
             //  и список алгоритмов
+
                $payload = (array) JWT::decode($authToken, 'w5yuCV2mQDVTGmn3', ['HS256'])
+
            );
 
         $app =  Application::where('key',$payload['sub'])->firstOrFail();

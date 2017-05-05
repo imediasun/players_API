@@ -261,8 +261,15 @@
                                         <h5 style="display:inline-block;margin-left:10px;color:#b9c5cd">Preis</h5>
                                     </div>
                                     
-                                    
+                                  <?php
+
+                                  foreach ($clients as $key=>$val){
+
+                                      $questinarys= App\Questionary::where('id_client', $val['id'])
+                                          ->get();
+                                  ?>
                                     <div class="row" style="margin-top:30px;padding:10px;">
+                                        <div class="item_block" style="padding:10px;background:#fff;width:100%;height:auto;border:2px solid #eee;">
                                         <div class="block" style="position:relative;height:164px;width:99%;border:3px solid #6dbb72;border-radius:5px;margin-top:25px;">
                                             <div class="neu" style="z-index:999;position:absolute;width:68px;height:56px;background:url('/img/neu.png');background-size:100% 100%">
 
@@ -276,50 +283,76 @@
                                                 </div>
                                                 <div class="col-md-9">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-7">
                                                             <div class="row">
                                                                 <h4>Gasheizung Neuninstallationg</h4>
                                                                 <div style="width:200px;height:3px;background:#3da5ea;"></div>
                                                             </div>
-                                                            <div class="row" style="margin-top:10px;">
-                                                                <button class="btn btn-warning btn-rounded"><img src="/img/monate.png"><span style="padding-left:10px;">1-2 Monate</span></button>
-                                                                <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/100-200.png"><span style="padding-left:10px;">100-200m<span style="font-size:6px">2</span></span></span></button>
+                                                            <?php
 
+                                                            foreach($questinarys as $k=>$v){
+                                                                if($v['id_question']==1){
+                                                                    $urgancy[0]=$v['answer'];
+                                                                }
+                                                                if($v['id_question']==2){
+                                                                    $squere[0]=$v['answer'];
+                                                                }
+                                                                if($v['id_question']==3){
+                                                                    $persons[0]=$v['answer'];
+                                                                }
+                                                                if($v['id_question']==4){
+                                                                    $house[0]=$v['answer'];
+                                                                }
+
+                                                            }
+?>
+                                                            <div class="row" style="margin-top:10px;">
+
+                                                                <?php if(!empty($urgancy[0])){?>
+                                                                <button class="btn btn-warning btn-rounded"><img src="/img/monate.png"><span style="padding-left:10px;"><?php echo $urgancy[0]?></span></button>
+                                                                <?php }?>
+                                                                <?php if(!empty($squere[0])){?>
+                                                                <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/100-200.png"><span style="padding-left:10px;"><?php echo $squere[0]?></span></span></button>
+                                                                <?php }?>
 
 
 
                                                             </div>
                                                             <div class="row" style="margin-top:10px;">
-                                                                <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/4-7_personen.png"><span style="padding-left:5px;">4-7 Personen</span></span></button>
-                                                                <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/Mehrfamilienhaus.png"><span style="padding-left:5px;">Mehrfamilienhaus</span></span></button>
+                                                                <?php if(!empty($persons[0])){?>
+                                                                <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/4-7_Personen.png"><span style="padding-left:5px;"><?php echo $persons[0]?></span></span></button>
+                                                                <?php }?>
+                                                                <?php if(!empty($house[0])){?>
+                                                                <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/mehrfamilienhaus.png"><span style="padding-left:5px;"><?php echo $house[0]?></span></span></button>
+                                                                <?php }?>
 
                                                            </div>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-5">
 
 
                                                                     <div class="row">
-                                                                    <div class="col-md-6">
+                                                                    <div class="col-md-7">
                                                                         <div style="position:relative;display:inline-block;width:27px;height:26px;background-size:100% 100%;background-image:url('/img/point.png')">
                                                                         </div>
                                                                         <h3 style="position:relative;display:inline-block;top:-5px;">18.03.2017</h3>
                                                                         <h5 style="position:relative;display:block;left:32px;top:-15px;color:#9e9e9e">15:46 Uhr</h5>
                                                                     </div>
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-5">
                                                                             <div style="position:relative;display:inline-block;width:27px;height:26px;background-size:100% 100%;background-image:url('/img/target_grey.png')">
                                                                             </div>
                                                                             <h3 style="position:relative;display:inline-block;top:-5px;">53km</h3>
-                                                                            <h5 style="position:relative;display:block;left:32px;top:-15px;color:#9e9e9e">PLZ:22555</h5>
+                                                                            <h5 style="position:relative;display:block;left:2px;top:-15px;color:#9e9e9e">PLZ:22555</h5>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row" style="margin-top:-30px;">
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-7">
                                                                             <div style="position:relative;display:inline-block;width:19px;height:24px;background-size:100% 100%;background-image:url('/img/medal_green.png')">
                                                                             </div>
                                                                             <h5 style="position:relative;display:inline-block;left:5px;top:-10px;color:#7dce82">Vorqualifiziert </h5>
 
                                                                         </div>
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-5">
 
                                                                             <h1 style="position:relative;display:inline-block;left:5px;top:-30px;color:#000">25&euro;</h1>
 
@@ -343,11 +376,59 @@
 
                                                 </div>
                                             </div>
+
+
                                         </div>
+                                        <div class="additional_info" style="position:relative;background:#fff;min-height:40px;height:auto;width:100%;margin-top:30px;">
+                                            
+                                        <?php
+
+                                        foreach($questinarys as $k=>$v){
+                                            $icon='';
+                                            $question=App\Question::where('id', $v['id_question'])
+                                                ->get();
+                                            if(isset($question[0])){
+                                            $icon=$question[0]['original']['icon'];
+                                            $icon_hover=$question[0]['original']['icon_hover'];
+                                            }
+                                            ?>
+                                            <div class="questions" style="display:none;position:relative;margin-top:20px;height:40px;border-bottom:2px dashed #eee;">
+                                            <div class="col-md-5" style="height:40px;display:inline-block"> <?php echo $v['original']['text'];?></div>
+                                                <div class="col-md-1" style="height:40px;display:inline-block">
+                                                    <?php
+
+                                                    if(!empty($icon)){
+
+                                                       ?>
+                                                        <img src="<? echo $icon ?> ">
+
+                                                        <?php
+
+                                                    }
+                                                    ?>
+
+                                                </div>
+                                            <div class="col-md-3" style="height:40px;display:inline-block"><?php echo $v['original']['answer'];?></div>
+                                            </div>
+                                            <?php
+                                            
+                                        }?>    
+                                        <div class="scroll_btn" style="width:34px;height:34px;background-size:100% 100%;background:url('/img/scroll_arrow_down.png');position:absolute;bottom:5px;left:0px;right:0px;margin:0 auto;cursor:pointer;">
+
+
+                                        </div>
+
+                                        </div>
+
                                         
                                     </div>
 
                                 </div>
+                               <?}?>     
+                                    
+                                    
+                                    
+                                    
                             </div>
 
                         </div>
@@ -376,3 +457,21 @@
     </div>
 
 
+<script>
+    $('.scroll_btn').click(function(){
+
+        if($(this).hasClass('active')){
+            $(this).parent().find('.questions').css('display','none')
+            $(this).removeClass('active')
+
+        }
+        else{
+
+            $(this).parent().find('.questions').css('display','block')
+            $(this).addClass('active');
+
+        }
+
+    })
+
+</script>

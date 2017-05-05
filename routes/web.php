@@ -75,13 +75,13 @@ $router->group(['prefix' => 'api/v1'], function ($router) {
     $router->post('/auth/user/logout', 'Api\AuthController@logoutUser')->middleware('auth.api.user');
 
     // Тестовые  маршруты
-    $router->get('/application-data', 'Api\HomeController@appData')->middleware('auth.api.app');
+    $router->post('/application-data', 'Api\HomeController@appData')->middleware('auth.api.app');
     $router->get('/user-data', 'Api\HomeController@userData');
 });
 
 // авторизация приложения для доступа к данным пользователя...
-$router->get('/authorize', 'HomeController@showAuthorizationForm')->middleware('web');
-$router->post('/authorize', 'HomeController@authorizeApp')->middleware('web');
+$router->get('/authorize', 'HomeController@showAuthorizationForm')->middleware('web'); 
+$router->post('/authorize', 'HomeController@authorizeApp')->middleware('web'); 
 
 
 

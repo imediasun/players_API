@@ -62,8 +62,6 @@
 <!--JAVASCRIPT-->
 <!--=================================================-->
 
-<!--jQuery [ REQUIRED ]-->
-<script src="jasmine/js/jquery-2.1.1.min.js"></script>
 
 <!--jQuery UI [ REQUIRED ]-->
 <script src="jasmine/js/jquery-ui.min.js"></script>
