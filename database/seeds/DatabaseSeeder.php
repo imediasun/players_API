@@ -321,7 +321,39 @@ class DatabaseSeeder extends Seeder
 
         ]);
 
+        DB::table('admin_categories')->insert([
 
+            [
+                'parent_id' => 0,
+                'name' => 'Dashboard',
+                'link'=> '/admin/dashboard',
+                'icon'=>'/img/dashboard_icon.png',
+                'icon_hover'=>'/img/dashboard_icon_white.png'
+            ],
+            [
+                'parent_id' => 0,
+                'name' => 'Anfregen',
+                'link'=> '/admin/anfregen',
+                'icon'=>'/img/Anfregen.png',
+                'icon_hover'=>'/img/Anfregen_white.png'
+            ],
+
+
+            [
+                'parent_id' => 0,
+                'name' => 'Kunden(Firmen)',
+                'link'=> '/admin/kunden',
+                'icon'=>'/img/contacts.png',
+                'icon_hover'=>'/img/contacts_white.png'
+            ],
+            [
+                'parent_id' => 0,
+                'name' => 'Kalender',
+                'link'=> '/admin/kalender',
+                'icon'=>'/img/Kalender.png',
+                'icon_hover'=>'/img/Kalender_white.png'
+            ]
+        ]);
 
 
     }

@@ -29,16 +29,13 @@ class Display_lib
         $view.=view($path.'.footer_view',$data)->render();
         return $view;
     }
-    public static function admin($path,$data,$data_nav)
+    public static function admin($path,$data,$data_nav,$data_content)
     {
 
-        session()->forget('file_name');
-        session()->forget('file_name_main_image');
-        session()->forget('variable');
         $view=view($path.'.preheader_view',$data)->render();
         $view.=view('admin_page.header_view')->render();
         $view.=view('admin_page.main_navigation_view',$data_nav)->render();
-        $view.=view($path.'.main_content_view',$data)->render();
+        $view.=view($path.'.main_content_view',$data_content)->render();
         /*$view.=view($path.'.main_aside_view',$data)->render();*/
         $view.=view($path.'.footer_view',$data)->render();
         return $view;

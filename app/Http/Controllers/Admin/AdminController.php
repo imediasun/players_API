@@ -36,16 +36,17 @@ class AdminController extends \App\Http\Controllers\Controller
         
     }
     
-    public function renderOutput($data){
+    public function renderOutput($data,$data_content){
         /*$this->vars = arry_add($this->vars,'title',$this->title);*/
         //подключить меню
         $data_nav['menu']=$this->menu();
         //передача в вид через Display_Lib
         
         $data['title']="Фрилансим по крупному";
+        $data_content['title']="Industry";
         $data['keywords']="Фрилансим по крупному";
         $data['description']="Фрилансим по крупному";
-        return \App\Http\Libraries\Display_lib::admin($this->template,$data,$data_nav);
+        return \App\Http\Libraries\Display_lib::admin($this->template,$data,$data_nav,$data_content);
     }
     
 }

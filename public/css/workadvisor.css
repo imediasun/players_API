@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'workadvisor';
+  src:
+    url('http://inter.imedia.in.ua/fonts/workadvisor.ttf?r86sbi') format('truetype'),
+    url('http://inter.imedia.in.ua/fonts/workadvisor.woff?r86sbi') format('woff'),
+    url('http://inter.imedia.in.ua/fonts/workadvisor.svg?r86sbi#workadvisor') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i.workadvisor {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'workadvisor' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.workadvisor-add-image:before {
+  content: "\e900";
+}
+.workadvisor-alarm-clock:before {
+  content: "\e901";
+}
+.workadvisor-arrow-point-to-bottom:before {
+  content: "\e902";
+}
+.workadvisor-arrow-point-to-top:before {
+  content: "\e903";
+}
+.workadvisor-calendar:before {
+  content: "\e904";
+}
+.workadvisor-certificate:before {
+  content: "\e905";
+}
+.workadvisor-cheked:before {
+  content: "\e906";
+}
+.workadvisor-cheked-circle .path1:before {
+  content: "\e907";
+  color: rgb(0, 0, 0);
+}
+.workadvisor-cheked-circle .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(1, 2, 2);
+}
+.workadvisor-clients:before {
+  content: "\e909";
+}
+.workadvisor-clock:before {
+  content: "\e90a";
+}
+.workadvisor-close:before {
+  content: "\e90b";
+}
+.workadvisor-copy:before {
+  content: "\e90c";
+}
+.workadvisor-dashboard:before {
+  content: "\e90d";
+}
+.workadvisor-details:before {
+  content: "\e90e";
+}
+.workadvisor-dokument:before {
+  content: "\e90f";
+}
+.workadvisor-dokuments:before {
+  content: "\e910";
+}
+.workadvisor-download:before {
+  content: "\e911";
+}
+.workadvisor-edit-tool:before {
+  content: "\e912";
+}
+.workadvisor-enter:before {
+  content: "\e913";
+}
+.workadvisor-eye:before {
+  content: "\e914";
+}
+.workadvisor-family:before {
+  content: "\e915";
+}
+.workadvisor-fireplace:before {
+  content: "\e916";
+}
+.workadvisor-folder:before {
+  content: "\e917";
+}
+.workadvisor-forward-arrow:before {
+  content: "\e918";
+}
+.workadvisor-google-map:before {
+  content: "\e919";
+}
+.workadvisor-heating:before {
+  content: "\e91a";
+}
+.workadvisor-heating-gas:before {
+  content: "\e91b";
+}
+.workadvisor-heating-oil:before {
+  content: "\e91c";
+}
+.workadvisor-home:before {
+  content: "\e91d";
+}
+.workadvisor-house-plan:before {
+  content: "\e91e";
+}
+.workadvisor-information:before {
+  content: "\e91f";
+}
+.workadvisor-like:before {
+  content: "\e920";
+}
+.workadvisor-list:before {
+  content: "\e921";
+}
+.workadvisor-list-document:before {
+  content: "\e922";
+}
+.workadvisor-list-task:before {
+  content: "\e923";
+}
+.workadvisor-location:before {
+  content: "\e924";
+}
+.workadvisor-medal:before {
+  content: "\e925";
+}
+.workadvisor-moneyback:before {
+  content: "\e926";
+}
+.workadvisor-move:before {
+  content: "\e927";
+}
+.workadvisor-next:before {
+  content: "\e928";
+}
+.workadvisor-notebook:before {
+  content: "\e929";
+}
+.workadvisor-on-off:before {
+  content: "\e92a";
+}
+.workadvisor-open-folder:before {
+  content: "\e92b";
+}
+.workadvisor-phone-call:before {
+  content: "\e92c";
+}
+.workadvisor-phonecall-in-circle:before {
+  content: "\e92d";
+}
+.workadvisor-previous:before {
+  content: "\e92e";
+}
+.workadvisor-printer:before {
+  content: "\e92f";
+}
+.workadvisor-real-estate:before {
+  content: "\e930";
+}
+.workadvisor-rubbish-bin:before {
+  content: "\e931";
+}
+.workadvisor-service-bathroom:before {
+  content: "\e932";
+}
+.workadvisor-service-solar:before {
+  content: "\e933";
+}
+.workadvisor-settings:before {
+  content: "\e934";
+}
+.workadvisor-settings-document:before {
+  content: "\e935";
+}
+.workadvisor-target:before {
+  content: "\e936";
+}
+.workadvisor-truck:before {
+  content: "\e937";
+}
+.workadvisor-truck-in-circle:before {
+  content: "\e938";
+}
+.workadvisor-uploaded-dokument .path1:before {
+  content: "\e939";
+  color: rgb(0, 0, 0);
+}
+.workadvisor-uploaded-dokument .path2:before {
+  content: "\e93a";
+  margin-left: -0.8603515625em;
+  color: rgb(1, 2, 2);
+}
+.workadvisor-uploaded-dokument .path3:before {
+  content: "\e93b";
+  margin-left: -0.8603515625em;
+  color: rgb(1, 2, 2);
+}
+.workadvisor-warning:before {
+  content: "\e93c";
+}
+.workadvisor-water-heater:before {
+  content: "\e93d";
+}
+.workadvisor-wrench:before {
+  content: "\e93e";
+}
+

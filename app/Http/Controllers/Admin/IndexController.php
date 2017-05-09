@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Gate;
 use Auth;
+use App\Client;
+use App\Http\Controllers\MenuController;
 class IndexController extends AdminController
 {
     //
@@ -14,7 +16,7 @@ class IndexController extends AdminController
        parent::__construct();
 
 
-        $this->template='admin_page';
+        $this->template='admin_page/anfragen';
     }
 
     public function index(){
@@ -24,9 +26,14 @@ class IndexController extends AdminController
 
             abort(403);
         }
+        $data_nav['menu']=MenuController::index('admin_categories'); 
+        $data_content['clients']=Client::orderBy('created_at', 'desc')
+            ->orderBy('updated_at', 'desc')
+            ->get();
+
         $data=array();
         $this->title = 'Панель администратора';
-        return $this->renderOutput($data);
+        return $this->renderOutput($data,$data_content);
     }
 }
 

@@ -35,9 +35,11 @@ class LoginController extends Controller
      */
     public function __construct(ActivationService $activationService)
     {
-        
-       /* $this->middleware('guest', ['except' => 'logout']);*/
+
+
+        /* $this->middleware('guest', ['except' => 'logout']);*/
         $this->middleware('guest', ['except' => 'logout']);
+
         $this->activationService = $activationService;
     }
 
