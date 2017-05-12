@@ -15,6 +15,7 @@ class CteateClientsTable extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('request_name')->default('')->nullable();
             $table->string('company_name')->default('')->nullable();
             $table->string('first_name')->default('')->nullable();
             $table->string('last_name')->default('')->nullable();

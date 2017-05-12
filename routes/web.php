@@ -44,7 +44,7 @@ Route::get('/good_added', function () {
 })->name('good_added');
 Route::get('/not_yours', function () {
     return view('not_yours');
-})->name('not_yours');
+})->name('not_yours'); 
 
 Route::get('/logout',['uses' => 'Admin\IndexController@index','as' => 'adminIndex']);
 
@@ -53,6 +53,7 @@ Route::group(['prefix' => 'admin','middleware'=>['web','auth']],function(){
        //admin
 
     Route::get('/',['uses' => 'Admin\IndexController@index','as' => 'adminIndex']);
+    Route::get('/kunden','Admin\KundenController@index');
     Route::post('/func_update_role', 'FunctionsController@role');
     Route::post('/func_delete_user', 'FunctionsController@delete_user');
     Route::resource('/add_good','Admin\GoodsController');

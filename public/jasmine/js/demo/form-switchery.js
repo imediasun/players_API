@@ -32,14 +32,14 @@ $(document).ready(function() {
 	// http://abpetkov.github.io/switchery/
 	// =================================================================
 	new Switchery(document.getElementById('demo-sw-unchecked'));
-
+/*new Switchery(document.getElementsByClassName('demo-sw-unchecked'));*/
 
 	// SWITCHERY - CHECKING STATE
 	// =================================================================
 	// Require Switchery
 	// http://abpetkov.github.io/switchery/
 	// =================================================================
-	var changeCheckbox = document.getElementById('demo-sw-checkstate'), changeField = document.getElementById('demo-sw-checkstate-field');
+var changeCheckbox = document.getElementById('demo-sw-checkstate'), changeField = document.getElementById('demo-sw-checkstate-field');
 	new Switchery(changeCheckbox)
 	changeField.innerHTML = changeCheckbox.checked;
 	changeCheckbox.onchange = function() {
@@ -87,5 +87,13 @@ $(document).ready(function() {
 	new Switchery(document.getElementById('demo-sw-sz'));
 	new Switchery(document.getElementById('demo-sw-sz-sm'), { size: 'small' });
 
+
+	$(function(){
+		var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+		elems.forEach(function(html) {
+			var switchery = new Switchery(html);
+		});
+	});
 
 });

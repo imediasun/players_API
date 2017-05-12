@@ -22,7 +22,8 @@ $main=$request->input('main');
 
 
         DB::table('clients')->insert(
-            ['company_name' => $main['company_name'],
+            ['request_name' => $main['request_name'],
+                'company_name' => $main['company_name'],
                 'first_name' => $main['first_name'],
                 'last_name' => $main['last_name'],
                 'street_house_number' => $main['street_house_number'],

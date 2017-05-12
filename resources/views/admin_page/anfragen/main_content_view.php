@@ -135,109 +135,151 @@
                                         ->get();
                                     ?>
                                     <div class="row" style="margin-top:30px;padding:10px;">
-                                        <div class="item_block" style="padding:10px;background:#fff;width:100%;height:auto;border:2px solid #eee;">
-                                            <div class="block" style="position:relative;height:164px;width:99%;border:3px solid #6dbb72;border-radius:5px;margin-top:25px;">
+                                        <div class="item_block" style="padding:5px;background:#fff;width:100%;height:auto;border:2px solid #eee;">
+                                            <div class="block" style="position:relative;height:164px;width:100%;border:3px solid #12aaeb;border-radius:5px;margin-top:25px;">
                                                 <div class="neu" style="z-index:999;position:absolute;width:68px;height:56px;background:url('/img/neu.png');background-size:100% 100%">
 
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-2" style="position:relative;">
-                                                        <div class="block_img" style="position:relative;width:90%;height:90%;margin-top:15px;margin-left:15px;border:1px solid #9e9e9e">
+                                                        <div class="block_img" style="position:relative;width:65%;height:65%;margin-top:5px;margin-left:15px;border:1px solid #9e9e9e">
 
                                                             <img style="width:90%" src="/img/gasheizung.png">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-9">
-                                                        <div class="row">
-                                                            <div class="col-md-7">
-                                                                <div class="row">
-                                                                    <h4>Gasheizung Neuninstallationg</h4>
+                                                    <div class="col-md-10">
+                                                        <div class="row" style="height:53px;border-bottom:1px solid #a5adb7">
+                                                            <div class="col-md-3">
+
+                                                                    <h4><?php echo $val['request_name']?></h4>
                                                                     <div style="width:200px;height:3px;background:#3da5ea;"></div>
-                                                                </div>
-                                                                <?php
-
-                                                                foreach($questinarys as $k=>$v){
-                                                                    if($v['id_question']==1){
-                                                                        $urgancy[0]=$v['answer'];
-                                                                    }
-                                                                    if($v['id_question']==2){
-                                                                        $squere[0]=$v['answer'];
-                                                                    }
-                                                                    if($v['id_question']==3){
-                                                                        $persons[0]=$v['answer'];
-                                                                    }
-                                                                    if($v['id_question']==4){
-                                                                        $house[0]=$v['answer'];
-                                                                    }
-
-                                                                }
-                                                                ?>
-                                                                <div class="row" style="margin-top:10px;">
-
-                                                                    <?php if(!empty($urgancy[0])){?>
-                                                                        <button class="btn btn-warning btn-rounded"><img src="/img/monate.png"><span style="padding-left:10px;"><?php echo $urgancy[0]?></span></button>
-                                                                    <?php }?>
-                                                                    <?php if(!empty($squere[0])){?>
-                                                                        <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/100-200.png"><span style="padding-left:10px;"><?php echo $squere[0]?></span></span></button>
-                                                                    <?php }?>
 
 
 
-                                                                </div>
-                                                                <div class="row" style="margin-top:10px;">
-                                                                    <?php if(!empty($persons[0])){?>
-                                                                        <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/4-7_Personen.png"><span style="padding-left:5px;"><?php echo $persons[0]?></span></span></button>
-                                                                    <?php }?>
-                                                                    <?php if(!empty($house[0])){?>
-                                                                        <button style="position:relative;margin:0 auto;" class="btn btn-default btn-rounded"><img src="/img/mehrfamilienhaus.png"><span style="padding-left:5px;"><?php echo $house[0]?></span></span></button>
-                                                                    <?php }?>
-
-                                                                </div>
                                                             </div>
                                                             <div class="col-md-5">
+                                                            </div>
 
+                                                            <div class="col-md-2">
+                                                            <i style="font-size:16px;" class="workadvisor workadvisor-eye"></i>
+                                                            <h4 style="position:relative;display:inline-block;top:-5px;">sichtbar für</h4>
+                                                            <h5 style="position:relative;display:block;left:32px;top:-25px;color:#12aaeb">36 Partner</h5>
+                                                            </div>
 
-                                                                <div class="row">
-                                                                    <div class="col-md-7">
-                                                                        <div style="position:relative;display:inline-block;width:27px;height:26px;background-size:100% 100%;background-image:url('/img/point.png')">
-                                                                        </div>
-                                                                        <h3 style="position:relative;display:inline-block;top:-5px;">18.03.2017</h3>
-                                                                        <h5 style="position:relative;display:block;left:32px;top:-15px;color:#9e9e9e">15:46 Uhr</h5>
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <div style="position:relative;display:inline-block;width:27px;height:26px;background-size:100% 100%;background-image:url('/img/target_grey.png')">
-                                                                        </div>
-                                                                        <h3 style="position:relative;display:inline-block;top:-5px;">53km</h3>
-                                                                        <h5 style="position:relative;display:block;left:2px;top:-15px;color:#9e9e9e">PLZ:22555</h5>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row" style="margin-top:-30px;">
-                                                                    <div class="col-md-7">
-                                                                        <div style="position:relative;display:inline-block;width:19px;height:24px;background-size:100% 100%;background-image:url('/img/medal_green.png')">
-                                                                        </div>
-                                                                        <h5 style="position:relative;display:inline-block;left:5px;top:-10px;color:#7dce82">Vorqualifiziert </h5>
-
-                                                                    </div>
-                                                                    <div class="col-md-5">
-
-                                                                        <h1 style="position:relative;display:inline-block;left:5px;top:-30px;color:#000">25&euro;</h1>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row" style="position:relative;padding-top:0px;top:-35px;">
-
-
-                                                                    <div class="col-md-3" style="margin-left:90px;">
-                                                                        <button style="position:relative;margin:0 auto;" class="btn btn-primary btn-rounded"><span style="padding-left:10px;">ANFRAGE KAUFEN</span></span></button>
-
-                                                                    </div>
-                                                                </div>
-
-
-
+                                                            <div class="col-md-1">
+                                                                <i style="font-size:16px;" class="workadvisor workadvisor-target"></i>
+                                                                <h4 style="position:relative;display:inline-block;top:-5px;">PLZ</h4>
+                                                                <h5 style="position:relative;display:block;left:12px;top:-25px;color:#a5adb7"><?php echo $val['zip_code']?></h5>
+                                                            </div>
+                                                            <div class="col-md-1">
+                                                                <i style="font-size:16px;" class="workadvisor workadvisor-cheked-circle"></i>
+                                                                <?php
+                                                                $date = new DateTime($val['created_at']);
+                                                                $date_= $date->format('Y-m-d');
+                                                                $time = $date->format('H:i:s');
+                                                                ?>
+                                                                <h4 style="position:relative;display:inline-block;top:-5px;"><?php echo  $date_?></h4>
+                                                                <h5 style="position:relative;display:block;left:12px;top:-25px;color:#a5adb7"><?php echo  $time?></h5>
                                                             </div>
 
                                                         </div>
+                                                        <div class="row" style="position:relative;top:-13px;">
+                                                            <div class="col-md-5" style="border-right:1px solid #eee;">
+                                                        <?php
+                                                        unset($calendar);unset($heating);
+                                                        unset($house_plan);unset($water);
+                                                        unset($family);unset($home);
+                                                        foreach($questinarys as $k=>$v){
+
+                                                            if($v->id_question==1 && !isset($calendar)){
+
+                                                             ?>
+                                                             <button class="btn btn-default btn-rounded"><i style="font-size:23px;color:#12aaeb" class="workadvisor workadvisor-calendar">
+
+                                                                 </i><span style="padding-left:10px;"><?php echo $v->answer?></span></button>
+
+                                                             <?
+                                                             $calendar=1;
+                                                            }
+
+                                                            if($v->id_question==2 && !isset($house_plan)){
+                                                                ?>
+                                                                <button class="btn btn-default btn-rounded"><i style="font-size:23px;color:#12aaeb" class="workadvisor workadvisor-house-plan">
+
+                                                                    </i><?php echo $v->answer?></span></button>
+
+                                                                <? $house_plan=1;
+                                                            }
+
+                                                            if($v->id_question==3 and !isset($family)){
+                                                                ?>
+                                                                <button class="btn btn-default btn-rounded"><i style="font-size:23px;color:#12aaeb" class="workadvisor workadvisor-family">
+
+                                                                    </i><span style="padding-left:10px;"><span style="padding-left:10px;"><?php echo $v->answer?></span></button>
+
+                                                                <? $family=1;
+                                                            }
+
+                                                            if($v->id_question==4 and !isset($home)){
+                                                            ?>
+                                                            <button class="btn btn-default btn-rounded"><i style="font-size:23px;color:#12aaeb" class="workadvisor workadvisor-home">
+
+                                                                </i><span style="padding-left:10px;"><?php echo $v->answer?></span></button>
+
+                                                             <? $home=1;
+                                                            }
+                                                            if($v->id_question==5 and !isset($water)){
+                                                                ?>
+                                                                <button class="btn btn-default btn-rounded"><i style="font-size:23px;color:#12aaeb" class="workadvisor workadvisor-heating-oil">
+
+                                                                    </i><span style="padding-left:10px;"><?php echo $v->answer?></span></button>
+
+                                                                <?
+                                                                $water=1;
+                                                            }
+                                                            if($v->id_question==6 and !isset($heating)){
+                                                                ?>
+                                                                <button class="btn btn-default btn-rounded"><i style="font-size:23px;color:#12aaeb" class="workadvisor workadvisor-heating">
+
+                                                                    </i><span style="padding-left:10px;"><?php echo $v->answer?></span></button>
+
+                                                                <?
+                                                                $heating=1;
+                                                            }
+
+
+                                                        }
+                                                        ?>
+                                                            </div>
+
+                                                            <div class="col-md-3" style="border-right:1px solid #eee;">
+                                                                <div>
+                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#9da5b0">Name:</h5>
+                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#000"><?php echo $val['first_name'] ?></h5>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#9da5b0">Telefon:</h5>
+                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#000"><?php echo $val['telephone'] ?></h5>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#9da5b0">Adresse:</h5>
+                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#000"><?php echo $val['street_house_number'] ?></h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2" style="border-right:1px solid #eee;">
+                                                                <div>
+                                                                    <h5 style="position:relative;display:block;left:3px;top:-10px;color:#9da5b0">Telefonische Erreichbarkeit:</h5>
+                                                                    <h5 style="position:relative;display:block;left:3px;top:-10px;color:#000"><?php echo $val['reachability'] ?></h5>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-md-2" style="border-left:1px solid #eee;">
+
+
+
+                                                            </div>
+                                                        </div>
+
 
 
                                                     </div>
@@ -292,7 +334,15 @@
                                     </div>
                                 <?}?>
 
+                                <div class="box-inline">
+                                    <p class="text-thin mar-btm">Uncheked by default2</p>
 
+                                    <!--Switchery : Unchecked-->
+                                    <!--===================================================-->
+                                    <input class="js-switch"  type="checkbox">
+                                    <!--===================================================-->
+
+                                </div>
 
 
                             </div>

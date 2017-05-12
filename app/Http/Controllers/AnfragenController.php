@@ -5,7 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Libraries\Display_lib;
 use App\Client;
+/*Google Directiond Api key*/
+/*AIzaSyDHQ29RQC9TMEJ9-bjVCH239l2SWxBtTF0 */
+/*Google Directiond Api key*/
 
+/*https://developers.google.com/maps/documentation/directions/?hl=ru*/
 class AnfragenController extends Controller
 {
     public function neue_anfregen()
