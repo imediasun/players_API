@@ -7,15 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Blank Page | Jasmine - Responsive admin template.</title>
-
-
-    <!--STYLESHEET-->
+    <!--JAVASCRIPT-->
     <!--=================================================-->
-
-    <!--Roboto Slab Font [ OPTIONAL ] -->
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,400" rel="stylesheet">
-
 
     <!--Bootstrap Stylesheet [ REQUIRED ]-->
     <link href="/jasmine/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +30,8 @@
 
     <!--Bootstrap Select [ OPTIONAL ]-->
     <link href="/jasmine/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
-
+    <!--Bootstrap Xeditable [ OPTIONAL ]-->
+    <link href="/jasmine/plugins/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
     <!--Bootstrap Validator [ OPTIONAL ]-->
     <link href="/jasmine/plugins/bootstrap-validator/bootstrapValidator.min.css" rel="stylesheet">
 
@@ -46,6 +42,8 @@
     <link href="/jasmine/css/demo/jasmine.css" rel="stylesheet">
 
 
+
+
     <!--SCRIPT-->
     <!--=================================================-->
 
@@ -54,9 +52,31 @@
     <script src="/jasmine/plugins/pace/pace.min.js"></script>
 
 
-
-
     <link rel="stylesheet" href="/css/workadvisor.css">
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="/jasmine/js/jquery-2.1.1.min.js"></script>
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="/jasmine/js/moment.js"></script>
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="/jasmine/js/bootstrap.min.js"></script>
+
+
+
+    <!--Bootstrap Xeditable [ OPTIONAL ]-->
+    <script src="/jasmine/plugins/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="/jasmine/js/demo/x-editable.js"></script>
+    <!--Roboto Slab Font [ OPTIONAL ] -->
+
+
+
 </head>
 
 <!--TIPS-->

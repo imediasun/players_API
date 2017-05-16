@@ -30,7 +30,6 @@ $main=$request->input('main');
                 'zip_code' => $main['zip_code'],
                 'city' => $main['city'],
                 'different' => ($main['different']=='true') ? 1 : 0 ,
-                'active' => $main['active'],
                 'install_street_house_number' => $main['install_street_house_number'],
                 'install_zip_code' => $main['install_zip_code'],
                 'install_city' => $main['install_city'],

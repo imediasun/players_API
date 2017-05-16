@@ -54,6 +54,10 @@ Route::group(['prefix' => 'admin','middleware'=>['web','auth']],function(){
 
     Route::get('/',['uses' => 'Admin\IndexController@index','as' => 'adminIndex']);
     Route::get('/kunden','Admin\KundenController@index');
+    Route::post('/first_name_xed', 'Admin\XedController@first_name');
+    Route::post('/telephone_xed', 'Admin\XedController@telephone');
+    Route::post('/adress_xed', 'Admin\XedController@adresse');
+    Route::post('/change_active_client', 'Admin\ClientController@change_active');
     Route::post('/func_update_role', 'FunctionsController@role');
     Route::post('/func_delete_user', 'FunctionsController@delete_user');
     Route::resource('/add_good','Admin\GoodsController');

@@ -60,54 +60,31 @@
 
 
 
-<!--JAVASCRIPT-->
-<!--=================================================-->
-
-<!--jQuery [ REQUIRED ]-->
-<script src="/jasmine/js/jquery-2.1.1.min.js"></script>
-
-
-<!--BootstrapJS [ RECOMMENDED ]-->
-<script src="/jasmine/js/bootstrap.min.js"></script>
-
 
 <!--Fast Click [ OPTIONAL ]-->
 <script src="/jasmine/plugins/fast-click/fastclick.min.js"></script>
 
-
 <!--Jasmine Admin [ RECOMMENDED ]-->
 <script src="/jasmine/js/scripts.js"></script>
-
 
 <!--Switchery [ OPTIONAL ]-->
 <script src="/jasmine/plugins/switchery/switchery.min.js"></script>
 
-<!--Jquery Steps [ OPTIONAL ]-->
-<script src="/jasmine/plugins/parsley/parsley.min.js"></script>
-
-<!--Jquery Steps [ OPTIONAL ]-->
-<script src="/jasmine/plugins/jquery-steps/jquery-steps.min.js"></script>
-
 <!--Bootstrap Select [ OPTIONAL ]-->
 <script src="/jasmine/plugins/bootstrap-select/bootstrap-select.min.js"></script>
 
-<!--Bootstrap Wizard [ OPTIONAL ]-->
-<script src="/jasmine/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
 
-<!--Masked Input [ OPTIONAL ]-->
-<script src="/jasmine/plugins/masked-input/bootstrap-inputmask.min.js"></script>
-
-<!--Bootstrap Validator [ OPTIONAL ]-->
-<script src="/jasmine/plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
-
-<!--Form Wizard [ SAMPLE ]-->
-<script src="/jasmine/js/demo/wizard.js"></script>
 
 <!--Demo script [ DEMONSTRATION ]-->
 <script src="/jasmine/js/demo/jasmine.js"></script>
 
-<!--Form Wizard [ SAMPLE ]-->
-<script src="/jasmine/js/demo/form-switchery.js"></script>
+
+
+
+
+
+
+
 
 
 </body>

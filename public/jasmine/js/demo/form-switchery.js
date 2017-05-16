@@ -88,12 +88,5 @@ var changeCheckbox = document.getElementById('demo-sw-checkstate'), changeField 
 	new Switchery(document.getElementById('demo-sw-sz-sm'), { size: 'small' });
 
 
-	$(function(){
-		var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
-
-		elems.forEach(function(html) {
-			var switchery = new Switchery(html);
-		});
-	});
 
 });

@@ -51,6 +51,8 @@
 
                                         <br>
                                         <div> <strong>Value : </strong> <span id="demo-range-def-val"></span> </div>
+                                        
+
                                     </div>
                                     <div class="col-xs-6">
                                         <p class="text-thin mar-btm">Step</p>
@@ -112,6 +114,7 @@
                                 <!--===================================================-->
                                 <div id="demo-range-hpips" class="demo-pips pips"></div>
                                 <!--===================================================-->
+                                <input type="hidden" class="center" value="<?php echo $center?>"/>
                             </div>
                             <div class="col-md-2">
                                 <div class="note-fontname btn-group">
@@ -265,6 +268,26 @@
 
                                   foreach ($clients as $key=>$val){
 
+
+
+                                    $ran=explode(',',$val['street_house_number']);
+
+                                      $randome=explode(' ',$ran[0]);
+                                      if($randome[1]<=5){
+                                      $randomes=rand($randome[1], 10);
+
+                                      }
+                                      else{
+                                          $randomes=rand(1, $randome[1]);
+
+                                      }
+
+                                        $adress=$randome[0].' '.$randomes.','.$ran[1];
+                                      ?>
+                                      <input type="hidden" class="adress" value="<?php echo $adress?>">
+                                      <input type="hidden"  class="service" value="<?php echo$val->service;?>">
+                                      <?php
+
                                       $questinarys= App\Questionary::where('id_client', $val['id'])
                                           ->get();
                                   ?>
@@ -341,7 +364,7 @@
                                                                         <div class="col-md-5">
                                                                             <div style="position:relative;display:inline-block;width:27px;height:26px;background-size:100% 100%;background-image:url('/img/target_grey.png')">
                                                                             </div>
-                                                                            <h3 style="position:relative;display:inline-block;top:-5px;">53km</h3>
+                                                                            <h3 style="position:relative;display:inline-block;top:-5px;"><?php echo $val->distance/1000?></h3>
                                                                             <h5 style="position:relative;display:block;left:2px;top:-15px;color:#9e9e9e">PLZ:22555</h5>
                                                                         </div>
                                                                     </div>
@@ -439,7 +462,35 @@
 
 
                 </div>
+                    <div class="col-lg-4">
+                        <div id="map" style="height: 800px;"></div>
+                        <script>
+                            var map;
+                            var center = function () {
+                                var address = $('.center').val();
+                                var respons = null;
+                                $.ajax({
+                                    async: false,
+                                    method: 'GET',
+                                    url: 'https://maps.googleapis.com/maps/api/geocode/json?address='+address+'&key=AIzaSyCKO9mnci2C3g06z1CKNO9S690jeUZZ0Gw&language=de',
+                                    success : function (result) {
+                                        respons = result;
+                                }
+                                });
+                                return respons;
+                            }();
 
+                            function initMap() {
+                                map = new google.maps.Map(document.getElementById('map'), {
+                                    center: {lat: center.results["0"].geometry.location.lat, lng: center.results["0"].geometry.location.lng},
+                                    zoom: 15,
+                                    scrollwheel: false
+                                });
+                            }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKO9mnci2C3g06z1CKNO9S690jeUZZ0Gw&callback=initMap"
+                                async defer></script>
+                    </div>
             </section>
             <!--===================================================-->
             <!--End page content-->
@@ -474,4 +525,4 @@
 
     })
 
-</script>
+</script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

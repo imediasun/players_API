@@ -22,8 +22,8 @@ class CteateClientsTable extends Migration
             $table->string('street_house_number')->default('')->nullable();
             $table->string('zip_code')->default('')->nullable();
             $table->string('city')->default('')->nullable();
-            $table->boolean('different');
-            $table->boolean('active');
+            $table->boolean('different')->default(null)->nullable();
+            $table->boolean('active')->default(null)->nullable();
             $table->string('install_street_house_number')->default('')->nullable();
             $table->string('install_zip_code')->default('')->nullable();
             $table->string('install_city')->default('')->nullable();

@@ -71,7 +71,7 @@
 
                                                 <!-- Inline Icon Checkboxes -->
                                                 <label class="form-checkbox form-icon active form-text">
-                                                    <input class="all_services" checked="" type="checkbox"> Alle auswählen</label>
+                                                    <input checked="" type="checkbox"> Alle auswählen</label>
 
 
 
@@ -86,14 +86,14 @@
                                             <div class="checkbox" style="">
 
                                                 <!-- Inline Icon Checkboxes -->
+                                                <label class="form-checkbox form-icon active form-text">
+                                                    <input checked="" type="checkbox"> Heizung Öl</label>
                                                 <label class="form-checkbox form-icon form-text">
-                                                    <input class="service heating_oil" checked="" type="checkbox">Heizung Öl</label>
+                                                    <input type="checkbox">Heizung Gas</label>
                                                 <label class="form-checkbox form-icon form-text">
-                                                    <input class="service heating_gas" checked="" type="checkbox">Heizung Gas</label>
-                                                <label  class="form-checkbox form-icon form-text">
-                                                    <input class="service solar" checked="" type="checkbox">Solar</label>
+                                                    <input type="checkbox">Solar</label>
                                                 <label class="form-checkbox form-icon form-text">
-                                                    <input class="service bath" checked="" type="checkbox">Bad</label>
+                                                    <input type="checkbox">Bad</label>
 
 
                                             </div>
@@ -857,28 +857,6 @@
             $('.additional_phone').css('display','block')
             $(this).addClass('active');
 
-        }
-
-    })
-
-</script>
-
-
-<script>
-    $('.all_services').change(function(){
-        if($(this).is(':checked')){
-            alert()
-
-            $('.heating_oil')[0].checked= true;
-            $('.heating_oil').parent('label').addClass('active')
-            $('.heating_gas')[0].checked= true;
-            $('.heating_gas').parent('label').addClass('active')
-        }
-        else{
-            $('.heating_oil')[0].checked= false;
-            $('.heating_oil').parent('label').removeClass('active')
-            $('.heating_gas')[0].checked= false;
-            $('.heating_gas').parent('label').removeClass('active')
         }
 
     })
