@@ -1,188 +1,261 @@
+<div class="boxed">
+
+    <!--CONTENT CONTAINER-->
+    <!--===================================================-->
+    <section id="content-container">
+        <header class="pageheader">
+            <h3> Kunden </h3>
+            <button data-target="#demo-default-modal" data-toggle="modal" class="btn btn-default btn-labeled btn-no-bg btn-sprite"> Neue kunden </button>
 
 
+            <!--Default Bootstrap Modal-->
+            <!--===================================================-->
+            <div class="modal fade" id="demo-default-modal" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal" aria-hidden="true">
+                <div class="modal-dialog custom-modal-dialog">
+                    <div class="modal-content">
+
+                        <!--Modal header-->
+                        <div class="modal-header custom-modal-header">
+                            <button data-dismiss="modal" class="close" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title">Modal Heading</h4>
+                        </div>
+
+                        <!--Modal body-->
+                        <div class="modal-body">
+                            <!--Dropzonejs-->
+                            <!--===================================================-->
+                            <form id="demo-dropzone" action="/admin/add_logo" class="dropzone">
+                                <div class="dz-default dz-message">
+                                    <div class="dz-icon icon-wrap icon-circle icon-wrap-md"> <i class="fa fa-cloud-upload fa-2x"></i>Add logo</div>
+                                    <div>
+                                        <p class="dz-text">Eine oder mehrere Dateien per Drag & Drop auf dieses Feld ziehen oder auf das Plus-Zeichen klicken und Dateien auswählen.</p>
+                                    </div>
+                                </div>
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple />
+                                </div>
+                            </form>
+                            <!--===================================================-->
+                            <!-- End Dropzonejs -->
+                            <form action="/admin/add_firm" method="post">
+                            <div class="form-group">
+                                <label for="one_input" class="col-sm-3 control-label">Firmenname</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="company_name" placeholder="Visseman Mobile" class="form-control" id="one_input">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="two_input" class="col-sm-3 control-label">Strasse</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="street_house_number" placeholder="Lange Str. 20, 21702 Ahlerstedt" class="form-control" id="two_input">
+                                </div>
+                            </div>
 
 
+                            <div class="form-group">
+                                <div class="col-md-3">
+                                    <span class="control-label">Telefone:</span>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <select name="phone_type" data-placeholder="Choose a telefone..." class="form-control">
+                                        <option value="Mobile">Mobile</option>
+                                        <option value="Mobile2">Mobile2</option>
+
+                                    </select>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="demo-text-input" name="telephone" class="form-control" placeholder="Telefone" value="0176123457" type="text">
+
+                                </div>
+                                <div class="col-md-9  col-md-offset-3">
+                                    <h5 class="add_phone icon_links icon_add">Add</h5>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="three_input"  class="col-sm-3 control-label">E-Mail</label>
+                                <div class="col-sm-9">
+                                    <input type="text"name="email"  class="form-control" id="three_input">
+                                </div>
+                            </div>
+
+                            <div class="panel-heading ui-sortable-handle ttu">
+                                <h3 class="panel-title"> Kontakt </h3>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="four_input" class="col-sm-3 control-label">Vorname</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="name" placeholder="Thomas" class="form-control" id="four_input">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="five_input" class="col-sm-3 control-label">Nachname</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="name2" placeholder="Adenaue" class="form-control" id="five_input">
+                                </div>
+                            </div>
+
+                            <div class="panel-heading ui-sortable-handle ttu">
+                                <h3 class="panel-title"> weitere Daten </h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="five_input" class="col-sm-3 control-label"> weitere Daten</label>
+                                <div class="col-sm-9">
+                                    <textarea id="textarea-input" name="information" rows="9" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+
+                            <!--Summernote-->
+                            <!--===================================================-->
+                            <div id="demo-summernote"></div>
+                            <!--===================================================-->
+                            <!-- End Summernote -->
+                        </div>
+
+                        <!--Modal footer-->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Bestätigen</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--===================================================-->
+            <!--End Default Bootstrap Modal-->
 
 
+        </header>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Xeditable | Jasmine - Responsive admin template.</title>
-
-
-    <!--STYLESHEET-->
-    <!--=================================================-->
-
-    <!--Roboto Slab Font [ OPTIONAL ] -->
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,400" rel="stylesheet">
-
-
-    <!--Bootstrap Stylesheet [ REQUIRED ]-->
-    <link href="/jasmine/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!--Jasmine Stylesheet [ REQUIRED ]-->
-    <link href="/jasmine/css/style.css" rel="stylesheet">
-
-
-    <!--Font Awesome [ OPTIONAL ]-->
-    <link href="/jasmine/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-
-    <!--Switchery [ OPTIONAL ]-->
-    <link href="/jasmine/plugins/switchery/switchery.min.css" rel="stylesheet">
-
-    <!--Bootstrap Xeditable [ OPTIONAL ]-->
-    <link href="/jasmine/plugins/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
-
-    <!--Bootstrap Select [ OPTIONAL ]-->
-    <link href="/jasmine/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
-
-
-    <!--Demo [ DEMONSTRATION ]-->
-    <link href="/jasmine/css/demo/jasmine.css" rel="stylesheet">
-
-
-    <!--SCRIPT-->
-    <!--=================================================-->
-
-    <!--Page Load Progress Bar [ OPTIONAL ]-->
-    <link href="/jasmine/plugins/pace/pace.min.css" rel="stylesheet">
-    <script src="/jasmine/plugins/pace/pace.min.js"></script>
-
-
-</head>
-
-
-<body>
-<div id="container" class="effect mainnav-lg">
-
-
-
-    <div class="boxed">
-
-        <!--CONTENT CONTAINER-->
+        <!--Page content-->
         <!--===================================================-->
-        <section id="content-container">
+        <div id="page-content">
+            
+            <?php 
+            foreach ($firms as $key=>$firm){
+                
+            ?>
+                <div class="row">
+                    <div class="panel pad-all ovh">
+                        <div class="pane-body">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="company_icon">
+                                        <div class="table-cell">
+                                            <img style="max-width:100%;max-height:50px" src="<?php echo '/'.$firm->logo?>" alt="logo_company">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7">
+                                    <div class="head-panel head-border">
+                                        <h4><?php echo $firm->company_name?></h4>
+                                    </div>
+                                    <div class="body-panel">
+                                        <div class="col-md-4 pl-0">
+                                            <span class="dark_color mb-10 fs13">Strasse</span>
+                                            <p><?php echo $firm->street_house_number?></p>
+                                        </div>
+                                        <div class="col-md-2 pr-0 pl-0">
+                                            <span class="dark_color mb-10 fs13">Telefon:</span>
+                                            <p><?php echo $firm->telephone?></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <span class="dark_color mb-10 fs13">E-Mail: </span>
+                                            <p><?php echo $firm->email?></p>
+                                        </div>
+                                        <div class="col-md-2 pr-0 pl-0">
+                                            <p class="dark_color">
+                                                Kaufte Abfragen <a href="#" class="blue_color">10</a> auf <b class="blue_color">200 EUR</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div id="demo-morris-bar" style="text-transform: uppercase; float: right; max-width: 350px; height: 100px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="100" version="1.1" width="315" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
 
-            <form class="form-horizontal form-bordered">
-                <div class="form-group">
-                    <div class="col-md-5"> Simple text field </div>
-                    <div class="col-md-7">
-                        <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username">superuser</a>
+                                            <path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#000000" d="M46,25H463" stroke-opacity="0" stroke-width="0.5"></path><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="260.107143" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sep</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="221.75" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Aug</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="180.392857" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Jul</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="139.821429" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Jun</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="102.25" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Mai</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="56.678571" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Apr</tspan></text>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="49.723214285714285" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect
+                                            >
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="62.39285714285714" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="89.50892857142856" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="102.17857142857142" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="129.29464285714286" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="141.96428571428572" y="48" width="9.669642857142858" height="32" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="169.08035714285714" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="181.75" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="208.86607142857142" y="48" width="9.669642857142858" height="32" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="221.53571428571428" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="248.6517857142857" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+
+                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="261.32142857142856" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+
+
+                                            <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 13px; line-height: normal; font-family: sans-serif;" x="300" y="73" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#adbeca" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text>
+                                            <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 13px; line-height: normal; font-family: sans-serif;" x="310" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#adbeca" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">365</tspan></text></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer clearfix bgt custom_top_line pb-0 mt--35">
+                            <ul class="pull-right butons_list">
+                                <li>
+                                    <a href="#" onClick="openWin()" class="icon_links icon_login">Login als Kunde</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/firm/<?php echo $firm->id?>" class="icon_links icon_read">Bearbeiten</a>
+                                </li>
+                                <li>
+                                    <input type="hidden" value="<?php echo $firm->id?>">
+                                    <a style="cursor:pointer" class="delete_kunden icon_links icon_del">Entfernen</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-            </form>
+            <?php
+            }
+            ?>
 
-
-
-
-            </div>
             <!--===================================================-->
             <!--End page content-->
 
-
-        </section>
-        <!--===================================================-->
-        <!--END CONTENT CONTAINER-->
-
-
-
-
-    </div>
-
-    <!-- FOOTER -->
+    </section>
     <!--===================================================-->
-    <footer id="footer">
+    <!--END CONTENT CONTAINER-->
+<script>
 
-        <!-- Visible when footer positions are fixed -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="show-fixed pull-right">
-            <ul class="footer-list list-inline">
-                <li>
-                    <p class="text-sm">SEO Proggres</p>
-                    <div class="progress progress-sm progress-light-base">
-                        <div style="width: 80%" class="progress-bar progress-bar-danger"></div>
-                    </div>
-                </li>
+    function  openWin() {
 
-                <li>
-                    <p class="text-sm">Online Tutorial</p>
-                    <div class="progress progress-sm progress-light-base">
-                        <div style="width: 80%" class="progress-bar progress-bar-primary"></div>
-                    </div>
-                </li>
-                <li>
-                    <button class="btn btn-sm btn-dark btn-active-success">Checkout</button>
-                </li>
-            </ul>
-        </div>
+      myWin= open("bla.htm");
 
-        <!-- Visible when footer positions are static -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="hide-fixed pull-right pad-rgt">Currently v2.2</div>
+    }
 
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <!-- Remove the class name "show-fixed" and "hide-fixed" to make the content always appears. -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    $('.delete_kunden').click(function(){
+var h=$(this).parent().find('input').val()
 
-        <p class="pad-lft">&#0169; 2015 Your Company</p>
+        var r = confirm("entfernen Ihre Firma?");
+        if (r == true) {
+           location.href="/admin/del_firm/"+h+"";
+        } else {
 
+        }
+    })
+</script>
 
-    </footer>
-    <!--===================================================-->
-    <!-- END FOOTER -->
-
-
-    <!-- SCROLL TOP BUTTON -->
-    <!--===================================================-->
-    <button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
-    <!--===================================================-->
-
-</div>
-<!--===================================================-->
-<!-- END OF CONTAINER -->
-
-<!--JAVASCRIPT-->
-<!--=================================================-->
-
-<!--jQuery [ REQUIRED ]-->
-<script src="/jasmine/js/jquery-2.1.1.min.js"></script>
-
-<!--jQuery [ REQUIRED ]-->
-<script src="/jasmine/js/moment.js"></script>
-
-<!--BootstrapJS [ RECOMMENDED ]-->
-<script src="/jasmine/js/bootstrap.min.js"></script>
-
-<!--Fast Click [ OPTIONAL ]-->
-<script src="/jasmine/plugins/fast-click/fastclick.min.js"></script>
-
-<!--Jasmine Admin [ RECOMMENDED ]-->
-<script src="/jasmine/js/scripts.js"></script>
-
-<!--Switchery [ OPTIONAL ]-->
-<script src="/jasmine/plugins/switchery/switchery.min.js"></script>
-
-<!--Bootstrap Select [ OPTIONAL ]-->
-<script src="/jasmine/plugins/bootstrap-select/bootstrap-select.min.js"></script>
-
-<!--Bootstrap Xeditable [ OPTIONAL ]-->
-<script src="/jasmine/plugins/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
-
-<!--Demo script [ DEMONSTRATION ]-->
-<script src="/jasmine/js/demo/jasmine.js"></script>
-
-<!--Demo script [ DEMONSTRATION ]-->
-<script src="/jasmine/js/demo/x-editable.js"></script>
-
-</body>
-</html>

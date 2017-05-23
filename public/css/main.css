@@ -1,0 +1,1117 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700");
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+header {
+  height: 77px;
+  box-shadow: inset 0 -1px 0 #e9e9e9;
+}
+
+aside {
+  float: left;
+  width: 285px;
+  height: calc(100vh - 77px);
+  background-color: #1b232a;
+}
+
+main {
+  float: right;
+  width: calc(100% - 285px);
+  height: calc(100vh - 77px);
+  background-color: #f6f6f6;
+  padding: 0 5px 0 25px;
+}
+
+.flex-container-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.page-caption {
+  margin: 40px 0 0;
+  color: #394e64;
+  font: 400 23px/23px Montserrat;
+}
+
+.mCSB_draggerRail {
+  width: 7px !important;
+  border-radius: 3px !important;
+  background-color: #ebeef3 !important;
+}
+
+.mCSB_dragger_bar {
+  width: 7px !important;
+  border-radius: 3px !important;
+  background-color: #a8b6c4 !important;
+}
+
+.mCSB_scrollTools {
+  width: 7px !important;
+}
+
+.projects {
+  margin: 25px 0 20px;
+  box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.projects .top {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px 20px 12px 18px;
+  border-bottom: 1px solid #e2e5e7;
+}
+
+.projects h3 {
+  margin: 0;
+  color: #394e64;
+  font: 400 18px/18px Montserrat;
+  text-transform: uppercase;
+}
+
+.projects form {
+  margin-left: 60px;
+}
+
+.projects .form-control {
+  width: 315px;
+  height: 36px;
+  margin-right: 15px;
+  padding: 10px 15px 10px 35px;
+  background: url(../img/icons/search-icon.png) 10px center no-repeat;
+  color: #748393;
+  font: 300 12px/12px Montserrat;
+}
+
+.projects .form-control::-webkit-input-placeholder {
+  opacity: 1;
+  color: #748393;
+}
+
+.projects .form-control::-moz-placeholder {
+  opacity: 1;
+  color: #748393;
+}
+
+.projects .form-control:-ms-input-placeholder {
+  opacity: 1;
+  color: #748393;
+}
+
+.projects .form-control::placeholder {
+  opacity: 1;
+  color: #748393;
+}
+
+.projects .btn {
+  width: 120px;
+  padding: 0;
+  border-radius: 3px;
+  background-color: #12aaeb;
+  color: #ffffff;
+  font: 600 12px/34px Montserrat;
+  text-transform: uppercase;
+}
+
+.projects .projects-list {
+  height: 275px;
+  padding: 15px 12px 15px 15px;
+}
+
+.projects .project-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #d3dae0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.projects .project-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.projects .gasheizung {
+  width: 86px;
+  height: 95px;
+  margin-right: 10px;
+  padding-top: 15px;
+  border-radius: 3px;
+  border: 1px solid #d3dae0;
+  text-align: center;
+}
+
+.projects .gasheizung p {
+  margin: 10px 0 0;
+  color: #3da5ea;
+  font: 600 9px/9px Montserrat;
+  text-transform: uppercase;
+}
+
+.projects .project-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 96px);
+}
+
+.projects .flex-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .project-name {
+  margin: 7px 0 0;
+  color: #394e64;
+  font: 400 13px/14px Montserrat;
+  text-transform: uppercase;
+}
+
+.projects .project-name span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.projects .address {
+  margin: 5px 0 0;
+  color: #12aaeb;
+  font: 700 13px/14px Montserrat;
+}
+
+.projects .right {
+  width: 355px;
+}
+
+.projects .times {
+  position: relative;
+  padding-left: 30px;
+}
+
+.projects .times span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 23px;
+  height: 23px;
+}
+
+.projects .times span:before, .projects .times span:after {
+  position: absolute;
+  font-family: workadvisor;
+  font-size: 23px;
+  color: #a6b6c0;
+  line-height: 23px;
+}
+
+.projects .times span:before {
+  content: '\e907';
+}
+
+.projects .times span:after {
+  content: '\e908';
+}
+
+.projects .date,
+.projects .time {
+  margin: 0;
+  color: #364048;
+  font: 600 14px/14px Montserrat;
+}
+
+.projects .time {
+  color: #7f8c9a;
+  font-size: 10px;
+}
+
+.projects .location {
+  position: relative;
+  padding-left: 30px;
+}
+
+.projects .location:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: workadvisor;
+  content: '\e936';
+  font-size: 23px;
+  line-height: 23px;
+}
+
+.projects i {
+  font-size: 24px;
+  color: #8fc816;
+}
+
+.projects .project-status {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .project-status .btn {
+  margin-left: auto;
+}
+
+.projects .info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 6px;
+  border-radius: 3px;
+  border: 1px solid #d1d8dc;
+  text-align: center;
+  color: #7f8c9a;
+  font: 600 12px/34px Montserrat;
+}
+
+.projects .info:hover {
+  text-decoration: none;
+}
+
+.projects .info i {
+  margin-right: 9px;
+  font-size: 22px;
+  color: #3da5ea;
+  line-height: 34px;
+}
+
+.projects .active {
+  border: 2px solid #ff6c00;
+  color: #ff6c00;
+  line-height: 32px;
+}
+
+.projects .active i {
+  color: #ff6c00;
+  line-height: 32px;
+}
+
+.projects .monate {
+  width: 116px;
+}
+
+.projects .area {
+  width: 119px;
+}
+
+.projects .persons {
+  width: 130px;
+}
+
+.projects .home {
+  width: 161px;
+}
+
+.projects .mCSB_container {
+  margin-right: 20px !important;
+}
+
+.vorlagen {
+  width: 466px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.vorlagen .top {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 25px;
+  padding: 18px 20px 18px 24px;
+  border-bottom: 1px solid #DFE2E7;
+}
+
+.vorlagen .top a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+  color: #a8b6c4;
+  font: 400 13px/15px Montserrat;
+}
+
+.vorlagen .top .active {
+  color: #3da5ea;
+  font-weight: 600;
+}
+
+.vorlagen .top i {
+  margin-right: 10px;
+}
+
+.vorlagen h3 {
+  margin: 0 auto 0 0;
+  color: #394e64;
+  font: 400 18px/18px Montserrat;
+  text-transform: uppercase;
+}
+
+.vorlagen .panel-group {
+  width: 420px;
+  margin: 0 auto;
+}
+
+.vorlagen .panel {
+  border: 1px solid #c0c9ce;
+  border-radius: 3px;
+}
+
+.vorlagen .panel + .panel {
+  margin-top: 8px;
+}
+
+.vorlagen .panel-heading {
+  position: relative;
+  height: 44px;
+  padding: 8px 12px;
+  background: #FFF;
+  cursor: pointer;
+}
+
+.vorlagen .panel-heading:after {
+  position: absolute;
+  right: 23px;
+  top: 18px;
+  font-family: workadvisor;
+  content: '\e903';
+  color: #9ba2a6;
+  font-size: 6px;
+}
+
+.vorlagen .panel-heading.collapsed:after {
+  content: '\e902';
+}
+
+.vorlagen .panel-heading i {
+  margin-right: 11px;
+  color: #3da5ea;
+  font-size: 27px;
+}
+
+.vorlagen .panel-heading p {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  color: #484848;
+  font: 400 14px/14px Montserrat;
+  text-transform: uppercase;
+}
+
+.vorlagen .panel-heading p span {
+  font-weight: 300;
+}
+
+.vorlagen ul {
+  width: 385px;
+  margin: 8px auto 19px;
+  padding: 0;
+  list-style: none;
+}
+
+.vorlagen li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  border-radius: 3px;
+  border: 1px solid #d8e0e4;
+}
+
+.vorlagen li + li {
+  margin-top: 8px;
+}
+
+.vorlagen li p {
+  margin: 0;
+  color: #394e64;
+  font: 400 13px/18px Montserrat;
+}
+
+.vorlagen .move {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18px;
+  background-color: #e0e3e5;
+  text-align: center;
+}
+
+.vorlagen .move i {
+  margin: auto;
+}
+
+.vorlagen .flex-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 18px);
+  padding: 10px 12px;
+  background-color: #f0f4f6;
+}
+
+.vorlagen .price {
+  margin-left: 20px;
+}
+
+.vorlagen .new-vorlagen {
+  margin-top: 35px;
+  padding: 14px 0 18px;
+  border-top: 1px solid #e2e5e7;
+  text-align: center;
+}
+
+.vorlagen .new-vorlagen a {
+  color: #a8b6c4;
+  font: 600 13px/13px Montserrat;
+  text-transform: uppercase;
+}
+
+.vorlagen .new-vorlagen span {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 20px;
+  border: 1px solid #a8b6c4;
+}
+
+.angebotserstellung {
+  width: calc(100% - 490px);
+  margin-bottom: 30px;
+  box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.angebotserstellung .top {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 22px;
+  padding: 18px 20px 18px 24px;
+  border-bottom: 1px solid #DFE2E7;
+}
+
+.angebotserstellung .top div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.angebotserstellung .top a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a8b6c4;
+  font: 400 13px/15px Montserrat;
+}
+
+.angebotserstellung .top a + a {
+  margin-left: 50px;
+}
+
+.angebotserstellung .top .active {
+  color: #3da5ea;
+  font-weight: 600;
+}
+
+.angebotserstellung .top i {
+  margin-right: 10px;
+}
+
+.angebotserstellung h3,
+.angebotserstellung h3 + p {
+  margin: 0;
+  color: #394e64;
+  font: 400 18px/18px Montserrat;
+  text-transform: uppercase;
+}
+
+.angebotserstellung .flex-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 22px;
+  padding: 0 55px 0 26px;
+}
+
+.angebotserstellung .address {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.angebotserstellung .address p {
+  margin: 0;
+  color: #394e64;
+  font: 600 13px/20px Montserrat;
+  text-transform: uppercase;
+}
+
+.angebotserstellung .address i {
+  position: absolute;
+  right: -15px;
+  color: #838e99;
+  cursor: pointer;
+}
+
+.angebotserstellung .contact-info {
+  margin-top: 25px;
+  max-width: 350px;
+}
+
+.angebotserstellung .contact-info p {
+  margin: 0;
+  color: #394e64;
+  font: 600 13px/20px Montserrat;
+}
+
+.angebotserstellung .contact-info dl {
+  position: relative;
+  margin: 30px 0 28px;
+}
+
+.angebotserstellung .contact-info dt {
+  float: left;
+  width: 140px;
+  color: #394e64;
+  overflow: hidden;
+  font: 600 13px/20px Montserrat;
+}
+
+.angebotserstellung .contact-info dd {
+  overflow: hidden;
+  text-align: right;
+  color: #394e64;
+  font: 300 13px/20px Montserrat;
+}
+
+.angebotserstellung .contact-info i {
+  position: absolute;
+  right: -16px;
+  top: 0;
+  color: #838e99;
+}
+
+.angebotserstellung .table {
+  max-height: 750px;
+  padding: 0 11px 0 27px;
+}
+
+.angebotserstellung .panel-group {
+  margin: 0;
+}
+
+.angebotserstellung .panel + .panel {
+  margin: 0;
+}
+
+.angebotserstellung .panel {
+  border-radius: 0;
+  border: 1px solid #d8e0e4;
+  border-top: none;
+}
+
+.angebotserstellung .panel.active {
+  border: 1px solid #b8c3c8;
+  border-top: none;
+  outline-top: 1px solid #b8c3c8;
+}
+
+.angebotserstellung .panel-head {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 89px 20px 54px;
+  border-radius: 3px 3px 0 0;
+  background-color: #12aaeb;
+}
+
+.angebotserstellung .panel-head p {
+  margin: 0;
+  border-radius: 3px 3px 0 0;
+  color: #ffffff;
+  font: 600 14px/14px Montserrat;
+  text-transform: uppercase;
+}
+
+.angebotserstellung .panel-head p:first-child {
+  margin-right: 105px;
+}
+
+.angebotserstellung .panel-head p:last-child {
+  margin-left: auto;
+}
+
+.angebotserstellung .panel-heading {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  background-color: #f0f4f6;
+}
+
+.angebotserstellung .panel-heading a {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 175px;
+  color: #3da5ea;
+  font: 600 13px/13px Montserrat;
+  text-transform: uppercase;
+}
+
+.angebotserstellung .panel-heading a i {
+  font-size: 7px;
+  margin-left: 4px;
+}
+
+.angebotserstellung .descr {
+  margin: 0 auto 0 0;
+  color: #394e64;
+  font: 400 13px/13px Montserrat;
+}
+
+.angebotserstellung .descr i {
+  position: relative;
+  top: -6px;
+  margin-left: 4px;
+  color: #838e99;
+  cursor: pointer;
+}
+
+.angebotserstellung .price {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 98px;
+  margin: 0 0 0 10px;
+  color: #394e64;
+  font: 600 13px/13px Montserrat;
+}
+
+.angebotserstellung .price i {
+  position: relative;
+  top: -8px;
+  margin-left: 4px;
+  color: #838e99;
+  cursor: pointer;
+}
+
+.angebotserstellung .drag {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 16px;
+  height: 44px;
+  border-right: 1px solid #d8e0e4;
+  background-color: #f0f4f6;
+}
+
+.angebotserstellung .drag i {
+  margin: auto;
+  color: #636363;
+  font-size: 12px;
+}
+
+.angebotserstellung .arrow {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #d8e0e4;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.angebotserstellung .arrow:after {
+  position: relative;
+  top: -1px;
+  content: '\e902';
+  font-family: workadvisor;
+  font-size: 7px;
+  color: #a6b6c0;
+  line-height: 20px;
+}
+
+.angebotserstellung .num {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 39px;
+  text-align: center;
+  color: #394e64;
+  font: 400 13px/13px Montserrat;
+  text-transform: uppercase;
+}
+
+.angebotserstellung .active .panel-heading {
+  background: #FFF;
+  border-bottom: 1px solid #b8c3c8;
+}
+
+.angebotserstellung .active .arrow {
+  background-color: #f0f4f6;
+}
+
+.angebotserstellung .active .arrow:after {
+  top: -2px;
+  content: '\e903';
+}
+
+.angebotserstellung .panel-collapse {
+  position: relative;
+}
+
+.angebotserstellung .panel-collapse:after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.angebotserstellung .panel-collapse .flex-container {
+  margin: 0;
+  padding: 22px 13px 0 52px;
+}
+
+.angebotserstellung .panel-collapse .drag {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.angebotserstellung .description {
+  max-width: 460px;
+}
+
+.angebotserstellung .description h4 {
+  margin: 0 0 10px;
+  color: #6a7176;
+  font: 700 12px/12px Montserrat;
+}
+
+.angebotserstellung .description i {
+  position: relative;
+  top: -6px;
+  margin-left: 5px;
+  color: #838e99;
+  cursor: pointer;
+}
+
+.angebotserstellung .description p {
+  margin: 0;
+  font: 300 12px/18px Montserrat;
+}
+
+.angebotserstellung .preview {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 119px;
+  height: 119px;
+  border-radius: 3px;
+  border: 1px solid #d8e0e4;
+  background-color: #ffffff;
+}
+
+.angebotserstellung .preview img {
+  margin: auto;
+}
+
+.angebotserstellung .btn,
+.angebotserstellung button {
+  float: right;
+  width: 194px;
+  margin: 30px 15px 27px auto;
+  border-radius: 3px;
+  padding: 0;
+  border: none;
+  background-color: #e2eaee;
+  color: #7c8ea2;
+  font: 600 12px/36px Montserrat;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.angebotserstellung .btn:hover,
+.angebotserstellung button:hover {
+  color: #FFF;
+  background-color: #3da5ea;
+}
+
+.angebotserstellung .form {
+  position: relative;
+  padding: 15px 17px 33px 30px;
+  border: 1px dashed #c0c9ce;
+  background-color: #ffffff;
+}
+
+.angebotserstellung .drag-form {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 16px;
+  padding-top: 20px;
+  border-right: 1px dashed #c0c9ce;
+  background-color: #f0f4f6;
+  text-align: center;
+}
+
+.angebotserstellung .drag-form:after {
+  content: '\e927';
+  font-family: workadvisor;
+  font-size: 12px;
+  color: #636363;
+}
+
+.angebotserstellung form:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.angebotserstellung form .flex-container {
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.angebotserstellung input,
+.angebotserstellung textarea,
+.angebotserstellung label {
+  border-radius: 3px;
+  border: 1px solid #c7d2dc;
+  color: #7f8c9a;
+  font: 300 12px/16px Montserrat;
+}
+
+.angebotserstellung .groop {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 186px;
+}
+
+.angebotserstellung .name {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 346px;
+  margin: 0 9px;
+}
+
+.angebotserstellung .add-price {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 120px;
+}
+
+.angebotserstellung input {
+  padding: 7px 12px;
+  margin-bottom: 15px;
+}
+
+.angebotserstellung textarea {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 540px;
+  height: 100px;
+  padding: 10px 15px;
+  resize: none;
+}
+
+.angebotserstellung label {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 120px;
+  height: 100px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.angebotserstellung label:before {
+  content: '\e900';
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 25px;
+  font-family: workadvisor;
+  font-size: 37px;
+  color: #3da5ea;
+  margin-top: 34px;
+}
+
+.angebotserstellung label input {
+  width: 0;
+  padding: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+.angebotserstellung label span {
+  margin-top: 6px;
+  color: #3da5ea;
+  cursor: pointer;
+  font: 300 11px/11px Montserrat;
+}
+
+.angebotserstellung button {
+  float: right;
+  margin: 10px 0 0;
+}
+
+.angebotserstellung .prices {
+  float: right;
+  width: 320px;
+  margin: 30px 70px 0 0;
+}
+
+.angebotserstellung .prices dt {
+  float: left;
+  width: 220px;
+  color: #4e5f72;
+  overflow: hidden;
+  font: 400 14px/14px Montserrat;
+}
+
+.angebotserstellung .prices dd {
+  width: 100px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  color: #394e64;
+  font: 600 13px/13px Montserrat;
+}
+
+.angebotserstellung .btns {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 35px 6px 40px;
+}
+
+.angebotserstellung .btns .btn {
+  width: 161px;
+  margin: 0 12px 0 0;
+}
+
+.angebotserstellung .line {
+  margin: 33px 0 0;
+  height: 1px;
+  background-color: #dfe2e7;
+}
+
+.angebotserstellung .mCSB_container {
+  margin-right: 26px !important;
+}

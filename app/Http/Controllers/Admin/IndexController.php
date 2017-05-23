@@ -17,7 +17,7 @@ class IndexController extends AdminController
        parent::__construct();
 
 
-        $this->template='admin_page/anfragen';
+        $this->template='admin_page/dashboard';
     }
 
     public function index(){

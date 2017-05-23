@@ -84,6 +84,11 @@
     <link href="jasmine/plugins/pace/pace.min.css" rel="stylesheet">
     <script src="jasmine/plugins/pace/pace.min.js"></script>
 
+    <!--noUiSlider [ OPTIONAL ]-->
+    <script src="/jasmine/plugins/noUiSlider/jquery.nouislider.all.min.js"></script>
+
+    <!--Form Component [ SAMPLE ]-->
+    <script src="/jasmine/js/demo/form-component.js"></script>
 
 </head>
 

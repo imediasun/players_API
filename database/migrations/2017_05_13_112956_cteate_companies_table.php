@@ -16,6 +16,7 @@ class CteateCompaniesTable extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->increments('id');
             $table->string('company_name')->default('')->nullable();
+            $table->string('logo')->nullable();
             $table->integer('id_user')->unsigned()->default(1);
             $table->string('street_house_number')->default('')->nullable();
             $table->string('zip_code')->default('')->nullable();

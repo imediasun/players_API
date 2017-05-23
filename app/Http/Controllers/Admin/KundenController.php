@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Gate;
 use Auth;
 use App\Client;
+use App\Company;
 use App\Http\Controllers\MenuController;
 class KundenController extends AdminController
 {
@@ -28,9 +29,13 @@ class KundenController extends AdminController
         }
         $data_nav['menu']=MenuController::index('admin_categories');
        
-
+        $data_content['firms']=Company::orderBy('created_at', 'desc')
+            ->orderBy('updated_at', 'desc')
+            ->get();
+        
+        
         $data=array();
         $this->title = 'Панель администратора';
-        return $this->renderOutput($data,null);
+        return $this->renderOutput($data,$data_content);
     }
 }

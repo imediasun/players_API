@@ -8,9 +8,7 @@
         <!--================================-->
         <div class="navbar-header">
             <a href="index.html" class="navbar-brand"> <i class="fa fa-cube brand-icon"></i>
-                <div class="brand-title"> <!--<span class="brand-text">Jasmine</span>-->
-                <img src="/img/logo_work_advisor.png">
-                </div>
+                <div class="brand-title"> <img src="/img/logo_interdomus_admin.svg"> </div>
             </a>
         </div>
         <!--================================-->
@@ -193,78 +191,7 @@
 
 
             </ul>
-            <ul class="nav navbar-top-links pull-right">
 
-                <!--Language selector-->
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <li class="dropdown">
-                    <a id="demo-lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown"> <span class="lang-selected"> <img class="lang-flag" src="img/flags/united-kingdom.png" alt="English"> <span class="lang-id">EN</span> <span class="lang-name">English</span> </span>
-                    </a>
-
-                    <!--Language selector menu-->
-                    <ul class="head-list dropdown-menu with-arrow">
-                        <li>
-                            <!--English-->
-                            <a href="#" class="active"> <img class="lang-flag" src="img/flags/united-kingdom.png" alt="English"> <span class="lang-id">EN</span> <span class="lang-name">English</span> </a>
-                        </li>
-                        <li>
-                            <!--France-->
-                            <a href="#"> <img class="lang-flag" src="img/flags/france.png" alt="France"> <span class="lang-id">FR</span> <span class="lang-name">Fran&ccedil;ais</span> </a>
-                        </li>
-                        <li>
-                            <!--Germany-->
-                            <a href="#"> <img class="lang-flag" src="img/flags/germany.png" alt="Germany"> <span class="lang-id">DE</span> <span class="lang-name">Deutsch</span> </a>
-                        </li>
-                        <li>
-                            <!--Italy-->
-                            <a href="#"> <img class="lang-flag" src="img/flags/italy.png" alt="Italy"> <span class="lang-id">IT</span> <span class="lang-name">Italiano</span> </a>
-                        </li>
-                        <li>
-                            <!--Spain-->
-                            <a href="#"> <img class="lang-flag" src="img/flags/spain.png" alt="Spain"> <span class="lang-id">ES</span> <span class="lang-name">Espa&ntilde;ol</span> </a>
-                        </li>
-                    </ul>
-                </li>
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <!--End language selector-->
-
-                <!--User dropdown-->
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <li id="dropdown-user" class="dropdown">
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right"> <span class="pull-right"> <img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture"> </span>
-                        <div class="username hidden-xs">John Doe</div>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right with-arrow">
-
-                        <!-- User dropdown menu -->
-                        <ul class="head-list">
-                            <li>
-                                <a href="#"> <i class="fa fa-user fa-fw fa-lg"></i> Profile </a>
-                            </li>
-                            <li>
-                                <a href="#"> <i class="fa fa-envelope fa-fw fa-lg"></i> Messages </a>
-                            </li>
-                            <li>
-                                <a href="#">  <i class="fa fa-gear fa-fw fa-lg"></i> Settings </a>
-                            </li>
-                            <li>
-                                <a href="#"> <i class="fa fa-sign-out fa-fw"></i> Logout </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <!--End user dropdown-->
-
-                <!--Navigation toogle button-->
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <li class="tgl-menu-btn">
-                    <a id="demo-toggle-aside" class="shortcut-grid" href="#"> <i class="fa fa-dedent"></i> </a>
-                </li>
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <!--End Navigation toogle button-->
-
-            </ul>
         </div>
         <!--================================-->
         <!--End Navbar Dropdown-->
