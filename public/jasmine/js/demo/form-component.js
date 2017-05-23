@@ -286,12 +286,26 @@ $(document).ready(function() {
 	// Require noUiSlider
 	// http://refreshless.com/nouislider/
 	// =================================================================
-	$("#demo-range-hpips").noUiSlider({
-		range: range_all_sliders,
-		connect: 'lower',
-		start: 90
-	});
+    var slider = $("#demo-range-hpips");
 
+    slider.noUiSlider({
+        range: range_all_sliders,
+        connect: 'lower',
+        start: 70
+    }).on('change', function (obj, val) {
+        $.ajax({
+            method: 'POST',
+            url: '/km',
+            data: {
+                km:val
+            },
+            success: function (result) {
+                                    console.log($.parseJSON(result));
+                clearOverlays();
+                $('.item').html('');
+            }
+        });
+    });
 
 	// RANGE SLIDER - VERTICAL PIPS
 	// =================================================================

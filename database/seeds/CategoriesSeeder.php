@@ -84,40 +84,39 @@ class CategoriesSeeder extends Seeder
 
 
         ]);
-        DB::table('customers_statuses')->insert([
+
+
+
+        DB::table('companies')->insert([
 
             [
-                
-                'name' => 'Фізична особа'
+
+                'company_name'=>'Wärme aus der Natur-Niemann GmbH & Co. KG',
+                'street_house_number'=>'Lange Str. 20, 21702 Ahlerstedt',
+                'zip_code'=>'290624',
+                'website'=>'imedia.in.ua',
+                'email'=>'imediasun@gmail.com',
+                'telephone'=>'0965441120',
+                'telephone2'=>'0965441120',
+                'fax'=>'0965441120',
+                'id_user'=>2
+
 
             ],
             [
 
-                'name' => 'Юридична особа'
+                'company_name'=>'Wärme Wärme',
+                'street_house_number'=>'Frauenplatz 12, 80331 München',
+                'zip_code'=>'290624',
+                'website'=>'imedia.in.ua',
+                'email'=>'imediasun@gmail.com',
+                'telephone'=>'0965441120',
+                'telephone2'=>'0965441120',
+                'fax'=>'0965441120',
+                'id_user'=>1
 
-            ]
-            
 
-        ]);
-        
-
-        DB::table('customers')->insert([
-
-        [
-        'id_user'=>3,
-        'name'=>'Южная Пальмира',
-        'edrpou'=>4568756,
-        'bank'=>'Приватбанк',
-        'mfo'=>324568,
-        'account'=>24562345644568990,
-        'city'=>'Одесса',
-        'street'=>'Рішельевська',
-        'house'=>45,
-        'ofice'=>345,
-        'index'=>348766,
-
-        ]
-           
+            ],
 
         ]);
         

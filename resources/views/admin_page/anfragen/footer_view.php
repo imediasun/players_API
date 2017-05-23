@@ -59,73 +59,32 @@
 <!-- END OF CONTAINER -->
 
 
-<!--JAVASCRIPT-->
-<!--=================================================-->
-
-
-<!--jQuery UI [ REQUIRED ]-->
-<script src="jasmine/js/jquery-ui.min.js"></script>
-
-<!--BootstrapJS [ RECOMMENDED ]-->
-<script src="jasmine/js/bootstrap.min.js"></script>
 
 
 <!--Fast Click [ OPTIONAL ]-->
-<script src="jasmine/plugins/fast-click/fastclick.min.js"></script>
-
+<script src="/jasmine/plugins/fast-click/fastclick.min.js"></script>
 
 <!--Jasmine Admin [ RECOMMENDED ]-->
-<script src="jasmine/js/scripts.js"></script>
-
+<script src="/jasmine/js/scripts.js"></script>
 
 <!--Switchery [ OPTIONAL ]-->
-<script src="jasmine/plugins/switchery/switchery.min.js"></script>
-
+<script src="/jasmine/plugins/switchery/switchery.min.js"></script>
 
 <!--Bootstrap Select [ OPTIONAL ]-->
-<script src="jasmine/plugins/bootstrap-select/bootstrap-select.min.js"></script>
-
-<!--Bootstrap Tags Input [ OPTIONAL ]-->
-<script src="jasmine/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
-
-<!--Bootstrap Tags Input [ OPTIONAL ]-->
-<script src="jasmine/plugins/tag-it/tag-it.min.js"></script>
-
-<!--Chosen [ OPTIONAL ]-->
-<script src="jasmine/plugins/chosen/chosen.jquery.min.js"></script>
+<script src="/jasmine/plugins/bootstrap-select/bootstrap-select.min.js"></script>
 
 
-<!--noUiSlider [ OPTIONAL ]-->
-<script src="jasmine/plugins/noUiSlider/jquery.nouislider.all.min.js"></script>
-
-
-<!--Bootstrap Timepicker [ OPTIONAL ]-->
-<script src="jasmine/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
-
-
-<!--Bootstrap Datepicker [ OPTIONAL ]-->
-<script src="jasmine/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-
-
-<!--Dropzone [ OPTIONAL ]-->
-<script src="jasmine/plugins/dropzone/dropzone.min.js"></script>
-
-<!--Dropzone [ OPTIONAL ]-->
-<script src="jasmine/plugins/ion-rangeslider/ion.rangeSlider.min.js"></script>
-
-
-<!--Masked Input [ OPTIONAL ]-->
-<script src="jasmine/plugins/masked-input/jquery.maskedinput.min.js"></script>
-
-
-<!--Summernote [ OPTIONAL ]-->
-<script src="jasmine/plugins/summernote/summernote.min.js"></script>
 
 <!--Demo script [ DEMONSTRATION ]-->
-<script src="jasmine/js/demo/jasmine.js"></script>
+<script src="/jasmine/js/demo/jasmine.js"></script>
 
-<!--Form Component [ SAMPLE ]-->
-<script src="jasmine/js/demo/form-component.js"></script>
+
+
+
+
+
+
+
 
 
 </body>

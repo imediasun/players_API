@@ -23,7 +23,9 @@ Route::get('/admin/del_good', 'AdminController@del_good');*/
 Route::get('/kalender', 'KalenderController@index');
 Route::get('/erstkontakt', 'ProjekteController@erstkontakt');
 Route::get('/neue_anfregen', 'AnfragenController@neue_anfregen');
-
+Route::get('/angebotseinstellungen', 'AngebotseinsController@index');
+Route::post('/km', 'AnfragenController@map_km');
+Route::post('/get_starting_map', 'AnfragenController@get_starting');
 Route::post('/functions_images', 'FunctionsController@index');
 Route::post('/functions_image', 'FunctionsController@main_image');
 Route::post('/functions_form', 'FunctionsController@form');
@@ -44,7 +46,7 @@ Route::get('/good_added', function () {
 })->name('good_added');
 Route::get('/not_yours', function () {
     return view('not_yours');
-})->name('not_yours');
+})->name('not_yours'); 
 
 Route::get('/logout',['uses' => 'Admin\IndexController@index','as' => 'adminIndex']);
 
@@ -53,6 +55,21 @@ Route::group(['prefix' => 'admin','middleware'=>['web','auth']],function(){
        //admin
 
     Route::get('/',['uses' => 'Admin\IndexController@index','as' => 'adminIndex']);
+    Route::get('/dashboard',['uses' => 'Admin\IndexController@index','as' => 'adminIndex']);
+    Route::get('/anfregen','Admin\AnfragenController@index');
+    Route::get('/kunden','Admin\KundenController@index');
+    Route::get('/firm/{id}','Admin\FirmController@show_firm');
+    Route::get('/del_firm/{id}', 'Admin\FirmController@del_firm');
+    Route::post('/first_name_xed', 'Admin\XedController@first_name');
+    Route::post('/telephone_xed', 'Admin\XedController@telephone');
+
+    Route::post('/adress_xed', 'Admin\XedController@adresse');
+    Route::post('/change_active_client', 'Admin\ClientController@change_active');
+    Route::post('/delete_client', 'Admin\ClientController@delete_client');
+    Route::post('/add_logo', 'Admin\FirmController@add_logo');
+    Route::post('/add_firm', 'Admin\FirmController@add_firm');
+    
+    Route::post('/client_general_information', 'Admin\ClientController@anfrage_form');
     Route::post('/func_update_role', 'FunctionsController@role');
     Route::post('/func_delete_user', 'FunctionsController@delete_user');
     Route::resource('/add_good','Admin\GoodsController');
