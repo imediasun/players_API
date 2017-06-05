@@ -145,6 +145,7 @@ $(document).ready(function() {
 	}).Link('lower').to($("#demo-range-def-val"));
 
 
+
 	// RANGE SLIDER - SLIDER STEP BY STEP
 	// =================================================================
 	// Require noUiSlider

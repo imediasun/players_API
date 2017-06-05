@@ -248,7 +248,15 @@
                                 <a href="#">  <i class="fa fa-gear fa-fw fa-lg"></i> Settings </a>
                             </li>
                             <li>
-                                <a href="#"> <i class="fa fa-sign-out fa-fw"></i> Logout </a>
+                                <a href="{{ url('/logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    Вийти
+                                </a>
+
+                                <form id="logout-form" action="<?php echo url('/logout') ?>" method="POST" style="display: none;">
+                                    <?php echo csrf_field() ?>
+                                </form>
                             </li>
                         </ul>
                     </div>

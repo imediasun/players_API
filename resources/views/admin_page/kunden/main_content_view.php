@@ -56,11 +56,11 @@
 
 
                             <div class="form-group">
-                                <div class="col-md-3">
+                                <div class="col-sm-3">
                                     <span class="control-label">Telefone:</span>
 
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sm-4">
                                     <select name="phone_type" data-placeholder="Choose a telefone..." class="form-control">
                                         <option value="Mobile">Mobile</option>
                                         <option value="Mobile2">Mobile2</option>
@@ -68,11 +68,11 @@
                                     </select>
 
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-sm-5">
                                     <input id="demo-text-input" name="telephone" class="form-control" placeholder="Telefone" value="0176123457" type="text">
 
                                 </div>
-                                <div class="col-md-9  col-md-offset-3">
+                                <div class="col-sm-9  col-sm-offset-3">
                                     <h5 class="add_phone icon_links icon_add">Add</h5>
                                 </div>
                             </div>
@@ -141,78 +141,75 @@
             foreach ($firms as $key=>$firm){
                 
             ?>
-                <div class="row">
-                    <div class="panel pad-all ovh">
+                    <div class="panel pad-all ovh kunden-card">
                         <div class="pane-body">
-                            <div class="row">
-                                <div class="col-lg-2 col-md-2">
-                                    <div class="company_icon">
-                                        <div class="table-cell">
-                                            <img style="max-width:100%;max-height:50px" src="<?php echo '/'.$firm->logo?>" alt="logo_company">
-                                        </div>
+                            <div class="flex-start fais shrink">
+                                <div class="company_icon kunden-company-icon">
+                                    <div class="table-cell">
+                                        <img style="max-width:100%;max-height:50px" src="<?php echo '/'.$firm->logo?>" alt="logo_company">
                                     </div>
                                 </div>
-                                <div class="col-lg-7 col-md-7">
-                                    <div class="head-panel head-border">
-                                        <h4><?php echo $firm->company_name?></h4>
-                                    </div>
-                                    <div class="body-panel">
-                                        <div class="col-md-4 pl-0">
-                                            <span class="dark_color mb-10 fs13">Strasse</span>
-                                            <p><?php echo $firm->street_house_number?></p>
+                                <div class="flex-between fais kunden-card-body">
+                                    <div class="kunden-card-info">
+                                        <div class="head-panel head-border">
+                                            <h4><?php echo $firm->company_name?></h4>
                                         </div>
-                                        <div class="col-md-2 pr-0 pl-0">
-                                            <span class="dark_color mb-10 fs13">Telefon:</span>
-                                            <p><?php echo $firm->telephone?></p>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <span class="dark_color mb-10 fs13">E-Mail: </span>
-                                            <p><?php echo $firm->email?></p>
-                                        </div>
-                                        <div class="col-md-2 pr-0 pl-0">
-                                            <p class="dark_color">
-                                                Kaufte Abfragen <a href="#" class="blue_color">10</a> auf <b class="blue_color">200 EUR</b>
-                                            </p>
+                                        <div class="body-panel flex-between">
+                                            <div>
+                                                <span class="dark_color mb-10 fs13">Strasse</span>
+                                                <p><?php echo $firm->street_house_number?></p>
+                                            </div>
+                                            <div class="telephone">
+                                                <span class="dark_color mb-10 fs13">Telefon:</span>
+                                                <p><?php echo $firm->telephone?></p>
+                                            </div>
+                                            <div>
+                                                <span class="dark_color mb-10 fs13">E-Mail: </span>
+                                                <p><?php echo $firm->email?></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3">
-                                    <div id="demo-morris-bar" style="text-transform: uppercase; float: right; max-width: 350px; height: 100px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="100" version="1.1" width="315" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                                    <div class="charts flex-between shrink">
+                                        <p class="dark_color">
+                                            Kaufte Abfragen <a href="#" class="blue_color">10</a> auf <b class="blue_color">200 EUR</b>
+                                        </p>
+                                        <div id="demo-morris-bar" style="text-transform: uppercase; float: right; max-width: 350px; height: 100px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="100" version="1.1" width="315" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
 
-                                            <path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#000000" d="M46,25H463" stroke-opacity="0" stroke-width="0.5"></path><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="260.107143" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sep</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="221.75" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Aug</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="180.392857" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Jul</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="139.821429" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Jun</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="102.25" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Mai</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="56.678571" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Apr</tspan></text>
+                                                <path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="none" stroke="#000000" d="M46,25H463" stroke-opacity="0" stroke-width="0.5"></path><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="260.107143" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sep</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="221.75" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Aug</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="180.392857" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Jul</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="139.821429" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Jun</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="102.25" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Mai</tspan></text><text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" x="56.678571" y="86" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#a1b3c0" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Apr</tspan></text>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="49.723214285714285" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect
-                                            >
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="62.39285714285714" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="49.723214285714285" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect
+                                                >
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="62.39285714285714" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="89.50892857142856" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="89.50892857142856" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="102.17857142857142" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="102.17857142857142" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="129.29464285714286" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="129.29464285714286" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="141.96428571428572" y="48" width="9.669642857142858" height="32" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="141.96428571428572" y="48" width="9.669642857142858" height="32" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="169.08035714285714" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="169.08035714285714" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="181.75" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="181.75" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="208.86607142857142" y="48" width="9.669642857142858" height="32" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="208.86607142857142" y="48" width="9.669642857142858" height="32" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="221.53571428571428" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="221.53571428571428" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="248.6517857142857" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="248.6517857142857" y="25" width="9.669642857142858" height="55" r="0" rx="0" ry="0" fill="#f0f4f6" stroke="none" fill-opacity="1"></rect>
 
-                                            <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="261.32142857142856" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
+                                                <rect style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" x="261.32142857142856" y="39.80000000000001" width="9.669642857142858" height="40" r="0" rx="0" ry="0" fill="#21b8f9" stroke="none" fill-opacity="1"></rect>
 
 
-                                            <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 13px; line-height: normal; font-family: sans-serif;" x="300" y="73" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#adbeca" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text>
-                                            <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 13px; line-height: normal; font-family: sans-serif;" x="310" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#adbeca" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">365</tspan></text></svg>
+                                                <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 13px; line-height: normal; font-family: sans-serif;" x="300" y="73" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#adbeca" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text>
+                                                <text style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 13px; line-height: normal; font-family: sans-serif;" x="310" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#adbeca" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">365</tspan></text></svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="panel-footer clearfix bgt custom_top_line pb-0 mt--35">
+                        <div class="panel-footer clearfix bgt custom_top_line pb-0 ">
                             <ul class="pull-right butons_list">
                                 <li>
                                     <a href="#" onClick="openWin()" class="icon_links icon_login">Login als Kunde</a>
@@ -227,7 +224,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
 
             <?php
             }

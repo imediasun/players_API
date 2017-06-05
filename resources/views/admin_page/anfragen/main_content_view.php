@@ -51,7 +51,7 @@
                             <hr class="mt-0">
                             <div class="row">
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 left-side">
                                     <div class="note-fontname btn-group">
                                         <h5>PLZ-Gebiet:</h5>
                                         <button type="button" class="btn btn-default btn-sm btn-small dropdown-toggle" data-toggle="dropdown" title="" tabindex="-1" data-original-title="Font Family" aria-expanded="false">
@@ -61,14 +61,14 @@
                                 </div>
 
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 right-side">
 
                                     <div class="row">
-                                        <div class="col-md-4 text-right">
+                                        <div class="col-md-4 text-right right-title">
                                             <h5 style="display:inline-block;">Dienstleistungen:</h5>
 
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 right-checkbox">
                                             <div style="display:inline-block;" class="checkbox">
 
                                                 <!-- Inline Icon Checkboxes -->
@@ -83,8 +83,8 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-4"></div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-4 right-title"></div>
+                                        <div class="col-md-8 right-checkbox">
                                             <div class="checkbox" style="">
 
                                                 <!-- Inline Icon Checkboxes -->
@@ -108,11 +108,11 @@
 
                                 </div>
                             </div>
-                            <hr>
+                            <hr style="margin: 16px 0 0;">
                             <div class="row">
 
-                                <div class="col-md-12 pl-0 pr-0">
-                                    <div class="col-md-6">
+                                <div class="col-xs-12 pl-0 pr-0 anfragen-card-nav">
+                                    <div class="col-xs-6">
 
                                         <div style="display:inline-block;" class="checkbox">
 
@@ -124,7 +124,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-xs-6">
                                         <div class="pull-right">
                                             <h5 style="display:inline-block;">Sortieren nach:</h5>
 
@@ -172,14 +172,14 @@
                                     $questinarys= App\Questionary::where('id_client', $val['id'])
                                         ->get();
                                     ?>
-                                    <div class="col-md-12 <?=$val['service']?>" >
+                                    <div class="col-xs-12 <?=$val['service']?>" >
                                         <div class="item_block ">
                                             <div class="block item_block_border">
                                                 <!--<div class="neu" style="z-index:999;position:absolute;width:68px;height:56px;background:url('/img/neu.png');background-size:100% 100%">
 
                                                 </div>-->
-                                                <div class="row">
-                                                    <div class="col-md-2 " style="position:relative;">
+                                                <div class="row mr-0">
+                                                    <div class="col-xs-2 pl-0 pr-0 company-icon-wrap" style="position:relative;">
                                                         <div class="company_icon custom_height">
                                                             <div class="table-cell">
 
@@ -226,117 +226,124 @@
                                                         </div>
                                                     </div>
                                                     
-                                                    <div class="col-md-10">
-                                                        <div class="row bb-1 right_content_table" >
-                                                            <div class="col-md-4 p-0">
-                                                                <div class="head-panel head-border">
-                                                                    <h4><?php echo $val['request_name']?></h4>
-                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-1 p-0">
+                                                    <div class="col-xs-10 pl-0 pr-0 anfragen-card-body">
+                                                        <div class="row bb-1 right_content_table flex-between anfragen-card-top" >
+                                                            <div class="flex-start">
+                                                                <h4 class="card-title"><?php echo $val['request_name']?></h4>
                                                                 <ul class="list-inline text-right padding_li_2">
-                                                                    <li class="tooltip_html list_icon">
-                                                                        <span class="check_box_btn green_bg"> <i >€</i> </span>
+                                                                        <li class="tooltip_html list_icon">
+                                                                            <span class="check_box_btn green_bg"> <i >€</i> </span>
 
+                                                                            <div class="tooltip_html_block popover top">
+                                                                                <div class="arrow" style="left: 5%;"></div>
+
+                                                                                <div class="popover-content">
+                                                                                    <p class="fow600"> <u> Wärme aus der Natur-Niemann GmbH & Co. KG</u></p>
+                                                                                    <p class="green_color ">
+                                                                                        <span class="check_box_btn green_bg"> <i class="workadvisor workadvisor-cheked"></i> </span>
+                                                                                        Abgeschlossen
+                                                                                    </p>
+                                                                                    <p>
+
+                                                                                        <a href="#" class="blue_color litle_fonts mt-10 block"></i>Zum Projekt Projekt #45465</a>
+                                                                                    </p>
+                                                                                    <p class="mb-0">
+
+                                                                                        <a href="#" class="blue_color litle_fonts mt-10 block"><i class="workadvisor workadvisor-enter blue_color pr-10"></i>Login als Kunde</a>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="check_box_btn red_bg"> <i class="workadvisor workadvisor-cheked"></i> </span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="check_box_btn default_bg"></span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="check_box_btn green_bg"> <i class="workadvisor workadvisor-cheked"></i>  </span>
+                                                                        </li>
+                                                                    </ul>
+                                                            </div>
+                                                            <div class="flex-end shrink">
+                                                                <div class="tooltip_html flex-start sichtbar">
+                                                                    <i class="workadvisor workadvisor-eye"></i>
+                                                                    <div>
+                                                                        <h4 class="fs14">sichtbar für</h4>
+                                                                        <a href="#" class="blue_color fs12"><?php echo $partners?> Partners</a>
+                                                                        <div class="tooltip_html_block popover top sichtbar-popover-content">
+                                                                            <div class="arrow" style="left: 11%;"></div>
+                                                                            <div class="popover-content">
+                                                                                <div class="nano nano-custom" style="height:220px">
+                                                                                    <div class="nano-content">
+                                                                                        <p class="fow600"> <span class="check_box_btn green_bg"> <i class="workadvisor workadvisor-cheked"></i> </span>  <u> Wärme aus der Natur-Niemann GmbH & Co. KG </u></p>
+                                                                                        <p> <u> ADM-ISOBLOC GmbH Anlagen für Dosieren und Mischen </u></p>
+                                                                                        <p> <u> ABC Edelstahl Armaturen & Fittings GmbH </u></p>
+                                                                                        <p> <u> AS Drives & Services GmbH </u></p>
+                                                                                        <p> <u> von Bronk Gummi- und Kunststofftechnik GmbH </u></p>
+                                                                                        <p> <u> d-Pack Engineering GmbH </u></p>
+                                                                                        <p> <u> ABC Edelstahl Armaturen & Fittings GmbH </u></p>
+                                                                                        <p> <u> AS Drives & Services GmbH </u></p>
+                                                                                        <p> <u> von Bronk Gummi- und Kunststofftechnik GmbH </u></p>
+                                                                                        <p> <u> d-Pack Engineering GmbH </u></p>
+                                                                                        <p> <u> ABC Edelstahl Armaturen & Fittings GmbH </u></p>
+                                                                                        <p> <u> AS Drives & Services GmbH </u></p>
+                                                                                        <p> <u> von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH </u></p>
+                                                                                        <p> <u> d-Pack Engineering GmbH </u></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="tooltip_html flex-start anfragen-card-ip">
+                                                                    <i class="workadvisor workadvisor-information fs-22"></i>
+                                                                    <div>
+                                                                        <h4 class="fs14">IP-Adresse: </h4>
+                                                                        <h5>188.239.77.145</h5>
                                                                         <div class="tooltip_html_block popover top">
-                                                                            <div class="arrow" style="left: 5%;"></div>
+                                                                            <div class="arrow" style="left: 11%;"></div>
 
-                                                                            <div class="popover-content"> 
-                                                                                <p class="fow600"> <u> Wärme aus der Natur-Niemann GmbH & Co. KG</u></p>
-                                                                                <p class="green_color ">
-                                                                                    <span class="check_box_btn green_bg"> <i class="workadvisor workadvisor-cheked"></i> </span>
-                                                                                    Abgeschlossen 
-                                                                                </p>
-                                                                                <p>
-                                                                                    
-                                                                                    <a href="#" class="blue_color litle_fonts mt-10 block"></i>Zum Projekt Projekt #45465</a>
-                                                                                </p>
-                                                                                <p class="mb-0">
-                                                                                    
-                                                                                <a href="#" class="blue_color litle_fonts mt-10 block"><i class="workadvisor workadvisor-enter blue_color pr-10"></i>Login als Kunde</a>
-                                                                                </p>
+                                                                            <div class="popover-content">
+                                                                                <p class="txt_contacts"><span>IP Address:</span> 188.239.77.145</p>
+                                                                                <p class="txt_contacts"><span>Provider:</span> Link Telecom Ltd</p>
+                                                                                <p class="txt_contacts"><span>Stadt:</span> kremenchug</p>
+                                                                                <a href="#" class="blue_color litle_fonts mt-10 block"><i class="workadvisor workadvisor-google-map blue_color pr-10"></i>Karte ansehen google</a>
                                                                             </div>
-                                                                        </div>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span class="check_box_btn red_bg"> <i class="workadvisor workadvisor-cheked"></i> </span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span class="check_box_btn default_bg"></span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span class="check_box_btn green_bg"> <i class="workadvisor workadvisor-cheked"></i>  </span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
 
-                                                            <div class="col-md-2 pr-0 tooltip_html">
-                                                                <i class="workadvisor workadvisor-eye"></i>
-                                                                
-                                                                <h4>sichtbar für</h4>
-                                                                <a href="#" class="blue_color"><?php echo $partners?> Partners</a>
-
-                                                                <div class="tooltip_html_block popover top sichtbar-popover-content">
-                                                                    <div class="arrow" style="left: 11%;"></div>
-                                                                    <div class="popover-content"> 
-                                                                        <div class="nano nano-custom" style="height:220px">
-                                                                            <div class="nano-content">
-                                                                                <p class="fow600"> <span class="check_box_btn green_bg"> <i class="workadvisor workadvisor-cheked"></i> </span>  <u> Wärme aus der Natur-Niemann GmbH & Co. KG </u></p> 
-                                                                                <p> <u> ADM-ISOBLOC GmbH Anlagen für Dosieren und Mischen </u></p>
-                                                                                <p> <u> ABC Edelstahl Armaturen & Fittings GmbH </u></p>
-                                                                                <p> <u> AS Drives & Services GmbH </u></p>
-                                                                                <p> <u> von Bronk Gummi- und Kunststofftechnik GmbH </u></p>
-                                                                                <p> <u> d-Pack Engineering GmbH </u></p>
-                                                                                <p> <u> ABC Edelstahl Armaturen & Fittings GmbH </u></p>
-                                                                                <p> <u> AS Drives & Services GmbH </u></p>
-                                                                                <p> <u> von Bronk Gummi- und Kunststofftechnik GmbH </u></p>
-                                                                                <p> <u> d-Pack Engineering GmbH </u></p>
-                                                                                <p> <u> ABC Edelstahl Armaturen & Fittings GmbH </u></p>
-                                                                                <p> <u> AS Drives & Services GmbH </u></p>
-                                                                                <p> <u> von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH von Bronk Gummi- und Kunststofftechnik GmbH </u></p>
-                                                                                <p> <u> d-Pack Engineering GmbH </u></p>
-                                                                            </div>
                                                                         </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class=" p-0 flex-start anfragen-card-plz">
+                                                                    <i class="workadvisor workadvisor-target"></i>
+                                                                    <div>
+                                                                        <h4 class="fs14">PLZ</h4>
+                                                                        <h5><?php echo $val['zip_code']?></h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-start anfragen-card-time">
+                                                                    <i class="workadvisor workadvisor-cheked workadvisor-cheked-custom"></i>
+                                                                    <div>
+                                                                        <?php
+                                                                        $date = new DateTime($val['created_at']);
+                                                                        $date_= $date->format('Y-m-d');
+                                                                        $time = $date->format('H:i:s');
+                                                                        ?>
+                                                                        <h4 class="fs14"><?php echo  $date_?></h4>
+                                                                        <h5><?php echo  $time?></h5>
                                                                     </div>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-2 tooltip_html">
-                                                                <i class="workadvisor workadvisor-information fs-22"></i>
-                                                                <h4>IP-Adresse: </h4>
-                                                                <h5>188.239.77.145</h5>
-                                                                 <div class="tooltip_html_block popover top">
-                                                                    <div class="arrow" style="left: 11%;"></div>
 
-                                                                    <div class="popover-content"> 
-                                                                        <p class="txt_contacts"><span>IP Address:</span> 188.239.77.145</p>
-                                                                        <p class="txt_contacts"><span>Provider:</span> Link Telecom Ltd</p>
-                                                                        <p class="txt_contacts"><span>Stadt:</span> kremenchug</p>
-                                                                        <a href="#" class="blue_color litle_fonts mt-10 block"><i class="workadvisor workadvisor-google-map blue_color pr-10"></i>Karte ansehen google</a>
-                                                                    </div>
 
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-1 p-0">
-                                                                <i class="workadvisor workadvisor-target"></i>
-                                                                <h4>PLZ</h4>
-                                                                <h5><?php echo $val['zip_code']?></h5>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <i class="workadvisor workadvisor-cheked workadvisor-cheked-custom"></i>
-                                                                <?php
-                                                                $date = new DateTime($val['created_at']);
-                                                                $date_= $date->format('Y-m-d');
-                                                                $time = $date->format('H:i:s');
-                                                                ?>
-                                                                <h4><?php echo  $date_?></h4>
-                                                                <h5><?php echo  $time?></h5>
-                                                            </div>
 
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="col-md-5">
+                                                        <div class="flex-between anfragen-card-content">
+                                                            <div class="btns">
                                                         <?php
                                                         unset($calendar);unset($heating);
                                                         unset($house_plan);unset($water);
@@ -404,10 +411,10 @@
                                                         ?>
                                                             </div>
 
-                                                            <div class="col-md-3" >
-                                                                <div>
-                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#9da5b0">Name:</h5>
-                                                                    <h5 id="first_name_xed_<?php echo $val['id']?>" style="position:relative;display:inline-block;left:3px;top:-10px;color:#000"><?php echo $val['first_name'] ?></h5>
+                                                            <div class="addresse">
+                                                                <div class="flex-start">
+                                                                    <h5 style="color:#9da5b0" class="shrink">Name:</h5>
+                                                                    <h5 id="first_name_xed_<?php echo $val['id']?>" style="color:#000"><?php echo $val['first_name'] ?></h5>
 
                                                                     <script>
                                                                         $('#first_name_xed_<?php echo $val['id']?>').editable({
@@ -420,9 +427,9 @@
 
 
                                                                 </div>
-                                                                <div>
-                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#9da5b0">Telefon:</h5>
-                                                                    <h5 id="telephone_xed_<?php echo $val['id']?>" style="position:relative;display:inline-block;left:3px;top:-10px;color:#000"><?php echo $val['telephone'] ?></h5>
+                                                                <div class="flex-start">
+                                                                    <h5 style="color:#9da5b0" class="shrink">Telefon:</h5>
+                                                                    <h5 id="telephone_xed_<?php echo $val['id']?>" style="color:#000"><?php echo $val['telephone'] ?></h5>
 
                                                                     <script>
                                                                         $('#telephone_xed_<?php echo $val['id']?>').editable({
@@ -433,10 +440,10 @@
                                                                         });
                                                                     </script>
                                                                 </div>
-                                                                <div>
+                                                                <div class="flex-start">
                                                                     
-                                                                    <h5 style="position:relative;display:inline-block;left:3px;top:-10px;color:#9da5b0">Adresse:</h5>
-                                                                    <h5 id="adress_xed_<?php echo $val['id']?>"style="position:relative;display:inline-block;left:3px;top:-10px;color:#000;border-bottom: 0;"><?php echo $val['street_house_number'] ?></h5>
+                                                                    <h5 style="color:#9da5b0" class="shrink">Adresse:</h5>
+                                                                    <h5 id="adress_xed_<?php echo $val['id']?>"style="color:#000"><?php echo $val['street_house_number'] ?></h5>
                                                                     <script>
                                                                         $('#adress_xed_<?php echo $val['id']?>').editable({
                                                                             type: 'text',
@@ -448,14 +455,12 @@
                                                                 
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-2">
-                                                                <div>
-                                                                    <h5 style="position:relative;display:block;left:3px;top:-10px;color:#9da5b0">Telefonische Erreichbarkeit:</h5>
-                                                                    <h5 style="position:relative;display:block;left:3px;top:-10px;color:#000"><?php echo $val['reachability'] ?></h5>
-                                                                </div>
-
+                                                            <div class="telefonische">
+                                                                <h5 style="color:#9da5b0">Telefonische Erreichbarkeit:</h5>
+                                                                <h5 style="color:#000"><?php echo $val['reachability'] ?></h5>
                                                             </div>
-                                                            <div class="col-md-2">
+
+                                                            <div class="offentlich">
 
                                                                 <div class="box-inline">
                                                                     <p class="text-thin mar-btm">ÖFFENTLICH</p>
@@ -502,7 +507,7 @@
 
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row mr-0">
                                                     <div class="panel-footer bgt bt-1"> 
 
                                                         <ul class="pull-right butons_list">
@@ -515,52 +520,52 @@
                                                                <button class="del_client_btn btn-md btn_links"><i class="workadvisor workadvisor-rubbish-bin"></i><span>Entfernen</span></button>
                                                             </li>
                                                         </ul>
-                                                        
 
 
+                                                        <div class="additional_info additional_info_custom" >
 
-
-
-                                            <div class="additional_info additional_info_custom" >
-
-                                                <?php
-
-                                                foreach($questinarys as $k=>$v){
-                                                    $icon='';
-                                                    $question=App\Question::where('id', $v['id_question'])
-                                                        ->get();
-                                                    if(isset($question[0])){
-                                                        $icon=$question[0]['original']['icon'];
-                                                        $icon_hover=$question[0]['original']['icon_hover'];
-                                                    }
-                                                    ?>
-                                                    <div class="questions" style="display:none;position:relative;margin-top:20px;height:40px;border-bottom:2px dashed #eee;">
-                                                        <div class="col-md-5" style="height:40px;display:inline-block"> <?php echo $v['original']['text'];?></div>
-                                                        <div class="col-md-1" style="height:40px;display:inline-block">
                                                             <?php
 
-                                                            if(!empty($icon)){
-
+                                                            foreach($questinarys as $k=>$v){
+                                                                $icon='';
+                                                                $question=App\Question::where('id', $v['id_question'])
+                                                                    ->get();
+                                                                if(isset($question[0])){
+                                                                    $icon=$question[0]['original']['icon'];
+                                                                    $icon_hover=$question[0]['original']['icon_hover'];
+                                                                }
                                                                 ?>
-                                                                <img src="<? echo $icon ?> ">
+                                                                <div class="questions" style="display:none;position:relative;margin-top:20px;height:40px;border-bottom:2px dashed #eee;">
+                                                                    <div class="col-xs-5" style="height:40px;display:inline-block"> <?php echo $v['original']['text'];?></div>
+                                                                    <div class="col-xs-1" style="height:40px;display:inline-block">
+                                                                        <?php
 
+                                                                        if(!empty($icon)){
+
+                                                                            ?>
+                                                                            <img src="<? echo $icon ?> ">
+
+                                                                            <?php
+
+                                                                        }
+                                                                        ?>
+
+                                                                    </div>
+                                                                    <div class="col-xs-6" style="height:40px;display:inline-block"><?php echo $v['original']['answer'];?></div>
+                                                                </div>
                                                                 <?php
 
-                                                            }
-                                                            ?>
+                                                            }?>
+                                                            <div class="scroll_btn icon_links ">
+
+
+                                                            </div>
 
                                                         </div>
-                                                        <div class="col-md-3" style="height:40px;display:inline-block"><?php echo $v['original']['answer'];?></div>
-                                                    </div>
-                                                    <?php
-
-                                                }?>
-                                                <div class="scroll_btn icon_links ">
 
 
-                                                </div>
 
-                                            </div>
+
                                                     </div>
                                                 </div>
 
@@ -631,89 +636,79 @@
                                                    <div class="modal-body ovh">
 
                                                        <div class="row">
-                                                           <div class="col-md-6 mb_row">
+                                                           <div class="col-xs-12 col-md-6 mb_row">
                                                                <div class="row">
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <span>Name:</span>
 
                                                                    </div>
-                                                                   <div class="col-md-8">
+                                                                   <div class="col-sm-8">
                                                                        <input name="id" type="hidden" value="<?php echo $val['id'] ?>">
                                                                        <input id="demo-text-input" name="first_name" class="form-control" placeholder="Name" value="<?php echo $val['first_name'] ?>" type="text">
 
                                                                    </div>
                                                                </div>
                                                                <div class="row">
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <span>Last Name:</span>
 
                                                                    </div>
-                                                                   <div class="col-md-8">
+                                                                   <div class="col-sm-8">
                                                                        <input id="demo-text-input" name="last_name" class="form-control" placeholder="Name" value="<?php echo $val['last_name'] ?>" type="text">
 
                                                                    </div>
                                                                </div>
                                                                <div class="row">
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <span>Adresse:</span>
 
                                                                    </div>
-                                                                   <div class="col-md-8">
+                                                                   <div class="col-sm-8">
                                                                        <input id="demo-text-input" name="adress" class="form-control" value="<?php echo $ex_adress[0];?>" placeholder="Adresse" type="text">
 
                                                                    </div>
                                                                </div>
                                                                <div class="row">
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
 
 
                                                                    </div>
-                                                                   <div class="col-md-8">
+                                                                   <div class="col-sm-8">
                                                                        <input id="demo-text-input" name="zip" style="width:33%;display:inline-block" class="form-control" placeholder="Zip code" type="text" value="<?php echo $zip ?>">
                                                                        <input id="demo-text-input" name="city" style="width:65%;display:inline-block;float:right"class="form-control" placeholder="Adresse" type="text" value="<?php echo $city ?>">
                                                                    </div>
                                                                </div>
-                                                               <div class="row">
-                                                                   <div class="col-md-4">
 
-
-                                                                   </div>
-                                                                   <div class="col-md-8">
-                                                                       <input class="js-switch add_install_address" style="display:inline-block"  name="different" type="checkbox" >
-                                                                       <h5  style="display:inline-block">Abweichende Installationsadresse</h5>
-                                                                   </div>
-
-                                                               </div>
 
                                                                <div class="row additional_address" style="display:none" >
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <span>Install Adresse:</span>
 
                                                                    </div>
-                                                                   <div class="col-md-8">
+                                                                   <div class="col-sm-8">
                                                                        <input id="demo-text-input" name="install_adress" class="form-control" value="<?php echo $ex_adress[0];?>" placeholder="Adresse" type="text">
 
                                                                    </div>
                                                                </div>
                                                                <div class="row additional_address" style="display:none" >
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
 
 
                                                                    </div>
-                                                                   <div class="col-md-8">
+                                                                   <div class="col-sm-8">
                                                                        <input id="demo-text-input" name="install_zip" style="width:33%;display:inline-block" class="form-control" placeholder="Zip code" type="text" value="<?php echo $zip ?>">
                                                                        <input id="demo-text-input" name="install_city" style="width:65%;display:inline-block;float:right"class="form-control" placeholder="Adresse" type="text" value="<?php echo $city ?>">
                                                                    </div>
                                                                </div>
 
                                                            </div>
-                                                           <div class="col-md-6">
+                                                           <div class="col-xs-12 col-md-6" style="margin-bottom: 10px;">
                                                                <div class="row">
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <span>Telefone:</span>
 
                                                                    </div>
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <select name="phone_type" data-placeholder="Choose a telefone..." class="form-control">
                                                                            <option value="Mobile">Mobile</option>
                                                                            <option value="Mobile2">Mobile2</option>
@@ -721,16 +716,16 @@
                                                                        </select>
 
                                                                    </div>
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <input id="demo-text-input" name="phone1" class="form-control" placeholder="Telefone" value="<?php echo $val['telephone'] ?>" type="text">
 
                                                                    </div>
                                                                </div>
                                                                <div class="row " >
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
 
                                                                    </div>
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <i style="display:inline-block" class="workadvisor workadvisor-target"></i>
                                                                        <h5 class="add_phone" style="cursor:pointer;display:inline-block;text-decoration:underline">hinzufügen</h5>
                                                                    </div>
@@ -738,10 +733,10 @@
                                                                </div>
 
                                                                <div class="row additional_phone" style="display:none">
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <span>Telefone:</span>
                                                                    </div>
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <select name="phone_type2" data-placeholder="Choose a telefone..." class="form-control">
                                                                            <option value="Mobile">Mobile</option>
                                                                            <option value="Mobile2">Mobile2</option>
@@ -749,39 +744,45 @@
                                                                        </select>
 
                                                                    </div>
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <input id="demo-text-input" name="phone2" class="form-control" placeholder="Telefone" value="<?php echo $val['telephone'] ?>" type="text">
 
                                                                    </div>
                                                                </div>
                                                                <div class="row" >
-                                                                   <div class="col-md-4">
+                                                                   <div class="col-sm-4">
                                                                        <span>Telefonische Erreichbarkeit:</span>
                                                                    </div>
-                                                                   <div class="col-md-8">
+                                                                   <div class="col-sm-8">
 
                                                                        <textarea name="reachability" class="form-control"><?php echo $val['reachability'] ?></textarea>
 
                                                                    </div>
                                                                </div>
-
-
+                                                           </div>
+                                                       </div>
+                                                       <div class="row" style="margin-bottom: 25px">
+                                                           <div class="col-sm-4 col-md-2">
 
 
                                                            </div>
-                                                       </div>
+                                                           <div class="col-sm-8">
+                                                               <input class="js-switch add_install_address" style="display:inline-block"  name="different" type="checkbox" >
+                                                               <h5  style="display:inline-block">Abweichende Installationsadresse</h5>
+                                                           </div>
 
+                                                       </div>
                                                        <div class="col-md-12">
                                                            <div class="row head_row">
-                                                               <div class="col-md-5">
+                                                               <div class="col-sm-6">
                                                                    <h4 style="color:#fff">Fragen</h4>
 
                                                                </div>
-                                                               <div class="col-md-4">
+                                                               <div class="col-sm-4">
                                                                    <h4 style="color:#fff">Anwort</h4>
 
                                                                </div>
-                                                               <div class="col-md-2">
+                                                               <div class="col-sm-2">
                                                                    <h4 style="color:#fff">Öffentlich</h4>
 
                                                                </div>
@@ -799,9 +800,9 @@
                                                                }
                                                                ?>
                                                                <div class="questions questions_modal row clearfix" >
-                                                                   <div class="col-md-6">
+                                                                   <div class="col-sm-6">
                                                                        <div class="row">
-                                                                           <div class="col-md-1 pr-0">
+                                                                           <div class="col-sm-2 col-md-1 pr-0">
                                                                                <?php
 
                                                                                if(!empty($icon)){
@@ -815,7 +816,7 @@
                                                                                ?>
 
                                                                            </div>
-                                                                           <div class="col-md-11 ">
+                                                                           <div class="col-sm-10 col-md-11 ">
 
                                                                                <input id="demo-text-input" class="form-control" name="question_<?php echo $k?>" placeholder="Question" value="<?php echo $v['original']['text'];?>" type="text">
                                                                            </div>
@@ -823,7 +824,7 @@
 
                                                                    </div>
 
-                                                                   <div class="col-md-4 p-0">
+                                                                   <div class="col-sm-4 p-0">
 
                                                                        <input id="demo-text-input" class="form-control" name="answer_<?php echo $k?>" placeholder="Answer" value="<?php echo $v['original']['answer'];?>" type="text">
 
@@ -832,7 +833,7 @@
 
                                                                    </div>
 
-                                                                   <div class="col-md-2 text-left">
+                                                                   <div class="col-sm-2 text-left">
 
                                                                        <input class="js-switch" style="display:inline-block;margin-left:100px"  name="public_question_<?php echo $k?>" type="checkbox" >
 
@@ -850,12 +851,12 @@
 
                                                             <div class="notes_quations_modal row">
                                                                 <div class="questions questions_modal clearfix">
-                                                                   <div class="col-md-6">
+                                                                   <div class="col-sm-6">
                                                                        <div class="row">
-                                                                           <div class="col-md-1 pr-0 pl-0">
+                                                                           <div class="col-sm-2 col-md-1 pr-0 pl-0">
                                                                                 <i class="workadvisor workadvisor-move custom-workadvisor-move"></i>         
                                                                            </div>
-                                                                           <div class="col-md-11 ">
+                                                                           <div class="col-sm-10 col-md-11 ">
 
                                                                                <input class="form-control" name="question_2" placeholder="" value="" type="text">
                                                                            </div>
@@ -863,13 +864,13 @@
 
                                                                    </div>
 
-                                                                   <div class="col-md-4 p-0">
+                                                                   <div class="col-sm-4 p-0">
 
                                                                        <input class="form-control" name="question_2" placeholder="" value="" type="text">
 
                                                                    </div>
 
-                                                                   <div class="col-md-2 text-left">
+                                                                   <div class="col-sm-2 text-left">
                                                                         <input class="js-switch" style="display: none; margin-left: 100px;" name="public_question_23" type="checkbox" data-switchery="true">
 
                                                                        <div class="close_input">
@@ -883,12 +884,12 @@
                                                                    </div>
                                                                </div>
                                                                <div class="questions questions_modal clearfix">
-                                                                   <div class="col-md-6">
+                                                                   <div class="col-sm-6">
                                                                        <div class="row">
-                                                                           <div class="col-md-1 pr-0 pl-0">
+                                                                           <div class="col-sm-2 col-md-1 pr-0 pl-0">
                                                                                 <i class="workadvisor workadvisor-move custom-workadvisor-move"></i>         
                                                                            </div>
-                                                                           <div class="col-md-11 ">
+                                                                           <div class="col-sm-10 col-md-11 ">
 
                                                                                <input class="form-control" name="question_2" placeholder="" value="" type="text">
                                                                            </div>
@@ -896,13 +897,13 @@
 
                                                                    </div>
 
-                                                                   <div class="col-md-4 p-0">
+                                                                   <div class="col-sm-4 p-0">
 
                                                                        <input class="form-control" name="question_2" placeholder="" value="" type="text">
 
                                                                    </div>
 
-                                                                   <div class="col-md-2 text-left">
+                                                                   <div class="col-sm-2 text-left">
                                                                         <input class="js-switch" style="display: none; margin-left: 100px;" name="public_question_23" type="checkbox" data-switchery="true">
 
                                                                        <div class="close_input">
@@ -915,11 +916,11 @@
                                                             </div>
 
                                                             <div class="row head_row">
-                                                               <div class="col-md-10">
+                                                               <div class="col-sm-9 col-md-10">
                                                                    <h4 style="color:#fff">Kommentare</h4>
 
                                                                </div>
-                                                               <div class="col-md-2">
+                                                               <div class="col-sm-3 col-md-2">
                                                                    <h4 style="color:#fff">Öffentlich</h4>
 
                                                                </div>
@@ -927,12 +928,12 @@
                                                            </div>
                                                            <div class="notes_quations_modal row mt-0 notes_quations_modal_bottom">
                                                                 <div class="questions questions_modal clearfix">
-                                                                   <div class="col-md-10">
+                                                                   <div class="col-sm-10 pr-0">
                                                                        <div class="row">
-                                                                           <div class="col-md-1 pr-0 pl-0">
+                                                                           <div class="col-sm-1 pr-0 pl-0">
                                                                                 <i class="workadvisor workadvisor-move custom-workadvisor-move"></i>         
                                                                            </div>
-                                                                           <div class="col-md-11 summernote_custom">
+                                                                           <div class="col-sm-11 summernote_custom">
 
                                                                                 <div id="demo-summernote" style="display: none;"></div>
                                                                                      <div class="note-editor">
@@ -1150,7 +1151,7 @@
 
                                                                    </div>
 
-                                                                   <div class="col-md-2 text-left">
+                                                                   <div class="col-sm-2 text-left">
                                                                         <input class="js-switch" style="display: none; margin-left: 100px;" name="public_question_23" type="checkbox" data-switchery="true">
 
                                                                        <div class="close_input">
@@ -1164,13 +1165,13 @@
                                                                    </div>
                                                                </div>
                                                                <div class="questions questions_modal clearfix">
-                                                                   <div class="col-md-10">
+                                                                   <div class="col-sm-10 pr-0">
                                                                        <div class="row">
-                                                                           <div class="col-md-1 pr-0 pl-0">
+                                                                           <div class="col-sm-1 pr-0 pl-0">
                                                                                 <i class="workadvisor workadvisor-move custom-workadvisor-move"></i>         
                                                                            </div>
                                                                            
-                                                                           <div class="col-md-11 summernote_custom">
+                                                                           <div class="col-sm-11 summernote_custom">
 
                                                                                 <div id="demo-summernote" style="display: none;"></div>
                                                                                      <div class="note-editor">
@@ -1388,7 +1389,7 @@
 
                                                                    </div>
 
-                                                                   <div class="col-md-2 text-left">
+                                                                   <div class="col-sm-2 text-left">
                                                                         <input class="js-switch" style="display: none; margin-left: 100px;" name="public_question_23" type="checkbox" data-switchery="true">
 
                                                                        <div class="close_input">

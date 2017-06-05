@@ -82,6 +82,10 @@
 
     <!--Page Load Progress Bar [ OPTIONAL ]-->
     <link href="jasmine/plugins/pace/pace.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/css/jquery.range.css">
+    <link rel="stylesheet" href="/css/bug-fix.css">
+
     <script src="jasmine/plugins/pace/pace.min.js"></script>
 
     <!--noUiSlider [ OPTIONAL ]-->
@@ -89,6 +93,11 @@
 
     <!--Form Component [ SAMPLE ]-->
     <script src="/jasmine/js/demo/form-component.js"></script>
+    <script src="/jasmine/js/jquery.slimscroll.min.js"></script>
+
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/jquery.range-min.js"></script>
+    <script src="/js/bug-fix.js"></script>
 
 </head>
 

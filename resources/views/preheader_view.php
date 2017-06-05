@@ -50,6 +50,9 @@
 
     <!--Demo [ DEMONSTRATION ]-->
     <link href="jasmine/css/demo/jasmine.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bug-fix.css">
+
     <!--jQuery [ REQUIRED ]-->
     <script src="jasmine/js/jquery-2.1.1.min.js"></script>
 

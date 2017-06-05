@@ -58,6 +58,9 @@
     <!--NEW STYLE [ style ]-->
     <link href="/css/main_bey.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/css/bug-fix.css">
+
     <!--JAVASCRIPT-->
     <!--=================================================-->
 
@@ -70,6 +73,8 @@
     <!--Page Load Progress Bar [ OPTIONAL ]-->
     <link href="/plugins/pace/pace.min.css" rel="stylesheet">
     <script src="/plugins/pace/pace.min.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/bug-fix.js"></script>
 </head>
 
 <body>

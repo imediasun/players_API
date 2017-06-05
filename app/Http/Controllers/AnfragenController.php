@@ -7,6 +7,7 @@ use App\Http\Libraries\Display_lib;
 use App\Client;
 use Auth;
 use App\Questionary;
+use App\Question;
 /*Google Directiond Api key*/
 /*AIzaSyDHQ29RQC9TMEJ9-bjVCH239l2SWxBtTF0 */
 /*Google Directiond Api key*/
@@ -14,7 +15,11 @@ use App\Questionary;
 /*https://developers.google.com/maps/documentation/directions/?hl=ru*/
 class AnfragenController extends Controller
 {
+public function __construct()
+{
 
+    $this->middleware('auth');
+}
 
     public function neue_anfregen()
     {
@@ -138,6 +143,17 @@ class AnfragenController extends Controller
                     ->get();
 
                     /*$client_info['main']=$client;*/  //secret
+
+
+                    //запросить иконки к вопросам
+                   foreach($questinarys as $k=>$v){
+                    $question=Question::where('id',$v['id_question'])
+                            ->get();
+                        if(count($question)>0){
+                            $questinarys[$k]['icon']=$question[0]->icon;
+                        }
+
+                    }
                     $json_[$k]['questions']=$questinarys;
                     $json_[$k]['point_arddress']['distance']=$client->distance;
                     $json_[$k]['point_arddress']['service']=$client->service;

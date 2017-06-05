@@ -54,6 +54,10 @@
 
     <link rel="stylesheet" href="/css/workadvisor.css">
 
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/css/bug-fix.css">
+
+
     <!--jQuery [ REQUIRED ]-->
     <script src="/jasmine/js/jquery-2.1.1.min.js"></script>
 
@@ -74,7 +78,8 @@
     <!--Demo script [ DEMONSTRATION ]-->
     <script src="/jasmine/js/demo/x-editable.js"></script>
     <!--Roboto Slab Font [ OPTIONAL ] -->
-
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/bug-fix.js"></script>
 
 
 </head>
