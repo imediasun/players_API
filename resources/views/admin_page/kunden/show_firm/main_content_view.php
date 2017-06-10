@@ -2,14 +2,14 @@
 
     <!--CONTENT CONTAINER-->
     <!--===================================================-->
-    <section id="content-container">
+    <section id="content-container" class="show-firm-page">
         <header class="pageheader">
             <h3 class="pl-15 pr-15"> Wärme aus der Natur-Niemann GmbH & Co. KG (Ahlerstedt) </h3>
 
 
 
             <div class="row pl-15 pr-15">
-                <div class="col-sm-12">
+                <div class="col-sm-12 header-btns">
                     <button class="btn btn-default btn-labeled btn-no-bg btn-icon"><i class="workadvisor workadvisor-enter"></i> Login als Kunde </button>
                     <button class="btn btn-default btn-labeled btn-no-bg btn-icon"><i class="workadvisor workadvisor-printer"></i> Kundenmappe drucken </button>
                     <button class="btn btn-default btn-labeled btn-no-bg btn-icon pull-right"><i class="workadvisor workadvisor-on-off"></i> Deaktivieren </button>
@@ -73,8 +73,8 @@
                     <div class="panel-heading no_border">
                         <h3 class="panel-title ttu pull-left"> Ansprechpartner </h3>
                         <div class="sort_links pull-right mt-15 mr-20">
-                            <a href="#" class="active"><i class="workadvisor workadvisor-list"></i>Liste</a>
-                            <a href="#"><i class="workadvisor workadvisor-details"></i>im Detail</a>
+                            <a href="#" class="active"><i class="workadvisor workadvisor-list"></i><span>Liste</span></a>
+                            <a href="#"><i class="workadvisor workadvisor-details"></i><span>im Detail</span></a>
                         </div>
                     </div>
                     <div class="panel-body custom_top_line">
@@ -160,12 +160,12 @@
                                             <a href="#" class="ttu"><i class="workadvisor workadvisor-add-image custom_plus_btn"></i>Benutzer hinzufügen</a>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-12 p-0">
+                                            <div class="col-xs-12 p-0">
                                                 <div class="notiz_panel_custom">
-                                                    <div class="col-sm-8">
+                                                    <div class="col-xs-8">
                                                         <b>Notiz vom 02.05.2017, 14:02 (Marcel Hadler)</b>
                                                     </div>
-                                                    <div class="col-sm-4">
+                                                    <div class="col-xs-4">
                                                         <ul class="list-inline text-right">
                                                             <li>
                                                                 <label class="form-checkbox form-icon form-text">
@@ -184,15 +184,15 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="col-sm-12">
+                                                    <div class="col-xs-12">
                                                         <p>Kunde zurückrufen: Kunde wollte sich innerhalb von zwei Wochen bis zum 07.11.2017 zurückmelden. Das ist nicht passiert.</p>
                                                     </div>
                                                 </div>
                                                 <div class="notiz_panel_custom">
-                                                    <div class="col-sm-8">
+                                                    <div class="col-xs-8">
                                                         <b><del>Notiz vom 02.05.2017, 14:02 (Marcel Hadler)</del></b>
                                                     </div>
-                                                    <div class="col-sm-4">
+                                                    <div class="col-xs-4">
                                                         <ul class="list-inline text-right">
                                                             <li>
                                                                 <label class="form-checkbox form-icon form-text">
@@ -211,7 +211,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="col-sm-12">
+                                                    <div class="col-xs-12">
                                                         <p><del>Kunde zurückrufen: Kunde wollte sich innerhalb von zwei Wochen bis zum 07.11.2017 zurückmelden. Das ist nicht passiert.</del></p>
                                                     </div>
                                                 </div>
@@ -236,8 +236,8 @@
                     <div class="panel-heading no_border">
                         <h3 class="panel-title ttu pull-left"> Benutzern </h3>
                         <div class="sort_links pull-right mt-15 mr-20">
-                            <a href="#" class="active"><i class="workadvisor workadvisor-list"></i>Liste</a>
-                            <a href="#"><i class="workadvisor workadvisor-details"></i>im Detail</a>
+                            <a href="#" class="active"><i class="workadvisor workadvisor-list"></i><span>Liste</span></a>
+                            <a href="#"><i class="workadvisor workadvisor-details"></i><span>im Detail</span></a>
                         </div>
                     </div>
                     <div class="panel-body custom_top_line">
@@ -320,7 +320,7 @@
                         <div class="tab-base tab-custom-style custom-pudding">
 
                             <!--Nav Tabs-->
-                            <ul class="nav nav-tabs text-left pl-20">
+                            <ul class="nav nav-tabs text-left pl-20 show-firm-tabs">
                                 <li class="active">
                                     <a data-toggle="tab" href="#demo-lft-tab-3"> Rechnungen </a>
                                 </li>
@@ -383,6 +383,7 @@
                             <div>
                                 <p class="dz-text">Eine oder mehrere Dateien per Drag & Drop auf dieses Feld ziehen oder auf das Plus-Zeichen klicken und Dateien auswählen.</p>
                             </div>
+                            <div class="clearfix"></div>
                         </div>
                         <div class="fallback">
                             <input name="file" type="file" multiple />
@@ -395,15 +396,15 @@
 
 
                     <div class="form-group">
-                        <label for="one_input" class="col-sm-4 control-label">Summe (netto)*</label>
-                        <div class="col-sm-8">
+                        <label for="one_input" class="col-xs-12 col-sm-4 control-label">Summe (netto)*</label>
+                        <div class="col-xs-12 col-sm-8">
                             <input type="text" placeholder="220,50" class="form-control" id="one_input">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="two_input" class="col-sm-4 control-label">Status*</label>
-                        <div class="col-sm-8">
+                        <label for="two_input" class="col-xs-12 col-sm-4 control-label">Status*</label>
+                        <div class="col-xs-12 col-sm-8">
                             <select class="form-control selectpicker">
                                 <option>offen</option>
                                 <option>offen2</option>
@@ -413,8 +414,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="three_input" class="col-sm-4 control-label">Zahlungsfrist*</label>
-                        <div class="col-sm-8">
+                        <label for="three_input" class="col-xs-12 col-sm-4 control-label">Zahlungsfrist*</label>
+                        <div class="col-xs-12 col-sm-8">
                             <!--Bootstrap Datepicker : Component-->
                             <!--===================================================-->
                             <div id="demo-dp-component">
@@ -427,8 +428,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="five_input" class="col-sm-4 control-label">Kommentar</label>
-                        <div class="col-sm-8">
+                        <label for="five_input" class="col-xs-12 col-sm-4 control-label">Kommentar</label>
+                        <div class="col-xs-12 col-sm-8">
                             <textarea id="textarea-input" rows="9" class="form-control" placeholder=""></textarea>
                         </div>
                     </div>

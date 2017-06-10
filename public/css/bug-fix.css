@@ -71,7 +71,7 @@
 }
 
 .right-side {
-    width: 520px;
+    width: 540px;
     float: right;
     padding: 0 !important;
 }
@@ -89,11 +89,11 @@
 }
 
 .right-title {
-    width: calc(100% - 400px);
+    width: calc(100% - 420px);
 }
 
 .right-checkbox {
-    width: 400px;
+    width: 420px;
 }
 
 .anfragen-card-nav {
@@ -111,6 +111,7 @@
 .company-icon-wrap {
     width: 122px;
     height: 129px;
+    padding: 0;
 }
 
 .company_icon.custom_height {
@@ -262,6 +263,56 @@
     margin-left: 10px;
 }
 
+.anfragen-card-foot .questions {
+    display: none;
+    position: relative;
+    margin-top: 20px;
+    height: 40px;
+    border-bottom:2px dashed #eee;
+}
+
+.admin-anfregen-page-modal-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.admin-anfregen-page-modal-header .vorqualifizier {
+    display: flex;
+    align-items: center;
+}
+
+.admin-anfregen-page-modal-header .vorqualifizier input {
+    margin: 0 5px 0 0;
+}
+
+.admin-anfregen-page-modal-header .vorqualifizier i {
+    margin: 0 5px 0 0;
+    color:#acdcb1;
+}
+
+.admin-anfregen-page-modal-header .vorqualifizier p {
+    margin: 0;
+}
+
+.admin-anfregen-page-modal-header button.close {
+    top: 0;
+    margin-left: 20px;
+}
+
+.admin-anfregen-page-modal-header .blue_custom_btn {
+    margin-left: 20px;
+}
+
+.admin-anfregen-page-modal-header h4 {
+    margin-right: auto;
+    padding: 0;
+}
+
+.admin-anfregen-page-modal-header {
+    padding: 25px;
+}
+
 .mr-0 {
     margin-right: 0 !important;
 }
@@ -297,8 +348,8 @@
 }
 
 .kunden-card-body {
-    width: 100%;
-    padding: 0 15px;
+    width: calc(100% - 141px);
+    padding: 0 0 0 15px;
 }
 
 .kunden-card-body h4 {
@@ -462,6 +513,7 @@
 
 .neue-anfragen-page .dienstleistungen {
     padding-bottom: 20px;
+    padding-right: 10px;
     border-bottom: 1px solid #c7d2dc;
 }
 
@@ -499,12 +551,12 @@
 }
 
 .neue-anfragen-page .neue-anfragen-filters {
-    padding: 17px 0 15px;
+    padding: 17px 10px 15px 0;
     border-bottom: 1px solid #c7d2dc;
 }
 
 .neue-anfragen-page .neue-anfragen-views {
-    padding: 30px 0 15px;
+    padding: 30px 10px 15px 0;
 }
 
 .neue-anfragen-page .neue-anfragen-views a {
@@ -524,7 +576,7 @@
 }
 
 .neue-anfragen-page .content {
-    padding-right: 15px;
+    padding-right: 5px;
 }
 
 .neue-anfragen-page #demo-range-hpips-val {
@@ -612,7 +664,8 @@
     align-items: flex-start;
     flex-shrink: 0;
     flex-wrap: wrap;
-    width: 335px;
+    max-width: 335px;
+    width: 100%;
 }
 
 .neue-anfragen-card .btn-block button {
@@ -663,6 +716,21 @@
     background-color: #ffffff;
 }
 
+.neue-anfragen-card .block_img .like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 22px;
+    height: 19px;
+    background: url("../img/like.png");
+    cursor: pointer;
+}
+
+.neue-anfragen-card .block_img .like.active,
+.neue-anfragen-card .block_img .like:hover {
+    background: url("../img/like-active.png");
+}
+
 .neue-anfragen-card .block_img + div {
     width: 100%;
 }
@@ -694,6 +762,15 @@
     transform: translateX(-50%) rotate(180deg);
 }
 
+.neue-anfragen-card .questions > div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#neue-anfragen-cards {
+    height: 560px;
+}
+
 .custom-checkbox {
     display: flex;
     align-items: center;
@@ -723,6 +800,12 @@
     background-image: url(../img/check-icon.png);
 }
  /************************************Neue afragen page****************************************/
+
+.notes_quations_modal_bottom .pluse_input {
+    bottom: -12px !important;
+}
+
+
 @media (max-width: 1500px) {
     .neue-anfragen-page .dienstleistungen {
         flex-wrap: wrap;
@@ -825,7 +908,7 @@
 @media (max-width: 1370px) {
     .neue-anfragen-page .neue-anfragen-views {
         flex-wrap: wrap;
-        padding: 15px 0 5px;
+        padding: 15px 10px 5px 0;
     }
 
     .neue-anfragen-page .neue-anfragen-views div {
@@ -850,6 +933,11 @@
 @media (max-width: 1270px) {
     .neue-anfragen-page {
         flex-wrap: wrap;
+    }
+
+    .neue-anfragen-page .map-container {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -881,9 +969,17 @@
         background-color: transparent;
     }
 
-    #container.mainnav-sm #navbar .navbar-content {
-        margin-left: 60px;
+    #page-content {
+        padding: 0 10px 20px;
     }
+
+    .neue-anfragen-page .content {
+        padding-right: 5px;
+    }
+
+    /*#container.mainnav-sm #navbar .navbar-content {*/
+        /*margin-left: 60px;*/
+    /*}*/
 
     .navbar-content {
         background-color: transparent;
@@ -923,12 +1019,11 @@
         color: #000;
     }
 
-    #container.mainnav-sm .brand-icon {
-        margin: 0 5px;
-    }
+    /*#container.mainnav-sm .brand-icon {*/
+        /*margin: 0 5px;*/
+    /*}*/
 
-    #container.mainnav-sm #mainnav-container,
-    #container.mainnav-sm #navbar .navbar-brand {
+    #container.mainnav-sm #mainnav-container {
         width: 60px;
         left: -60px;
     }
@@ -973,5 +1068,479 @@
 
     #mainnav-container {
         left: 0;
+    }
+
+    .navbar-top-links .tgl-menu-btn>a,
+    .navbar-top-links .tgl-menu-btn>a:hover,
+    .navbar-top-links .tgl-menu-btn>a:focus {
+        color: #515151;
+    }
+
+    #mainnav-container {
+        width: 0;
+    }
+
+    #container.mainnav-out #content-container,
+    #container.mainnav-in #mainnav-container {
+        width: 285px;
+    }
+
+    .navbar-brand {
+        width: 60px;
+    }
+
+    #container.mainnav-in #navbar {
+        left: 0;
+    }
+
+    #container.mainnav-in .navbar-header {
+        left: 0;
+    }
+
+    #container.mainnav-in #content-container,
+    #container.mainnav-in #footer {
+        left: 0;
+    }
+
+    #container.aside-in #aside-container {
+        left: auto;
+        right: 0;
+    }
+
+    #container #aside-container {
+        padding: 0;
+        background-color: #fff;
+        position: absolute;
+        width: 250px;
+        height: auto;
+        left: auto;
+        right: -250px;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: hidden;
+        visibility: hidden;
+        z-index: 3;
+    }
+
+    #container.aside-in #aside {
+        padding-top: 60px;
+    }
+
+    #aside {
+        max-height: none;
+        padding-top: 60px;
+        visibility: visible;
+        background: #fff;
+        border-left: 1px solid #dde5f1;
+        height: 100%;
+    }
+
+    #container #aside-container .nano-content {
+        position: absolute;
+    }
+
+    #aside .nav-tabs.nav-justified>li>a {
+        margin-bottom: 0;
+    }
+
+    #container.mainnav-in #aside-container {
+        left: auto;
+        right: -250px;
+    }
+
+    .anfragen-card-top > div + div {
+        flex-shrink: 1;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .anfragen-card-top > div + div > div {
+        margin-right: 40px;
+        margin-bottom: 10px;
+        margin-left: 0 !important;
+    }
+
+    .anfragen-card-content .offentlich {
+        margin-bottom: 10px;
+    }
+
+    .anwort-input {
+        margin: 10px 0;
+        padding: 0 15px !important;
+    }
+
+    .close_input {
+        top: 50% !important;
+        transform: translateY(-50%);
+    }
+
+    .notes_quations_modal .question_2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0 15px !important;
+    }
+
+    .notes_quations_modal .workadvisor-move:before {
+        position: relative;
+        top: 45px;
+    }
+
+    .notes_quations_modal .workadvisor-move:after {
+        height: 151px;
+    }
+
+    .notes_quations_modal_bottom .close_input {
+        top: 50% !important;
+        transform: translateY(-50%);
+    }
+
+    .notes_quations_modal_bottom .close_input:before {
+        top: 31px;
+    }
+
+    .notes_quations_modal_bottom .close_input:after {
+        height: 168px !important;
+    }
+
+    .kunden-card-info .body-panel {
+        flex-wrap: wrap;
+    }
+
+    .kunden-card .charts {
+        flex-wrap: wrap;
+    }
+
+    .kunden-card-info .body-panel > div {
+        margin: 0 20px 0 0;
+    }
+
+    .kunden-card .charts {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .anfragen-card-foot {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .anfragen-card-foot .butons_list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+
+    .anfragen-card-foot li {
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .pageheader .breadcrumb-wrapper {
+        display: none;
+    }
+
+    .anfragen-card-top > .flex-start {
+        flex-wrap: wrap;
+    }
+
+    .anfragen-card-top .card-title {
+        margin: 0 0 15px;
+    }
+
+    .admin-anfregen-page-modal-header {
+        flex-wrap: wrap;
+    }
+
+    .admin-anfregen-page-modal-header h4 {
+        width: calc(100% - 36px);
+        margin-right: 0;
+    }
+
+    .admin-anfregen-page-modal-header .vorqualifizier {
+        order: 1;
+    }
+
+    .admin-anfregen-page-modal-header .blue_custom_btn {
+        order: 1;
+    }
+}
+
+@media (max-width: 580px) {
+    .left-side {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-side {
+        float: left;
+        margin-left: 10px;
+    }
+
+
+}
+
+@media (max-width: 570px) {
+    .neue-anfragen-card {
+        position: relative;
+    }
+
+    .neue-anfragen-card .neu {
+        left: 0;
+        top: 0;
+    }
+
+    .neue-anfragen-card .block_img {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+
+    .neue-anfragen-card > .block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .neue-anfragen-card .block_img img {
+        width: auto;
+        height: 100%;
+    }
+
+    .neue-anfragen-card .card-info > div + div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .show-firm-page .pageheader {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .show-firm-page .header-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .show-firm-page .header-btns button {
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 530px) {
+    .anfragen-card-nav {
+        padding: 10px 0 0;
+    }
+
+    .anfragen-card-nav > div {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .kunden-card > div > div {
+        flex-wrap: wrap;
+    }
+
+    .kunden-company-icon {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .kunden-card-body {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .ansprechpartner-card .panel-heading h3 {
+        font-size: 1.2em;
+        padding: 0 10px;
+    }
+
+    .ansprechpartner-card .panel-heading a {
+        margin-left: 0;
+    }
+
+    .ansprechpartner-card .panel-heading .mr-20 {
+        margin-right: 7px;
+    }
+
+    .ansprechpartner-card .sort_links span {
+        display: none;
+    }
+
+    #page-content .ansprechpartner-card .panel-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ansprechpartner-card .panel-group.accordion .panel-title a {
+        padding: 0 10px;
+    }
+
+    .ansprechpartner-card .custom_accordion .read_btn_box {
+        right: 40px;
+    }
+
+}
+
+@media (max-width: 485px) {
+    .neue-anfragen-page .neue-anfragen-filters > div + div {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 260px;
+    }
+
+    .neue-anfragen-page .gebaude {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .neue-anfragen-page .beginn {
+        width: 130px;
+        margin: 0;
+    }
+
+    .neue-anfragen-page .gebiet {
+        width: 115px;
+        margin: 0;
+    }
+
+    .company-icon-wrap {
+        width: 100%;
+        margin-bottom: 15px;
+        padding-right: 10px !important;
+    }
+
+    .anfragen-card-body {
+        width: 100%!important;
+    }
+
+    .anfragen-card-content {
+        flex-direction: column;
+    }
+
+    .anfragen-card-body .addresse {
+        margin: 10px 0;
+    }
+
+    .anfragen-card-body .telefonische {
+        margin: 0;
+    }
+
+    .anfragen-card-content .offentlich {
+        margin: 15px 0 20px auto;
+    }
+
+    .item_block_border {
+        padding: 10px !important;
+    }
+
+    .kunden-card .panel-footer .butons_list {
+        display: flex;
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+
+    #page-content .kundendaten-card .panel-body {
+        flex-wrap: wrap;
+    }
+
+    .kundendaten-card .company_icon {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+
+    .show-firm-page .show-firm-tabs a {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 435px) {
+    .right-side,
+    .right-title,
+    .right-checkbox{
+        width: 100%;
+    }
+
+    .kunden-card .panel-footer .butons_list {
+        flex-direction: column;
+        align-items: center;
+        float: none !important;
+    }
+
+    .kunden-card .panel-footer .butons_list li + li {
+        margin-top: 7px;
+    }
+
+    .custom-dropzone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .custom-modal-dialog .custom-dropzone .dz-icon {
+        margin: 0 auto 15px;
+    }
+
+    .custom-modal-dialog .custom-dropzone .dz-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .admin-anfregen-page-modal-header .vorqualifizier {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .kunden-card .charts > div {
+        position: relative;
+        left: -40px;
+    }
+
+    .ansprechpartner-card .read_btn_box .cursor_pointer.mr-15 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    #container.mainnav-sm #navbar .navbar-brand {
+        width: 40px;
+    }
+
+    .brand-icon {
+        padding-left: 10px;
+    }
+
+    .navbar-top-links>li>a {
+        padding: 0 8px;
+    }
+
+    .navbar-brand {
+        width: 40px;
+    }
+
+    .kunde-tabs .notiz_panel_custom .col-xs-4 {
+        width: 110px;
+    }
+
+    .kunde-tabs .notiz_panel_custom .col-xs-8 {
+        width: calc(100% - 110px);
+    }
+}
+
+@media (max-width: 360px) {
+    .show-firm-page + div .modal-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show-firm-page + div .modal-footer .blue_custom_btn {
+        margin: 10px 0 0;
     }
 }

@@ -14,6 +14,7 @@
             </div>
         </header>
 
+
         <!--Page content-->
         <!--===================================================-->
         <section id="page-content" class="flex-between neue-anfragen-page">
@@ -104,7 +105,7 @@
                             <a href="javascript:void(0);">Preis</a>
                         </div>
                     </div>
-                    <div>
+                    <div id="neue-anfragen-cards">
                         <?php
 
                         foreach ($clients as $key => $val)
@@ -129,14 +130,15 @@
                             $questinarys = App\Questionary::where('id_client', $val['id'])
                                 ->get();
                             ?>
-                            <div class="item_block neue-anfragen-card">
-                                <div class="block flex-start fais">
-                                    <div class="neu"
-                                         style="z-index:999;position:absolute;width:68px;height:56px;background:url('/img/neu.png');background-size:100% 100%">
+                            <div class="item_block neue-anfragen-card info_<?php echo $val->id ?>">
+                                <div class="neu"
+                                     style="z-index:2;position:absolute;width:68px;height:56px;background:url('/img/neu.png');background-size:100% 100%">
 
-                                    </div>
+                                </div>
+                                <div class="block flex-start fais">
                                     <div class="block_img">
                                         <img src="/img/gasheizung.png">
+                                        <div class="like"></div>
                                     </div>
                                     <div>
                                         <div class="card-top">
@@ -247,10 +249,9 @@
                                         }
                                         ?>
                                         <div class="questions"
-                                             style="display:none;position:relative;margin-top:20px;height:40px;border-bottom:2px dashed #eee;">
-                                            <div class="col-md-5"
-                                                 style="height:40px;display:inline-block"> <?php echo $v['original']['text']; ?></div>
-                                            <div class="col-md-1" style="height:40px;display:inline-block">
+                                             style="display:none;position:relative;margin-top:20px;border-bottom:2px dashed #eee;">
+                                            <div class="col-xs-12 col-sm-5"> <?php echo $v['original']['text']; ?></div>
+                                            <div class="col-xs-2 col-sm-1">
                                                 <?php
 
                                                 if ( ! empty($icon))
@@ -265,8 +266,8 @@
                                                 ?>
 
                                             </div>
-                                            <div class="col-md-3"
-                                                 style="height:40px;display:inline-block"><?php echo $v['original']['answer']; ?></div>
+                                            <div class="col-xs-10 col-sm-6"><?php echo $v['original']['answer']; ?></div>
+                                            <span class="clearfix"></span>
                                         </div>
                                         <?php
 
@@ -494,9 +495,10 @@
 //                                                return height;
 //                                            };
                                             console.log(positions[i]);
-                                            $('#items_start').animate({
-                                                scrollTop: $(positions[i]).offset().top
-                                            }, 2000);
+//                                            $('#items_start').animate({
+//                                                scrollTop: $(positions[i]).offset().top
+//                                            }, 2000);
+                                            $("#neue-anfragen-cards").mCustomScrollbar("scrollTo",positions[i]);
 
                                             
 //                                            slimScroll({

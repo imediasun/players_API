@@ -1,19 +1,41 @@
 jQuery(function ($) {
     var modal = $('.modal'),
-        scroll = $("#content-container");
-    scroll.mCustomScrollbar({
-        // autoDraggerLength: false,
-        mouseWheel:{
-            scrollAmount: 150
-        }
-    });
+        scroll = $("#content-container"),
+        scroll2 = $("#neue-anfragen-cards");
 
-    modal.on('show.bs.modal', function () {
-        scroll.mCustomScrollbar('disable')
-    });
+    if(scroll) {
+        scroll.mCustomScrollbar({
+            // autoDraggerLength: false,
+            mouseWheel:{
+                scrollAmount: 150
+            }
+        });
+    }
 
-    modal.on('hide.bs.modal', function () {
-        scroll.mCustomScrollbar('update')
-    })
+    if(scroll2) {
+        scroll2.mCustomScrollbar({
+            // autoDraggerLength: false,
+            mouseWheel:{
+                scrollAmount: 150
+            }
+        });
+    }
+
+    if(modal) {
+        modal.on('show.bs.modal', function () {
+            scroll.mCustomScrollbar('disable')
+        });
+
+        modal.on('hide.bs.modal', function () {
+            scroll.mCustomScrollbar('update')
+        });
+    }
+
+    var container = $('#container'),
+        width = $(window).width();
+
+    if(container && width <= 768) {
+        container.addClass('mainnav-sm')
+    }
 
 })

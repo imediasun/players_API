@@ -27,11 +27,12 @@
                             <!--Dropzonejs-->
                             <!--===================================================-->
                             <form id="demo-dropzone" action="/admin/add_logo" class="dropzone">
-                                <div class="dz-default dz-message">
+                                <div class="dz-default dz-message custom-dropzone">
                                     <div class="dz-icon icon-wrap icon-circle icon-wrap-md"> <i class="fa fa-cloud-upload fa-2x"></i>Add logo</div>
                                     <div>
                                         <p class="dz-text">Eine oder mehrere Dateien per Drag & Drop auf dieses Feld ziehen oder auf das Plus-Zeichen klicken und Dateien auswählen.</p>
                                     </div>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="fallback">
                                     <input name="file" type="file" multiple />
@@ -41,26 +42,26 @@
                             <!-- End Dropzonejs -->
                             <form action="/admin/add_firm" method="post">
                             <div class="form-group">
-                                <label for="one_input" class="col-sm-3 control-label">Firmenname</label>
-                                <div class="col-sm-9">
+                                <label for="one_input" class="col-xs-12 col-sm-3 control-label">Firmenname</label>
+                                <div class="col-xs-12 col-sm-9">
                                     <input type="text" name="company_name" placeholder="Visseman Mobile" class="form-control" id="one_input">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="two_input" class="col-sm-3 control-label">Strasse</label>
-                                <div class="col-sm-9">
+                                <label for="two_input" class="col-xs-12 col-sm-3 control-label">Strasse</label>
+                                <div class="col-xs-12 col-sm-9">
                                     <input type="text" name="street_house_number" placeholder="Lange Str. 20, 21702 Ahlerstedt" class="form-control" id="two_input">
                                 </div>
                             </div>
 
 
                             <div class="form-group">
-                                <div class="col-sm-3">
+                                <div class="col-xs-12 col-sm-3">
                                     <span class="control-label">Telefone:</span>
 
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-6 col-sm-4">
                                     <select name="phone_type" data-placeholder="Choose a telefone..." class="form-control">
                                         <option value="Mobile">Mobile</option>
                                         <option value="Mobile2">Mobile2</option>
@@ -68,18 +69,18 @@
                                     </select>
 
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-xs-6 col-sm-5">
                                     <input id="demo-text-input" name="telephone" class="form-control" placeholder="Telefone" value="0176123457" type="text">
 
                                 </div>
-                                <div class="col-sm-9  col-sm-offset-3">
+                                <div class="col-xs-12 col-sm-9  col-sm-offset-3">
                                     <h5 class="add_phone icon_links icon_add">Add</h5>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="three_input"  class="col-sm-3 control-label">E-Mail</label>
-                                <div class="col-sm-9">
+                                <label for="three_input"  class="col-xs-12 col-sm-3 control-label">E-Mail</label>
+                                <div class="col-xs-12 col-sm-9">
                                     <input type="text"name="email"  class="form-control" id="three_input">
                                 </div>
                             </div>
@@ -89,15 +90,15 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="four_input" class="col-sm-3 control-label">Vorname</label>
-                                <div class="col-sm-9">
+                                <label for="four_input" class="col-xs-12 col-sm-3 control-label">Vorname</label>
+                                <div class="col-xs-12 col-sm-9">
                                     <input type="text" name="name" placeholder="Thomas" class="form-control" id="four_input">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="five_input" class="col-sm-3 control-label">Nachname</label>
-                                <div class="col-sm-9">
+                                <label for="five_input" class="col-xs-12 col-sm-3 control-label">Nachname</label>
+                                <div class="col-xs-12 col-sm-9">
                                     <input type="text" name="name2" placeholder="Adenaue" class="form-control" id="five_input">
                                 </div>
                             </div>
@@ -106,8 +107,8 @@
                                 <h3 class="panel-title"> weitere Daten </h3>
                             </div>
                             <div class="form-group">
-                                <label for="five_input" class="col-sm-3 control-label"> weitere Daten</label>
-                                <div class="col-sm-9">
+                                <label for="five_input" class="col-xs-12 col-sm-3 control-label"> weitere Daten</label>
+                                <div class="col-xs-12 col-sm-9">
                                     <textarea id="textarea-input" name="information" rows="9" class="form-control" placeholder=""></textarea>
                                 </div>
                             </div>
@@ -209,7 +210,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="panel-footer clearfix bgt custom_top_line pb-0 ">
+                        <div class="panel-footer clearfix bgt custom_top_line pb-0 pl-0 pr-0">
                             <ul class="pull-right butons_list">
                                 <li>
                                     <a href="#" onClick="openWin()" class="icon_links icon_login">Login als Kunde</a>
