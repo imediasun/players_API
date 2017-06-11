@@ -19,7 +19,7 @@ class CreateQuestionariesTable extends Migration
             $table->integer('id_client');
             $table->integer('id_question')->default(0);
             $table->text('answer');
-            $table->text('public')->default(0);
+            $table->integer('public')->default(0);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });

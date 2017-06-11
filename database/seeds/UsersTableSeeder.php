@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-		 
+
 
  DB::table('users')->insert([
 
@@ -24,7 +24,7 @@ class UsersTableSeeder extends Seeder
                 'information'=>'information description',
                 'status'=>1,
                 'activated'=> TRUE,
-                'name' => 'Êğèâîøåéêèí Àëåêñåé'
+                'name' => 'ĞšÑ€Ğ¸Ğ²Ğ¾ÑˆĞµĞ¹ĞºĞ¸Ğ½ ĞĞ»ĞµĞºÑĞµĞ¹'
 
             ],
             [
@@ -35,7 +35,7 @@ class UsersTableSeeder extends Seeder
                 'information'=>'information description',
                 'status'=>1,
                 'activated'=> TRUE,
-                'name' => 'Êğèâîøåéêèí Àëåêñåé'
+                'name' => 'ĞšÑ€Ğ¸Ğ²Ğ¾ÑˆĞµĞ¹ĞºĞ¸Ğ½ ĞĞ»ĞµĞºÑĞµĞ¹'
 
             ],
 
@@ -52,8 +52,31 @@ class UsersTableSeeder extends Seeder
             ]
 
         ]);
-		
-		 DB::table('role_user')->insert([
+
+
+
+
+        DB::table('roles')->insert([
+
+            [
+
+                'name' => 'Admin',
+
+            ],
+            [
+
+                'name' => 'Moderator',
+
+            ],
+            [
+
+                'name' => 'Guest',
+
+            ],
+
+        ]);
+
+        DB::table('role_user')->insert([
 
             [
 
@@ -75,30 +98,7 @@ class UsersTableSeeder extends Seeder
 
 
         ]);
-		
-		
-        DB::table('roles')->insert([
 
-            [
-
-                'name' => 'Admin',
-
-            ],
-            [
-
-                'name' => 'Moderator',
-
-            ],
-            [
-
-                'name' => 'Guest',
-
-            ],
-
-        ]);
-
-
-        
         DB::table('permissions')->insert([
 
             [
@@ -113,6 +113,7 @@ class UsersTableSeeder extends Seeder
             ]
 
         ]);
+
         DB::table('permission_role')->insert([
 
             [
@@ -135,6 +136,8 @@ class UsersTableSeeder extends Seeder
             ]
 
         ]);
+		
+
 		
 		    DB::table('applications')->insert([
 
