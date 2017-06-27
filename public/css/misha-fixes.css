@@ -1,0 +1,14 @@
+
+
+.float-right,
+.col-xs-10 col-sm-10 col-md-11 {
+    float: right;
+}
+.close_input {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.questions .pluse_input {
+    transform: translateY(50%);
+    bottom: 0;
+}

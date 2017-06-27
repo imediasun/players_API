@@ -9,8 +9,8 @@
     <title> Blank Page | Jasmine - Responsive admin template.</title>
     <!--JAVASCRIPT-->
     <!--=================================================-->
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,400" rel="stylesheet">
+<!--    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet">-->
+<!--    <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,400" rel="stylesheet">-->
 
     <!--Bootstrap Stylesheet [ REQUIRED ]-->
     <link href="/jasmine/css/bootstrap.min.css" rel="stylesheet">
@@ -40,6 +40,11 @@
 
     <!--Demo [ DEMONSTRATION ]-->
     <link href="/jasmine/css/demo/jasmine.css" rel="stylesheet">
+
+    <!-- Page css -->
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/misha-fixes.css" rel="stylesheet">
 
 
 

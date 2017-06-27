@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Client;
+use Illuminate\Support\Facades\DB;
+
 class ClientController extends Controller
 {
     //
@@ -54,7 +56,6 @@ class ClientController extends Controller
 
 $set_update=[
 
-
         'first_name'=>$request->input('first_name'),
         'last_name'=>$request->input('last_name'),
         'street_house_number'=> ''.$request->input('adress').', '.$request->input('zip').' '.$request->input('city').'',
@@ -71,12 +72,16 @@ $set_update=[
 
         Client::where('id', '=', $request->input('id'))->update($set_update);
 
-
-
     }
 
-    public function delete_client(Request $request){
+    public function delete_client(Request $request)
+    {
 
-        dd($request->input());
+        $id = $request->input('id_active');
+        DB::table('clients')->where('id', $id)->delete();
+        DB::table('questionaries')->where('id_client', $id)->delete();
+
+        return $id;
+
     }
 }

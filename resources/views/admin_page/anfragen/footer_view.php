@@ -78,6 +78,9 @@
 <!--Demo script [ DEMONSTRATION ]-->
 <script src="/jasmine/js/demo/jasmine.js"></script>
 
+<!-- Page script -->
+<script src="/js/anfragen.js?v=<?=time()?>"></script>
+
 
 
 

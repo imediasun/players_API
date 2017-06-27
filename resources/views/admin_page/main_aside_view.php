@@ -29,7 +29,7 @@
                         <div class="list-group bg-trans">
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av1.png" alt="" class="img-sm">
+                                    <img src="/img/av1.png" alt="" class="img-sm">
                                     <i class="on bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -39,7 +39,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av2.png" alt="" class="img-sm">
+                                    <img src="/img/av2.png" alt="" class="img-sm">
                                     <i class="on bottom text-light"></i>
                                 </a>
                                 <div class="inline-block pad-ver-5">
@@ -49,7 +49,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av3.png" alt="" class="img-sm">
+                                    <img src="/img/av3.png" alt="" class="img-sm">
                                     <i class="on bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -59,7 +59,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av7.png" alt="" class="img-sm">
+                                    <img src="/img/av7.png" alt="" class="img-sm">
                                     <i class="on bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -69,7 +69,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av4.png" alt="" class="img-sm">
+                                    <img src="/img/av4.png" alt="" class="img-sm">
                                     <i class="on bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -79,7 +79,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av5.png" alt="" class="img-sm">
+                                    <img src="/img/av5.png" alt="" class="img-sm">
                                     <i class="on bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -93,7 +93,7 @@
                         <div class="list-group bg-trans">
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av1.png" alt="" class="img-sm">
+                                    <img src="/img/av1.png" alt="" class="img-sm">
                                     <i class="busy bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -103,7 +103,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av2.png" alt="" class="img-sm">
+                                    <img src="/img/av2.png" alt="" class="img-sm">
                                     <i class="busy bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -113,7 +113,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av3.png" alt="" class="img-sm">
+                                    <img src="/img/av3.png" alt="" class="img-sm">
                                     <i class="busy bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -123,7 +123,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av7.png" alt="" class="img-sm">
+                                    <img src="/img/av7.png" alt="" class="img-sm">
                                     <i class="busy bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">
@@ -137,7 +137,7 @@
                         <div class="list-group bg-trans">
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av1.png" alt="" class="img-sm">
+                                    <img src="/img/av1.png" alt="" class="img-sm">
                                     <i class="off bottom text-light"></i>
                                 </a>
                                 <div class="inline-block pad-ver-5">
@@ -147,7 +147,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av2.png" alt="" class="img-sm">
+                                    <img src="/img/av2.png" alt="" class="img-sm">
                                     <i class="off bottom text-light"></i>
                                 </a>
                                 <div class="inline-block pad-ver-5">
@@ -157,7 +157,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av3.png" alt="" class="img-sm">
+                                    <img src="/img/av3.png" alt="" class="img-sm">
                                     <i class="off bottom text-light"></i>
                                 </a>
                                 <div class="inline-block pad-ver-5">
@@ -167,7 +167,7 @@
                             </div>
                             <div class="list-group-item">
                                 <a herf="javascript:void(0)" class="pull-left avatar mar-rgt">
-                                    <img src="img/av7.png" alt="" class="img-sm">
+                                    <img src="/img/av7.png" alt="" class="img-sm">
                                     <i class="off bottom text-light"></i>
                                 </a>
                                 <div class="inline-block">

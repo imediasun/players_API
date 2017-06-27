@@ -44,7 +44,7 @@
                                     <!-- Dropdown list-->
                                     <li>
                                         <a href="#" class="media">
-                                            <div class="media-left"> <img src="img/av2.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                            <div class="media-left"> <img src="/img/av2.png" alt="Profile Picture" class="img-circle img-sm"> </div>
                                             <div class="media-body">
                                                 <div class="text-nowrap">Andy sent you a message</div>
                                                 <small class="text-muted">15 minutes ago</small> </div>
@@ -54,7 +54,7 @@
                                     <!-- Dropdown list-->
                                     <li>
                                         <a href="#" class="media">
-                                            <div class="media-left"> <img src="img/av4.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                            <div class="media-left"> <img src="/img/av4.png" alt="Profile Picture" class="img-circle img-sm"> </div>
                                             <div class="media-body">
                                                 <div class="text-nowrap">Lucy sent you a message</div>
                                                 <small class="text-muted">30 minutes ago</small> </div>
@@ -64,7 +64,7 @@
                                     <!-- Dropdown list-->
                                     <li>
                                         <a href="#" class="media">
-                                            <div class="media-left"> <img src="img/av3.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                            <div class="media-left"> <img src="/img/av3.png" alt="Profile Picture" class="img-circle img-sm"> </div>
                                             <div class="media-body">
                                                 <div class="text-nowrap">Jackson sent you a message</div>
                                                 <small class="text-muted">40 minutes ago</small> </div>
@@ -74,7 +74,7 @@
                                     <!-- Dropdown list-->
                                     <li>
                                         <a href="#" class="media">
-                                            <div class="media-left"> <img src="img/av6.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                            <div class="media-left"> <img src="/img/av6.png" alt="Profile Picture" class="img-circle img-sm"> </div>
                                             <div class="media-body">
                                                 <div class="text-nowrap">Donna sent you a message</div>
                                                 <small class="text-muted">5 hours ago</small> </div>
@@ -84,7 +84,7 @@
                                     <!-- Dropdown list-->
                                     <li>
                                         <a href="#" class="media">
-                                            <div class="media-left"> <img src="img/av4.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                            <div class="media-left"> <img src="/img/av4.png" alt="Profile Picture" class="img-circle img-sm"> </div>
                                             <div class="media-body">
                                                 <div class="text-nowrap">Lucy sent you a message</div>
                                                 <small class="text-muted">Yesterday</small> </div>
@@ -94,7 +94,7 @@
                                     <!-- Dropdown list-->
                                     <li>
                                         <a href="#" class="media">
-                                            <div class="media-left"> <img src="img/av3.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                            <div class="media-left"> <img src="/img/av3.png" alt="Profile Picture" class="img-circle img-sm"> </div>
                                             <div class="media-body">
                                                 <div class="text-nowrap">Jackson sent you a message</div>
                                                 <small class="text-muted">Yesterday</small> </div>

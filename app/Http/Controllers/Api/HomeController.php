@@ -18,6 +18,24 @@ class HomeController extends Controller
 
 $main=$request->input('main');
 
+if(empty($main['install_street_house_number'])){
+
+    $str = $main['street_house_number'];
+    $address = str_replace(' ', '+', $str);
+
+    $json = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address=' . $address . '&key=AIzaSyARmeJZxBmgWPluo5vALvdT4_4JdgiNvDg'), TRUE);
+
+    $lat = $json['results'][0]['geometry']['location']['lat'];
+    $long = $json['results'][0]['geometry']['location']['lng'];
+
+}else{
+    $str = $main['install_street_house_number'];
+    $address = str_replace(' ', '+', $str);
+    $json = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address=' . $address . '&key=AIzaSyARmeJZxBmgWPluo5vALvdT4_4JdgiNvDg'), TRUE);
+
+    $lat = $json['results'][0]['geometry']['location']['lat'];
+    $long = $json['results'][0]['geometry']['location']['lng'];
+}
 
 
 
@@ -38,6 +56,8 @@ $main=$request->input('main');
                 'reachability' => $main['reachability'],
                 'service' =>$main['service'],
                 'comments' => $main['comments'],
+                'latitude' => $lat,
+                'longtitude' => $long,
                 'comments_hidden' => ($main['comments_hidden']=='true') ? 1 : 0 ,
             ]
         );
