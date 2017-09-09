@@ -18,7 +18,7 @@ class AuthController extends Controller
         try {
             list($appKey, $appSecret) = explode(':', $credentials);
 
-            $app = Application::whereKeyAndSecret($appKey, $appSecret)->firstOrFail(); 
+        $app = Application::whereKeyAndSecret($appKey, $appSecret)->firstOrFail();
         } catch (\Throwable $e) {
             return response('invalid_credentials', 400);
         }
